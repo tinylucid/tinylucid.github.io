@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meta on defPhil</title>
+    <link>/tags/meta/</link>
+    <description>Recent content in Meta on defPhil</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/meta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gonzo Science</title>
+      <link>/post/2018/03/21/gonzo-science/</link>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/03/21/gonzo-science/</guid>
+      <description>Seeing the white rabbit Yesterday I&#39;ve finished reading What the Dormouse Said and The Soul of a New Machine. First I have to make a confession. I always had weak spot for 60s in America. It is such distant place for me, both geographically and by time, but it always impressed me and inspired me, don&#39;t know why. I was hooked up on Rock &#39;n&#39; Roll when I was a kid, it was influence from my uncle.</description>
+    </item>
+    
+  </channel>
+</rss>

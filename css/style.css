@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+/* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
+
+body {
+  background: #f4f4f4;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 15px;
+  line-height: 1.5em;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width:600px) {
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1em;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	body {
+		padding-left: 10px;
+		padding-right: 600px;
+	}
+}
+
+a { color: #5554aa; text-decoration: none;}
+a:visited { color: #5554aa; text-decoration: none; }
+a:hover { color: #222222; text-decoration: none; }
+
+/* header and footer areas */
+.menu {
+	padding-left: 0px;
+	text-align: left;
+}
+.menu li { display: inline; }
+
+.menu a {
+    padding: 5px;
+    background: #e8e7ea;
+    font-family: Fira Mono, monospace;
+    font-size: 1em;
+    color: #000;
+    outline: 2px solid #f4f4f4;
+	-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out
+}
+
+.menu a:hover {
+	outline: 1px solid #f4f4f4;
+	color: #f4f4f4;
+    background-color: #5554aa;
+}
+
+.article-meta {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 2px;
+  background: #212529;
+  padding: 1px 10px 1px 0px;
+  text-align: right;
+}
+
+.title { font-size: 1em;
+	font-weight: normal;
+	text-decoration: underline;
+	font-family: Fira Mono; }
+
+footer { 
+	text-align: left;
+	font-size: 0.9em;
+}
+
+footer a { 
+	text-decoration: none;
+	color: black;
+}
+
+hr {
+  border-style: dashed;
+  color: #dfdfdf;
+}
+
+/* ---------------- code ---------------- */
+pre {
+  border: 1px dashed #ddd;
+  padding: 8px;
+  overflow-x: scroll;
+  font-family: Fira Mono;
+}
+
+code { 
+  background: #f9f9f9; 
+}
+
+pre code { 
+	background: none; 
+	font-family: Fira Mono;
+}
+/* -------------------------------------- */
+
+/* misc elements */
+img, iframe, video { max-width: 100%; }
+
+main { 
+	hyphens: auto;
+  	font-family:monospace;
+}
+
+main p {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: monospace;
+}
+
+main h1 {
+	font-size: 1.5em;
+	font-family: monospace;
+}
+
+main h2 {
+	font-size: 1.4em;
+	font-family: monospace;
+}
+
+main h3 {
+	font-size: 1.3em;
+	font-family: monospace;
+}
+
+main h4 {
+	font-size: 1em;
+	font-family: monospace;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 4px solid #ccc;
+  padding: 3px 1em 3px;
+}
+
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
