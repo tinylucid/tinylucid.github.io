@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 /* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
 
@@ -114,21 +115,21 @@ main {
 main p {
 	font-size: 1em;
 	line-height: 1.5em;
-	font-family: monospace;
+	font-family: 'PT Sans';
 }
 
 main h1 {
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-family: monospace;
 }
 
 main h2 {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-family: monospace;
 }
 
 main h3 {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: monospace;
 }
 
