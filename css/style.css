@@ -120,22 +120,22 @@ main p {
 
 main h1 {
 	font-size: 1.3em;
-	font-family: monospace;
+	font-family: Fira Mono;
 }
 
 main h2 {
 	font-size: 1.2em;
-	font-family: monospace;
+	font-family: Fira Mono;
 }
 
 main h3 {
 	font-size: 1.1em;
-	font-family: monospace;
+	font-family: Fira Mono;
 }
 
 main h4 {
 	font-size: 1em;
-	font-family: monospace;
+	font-family: Fira Mono;
 }
 
 blockquote {
