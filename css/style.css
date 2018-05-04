@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 /* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
 
 body {
@@ -113,9 +112,9 @@ main {
 }
 
 main p {
-	font-size: 1em;
+	font-size: 1.1em;
 	line-height: 1.5em;
-	font-family: 'PT Sans';
+	font-family: "Slabo 27px";
 }
 
 main h1 {
