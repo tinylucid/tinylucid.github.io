@@ -17,7 +17,8 @@
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018/04/20/objects-vs-lambdas/</guid>
-      <description>Change of perception after going functional route This won&#39;t be another &#34;Oh my god, SICP changed my life and the way I look at software&#34; blog post. Although it did certainly have significant impact on my perception on how to write software, I want to talk about something a little bit different today. And that is how I started thinking about Object Oriented Programming from different point of view than before I got my feet wet with functional paradigm.</description>
+      <description>Change of perception This won&#39;t be another &#34;Oh my god, SICP changed my life and the way I look at software&#34; blog post. Although it did certainly have significant impact on my perception on how to write software, but I want to talk about something a little bit different today; how functional programming changed the way I write Object Oriented code.
+It&#39;s rather easy to get caught up in pitfalls of object oriented programming.</description>
     </item>
     
     <item>
