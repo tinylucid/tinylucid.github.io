@@ -1,6 +1,7 @@
 /* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
 
 body {
+  font-family: monospace;;
   background: #f4f4f4;
   max-width: 600px;
   margin: auto;
@@ -91,7 +92,9 @@ pre {
   font-family: monospace;
 }
 
-code { 
+code {
+	font-family: monospace;
+	font-size: 80%;
   background: #f9f9f9; 
 }
 
