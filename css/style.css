@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 /* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
 
 body {
@@ -40,8 +38,8 @@ a:hover { color: #222222; text-decoration: none; }
 .menu a {
     padding: 5px;
     background: #e8e7ea;
-    font-family: Fira Mono, monospace;
-    font-size: 1em;
+    font-family: monospace;
+    font-size: 1.2em;
     color: #000;
     outline: 2px solid #f4f4f4;
 	-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
@@ -68,7 +66,7 @@ a:hover { color: #222222; text-decoration: none; }
 .title { font-size: 1em;
 	font-weight: normal;
 	text-decoration: underline;
-	font-family: Fira Mono; }
+	font-family: monospace; }
 
 footer { 
 	text-align: left;
@@ -90,7 +88,7 @@ pre {
   border: 1px dashed #ddd;
   padding: 8px;
   overflow-x: scroll;
-  font-family: Fira Mono;
+  font-family: monospace;
 }
 
 code { 
@@ -119,22 +117,22 @@ main p {
 
 main h1 {
 	font-size: 1.3em;
-	font-family: Fira Mono;
+	font-family: monospace;
 }
 
 main h2 {
 	font-size: 1.2em;
-	font-family: Fira Mono;
+	font-family: monospace;
 }
 
 main h3 {
 	font-size: 1.1em;
-	font-family: Fira Mono;
+	font-family: monospace;
 }
 
 main h4 {
 	font-size: 1em;
-	font-family: Fira Mono;
+	font-family: monospace;
 }
 
 blockquote {
