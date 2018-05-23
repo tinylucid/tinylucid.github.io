@@ -1,12 +1,13 @@
 /* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
   background: #f4f4f4;
   max-width: 600px;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 12px;
   line-height: 1.5em;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 @media screen and (max-width:600px) {
@@ -19,8 +20,8 @@ body {
 
 @media screen and (min-width:1200px) {
 	body {
-		padding-left: 10px;
-		padding-right: 600px;
+		padding-left: 40px;
+		padding-right: 400px;
 	}
 }
 
@@ -63,10 +64,11 @@ a:hover { color: #222222; text-decoration: none; }
   text-align: right;
 }
 
-.title { font-size: 1em;
-	font-weight: normal;
+.title { 
+	font-size: 1.2em;
+	font-weight: bold;
 	text-decoration: underline;
-	font-family: monospace; }
+	font-family: "Inconsolata", monospace; }
 
 footer { 
 	text-align: left;
@@ -97,7 +99,7 @@ code {
 
 pre code { 
 	background: none; 
-	font-family: Fira Mono;
+	font-family: monospace;
 }
 /* -------------------------------------- */
 
@@ -106,33 +108,33 @@ img, iframe, video { max-width: 100%; }
 
 main { 
 	hyphens: auto;
-  	font-family:monospace;
+  	font-family: monospace;
 }
 
 main p {
 	font-size: 1em;
 	line-height: 1.5em;
-	font-family: monospace;
+	font-family: "Inconsolata", monospace;
 }
 
 main h1 {
-	font-size: 1.3em;
-	font-family: monospace;
+	font-size: 1.4em;
+	font-family: "Inconsolata", monospace;
 }
 
 main h2 {
-	font-size: 1.2em;
-	font-family: monospace;
+	font-size: 1.3em;
+	font-family: "Inconsolata", monospace;
 }
 
 main h3 {
-	font-size: 1.1em;
-	font-family: monospace;
+	font-size: 1.2em;
+	font-family: "Inconsolata", monospace;
 }
 
 main h4 {
-	font-size: 1em;
-	font-family: monospace;
+	font-size: 1.1em;
+	font-family: "Inconsolata", monospace;
 }
 
 blockquote {
