@@ -1,5 +1,4 @@
 /* credits to https://github.com/yihui/hugo-xmin, for the xmin theme that I heavily modified to create this one */
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 body {
   background: #f4f4f4;
@@ -66,9 +65,9 @@ a:hover { color: #222222; text-decoration: none; }
 
 .title { 
 	font-size: 1.2em;
-	font-weight: bold;
+	font-weight: normal;
 	text-decoration: underline;
-	font-family: "Inconsolata", monospace; }
+	font-family:   monospace; }
 
 footer { 
 	text-align: left;
@@ -114,27 +113,27 @@ main {
 main p {
 	font-size: 1em;
 	line-height: 1.5em;
-	font-family: "Inconsolata", monospace;
+	font-family: monospace;
 }
 
 main h1 {
-	font-size: 1.4em;
-	font-family: "Inconsolata", monospace;
+	font-size: 1.5em;
+	font-family: monospace;
 }
 
 main h2 {
-	font-size: 1.3em;
-	font-family: "Inconsolata", monospace;
+	font-size: 1.4em;
+	font-family: monospace;
 }
 
 main h3 {
-	font-size: 1.2em;
-	font-family: "Inconsolata", monospace;
+	font-size: 1.3em;
+	font-family: monospace;
 }
 
 main h4 {
-	font-size: 1.1em;
-	font-family: "Inconsolata", monospace;
+	font-size: 1.2em;
+	font-family: monospace;
 }
 
 blockquote {
