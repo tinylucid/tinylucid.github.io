@@ -25,10 +25,10 @@ body {
 }
 
 a { 
-	color: #d48a2d;
+	color: #746cce;
 	text-decoration: none;
 }
-a:visited { color: #d48a2d; text-decoration: none; }
+a:visited { color: #746cce; text-decoration: none; }
 a:hover { color: #222222; text-decoration: none; }
 
 /* header and footer areas */
