@@ -107,13 +107,13 @@ img, iframe, video { max-width: 100%; }
 
 main { 
 	hyphens: auto;
-  	font-family: monospace;
+  	font-family: Helvetica, Verdana, sans-serif;
 }
 
 main p {
-	font-size: 1.1em;
+	font-size: 1em;
 	line-height: 1.4em;
-	font-family: monospace;
+	font-family: Helvetica, Verdana, sans-serif;
 }
 
 main h1 {
