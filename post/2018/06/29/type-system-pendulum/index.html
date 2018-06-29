@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Type system pendulum | defPhil</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">defPhil</a></li>
+      
+      <li><a href="/post/">blog</a></li>
+      
+      <li><a href="/tags/">tags</a></li>
+      
+      <li><a href="/about/">about me</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h3><span class="title">Type system pendulum</span></h3>
+<p class="date">2018/06/29</p>
+</div>
+
+<main>
+<h2 id="a-little-bit-of-history">A little bit of history</h2>
+
+<p>During last 10 to 15 years we saw rise in popularity of dynamically typed languages. Developers delved from statically typed era of Java into web stacks written in dynamically typed languages like PHP/Ruby/JS/Python. That impacted popularity of typed programming languages the most . But as we are moving down the timeline towards today, we can see pendulum swinging back to statical typing systems but in some weird way. And what's rather interesting is the way that static typing is making a <em>"comeback"</em>. Not by popping up of some new programming language/stack, bur rather as tools that are used on top of dynamically typed code.</p>
+
+<p>Most notable example can be Facebook, where they've built Pyre -- static type checker for Python. Also very interesting thing coming from Facebook would be Reason, think of it as Ruby-fication of OCaml that gets executed like JS. Type-safe of course... JS maybe isn't even typed at all... /s React introduced Flow, Microsoft released TypeScript, which is getting some serious traction.</p>
+
+<p>Recent event that made me think more about this topic was release of Python 3.7, and it's introduction of `dataclasses` and <a href="https://www.python.org/dev/peps/pep-0557/" title="PEP557">PEP557</a>. So we have decorators and functions provided, for example:</p>
+
+<pre><code class="language-python">@dataclass
+class Student:
+    &quot;&quot;&quot; Class for keeping information about each student &quot;&quot;&quot;
+    name: str
+    ID: int
+    num_of_subjects: int = 45
+	current_year: int
+
+def progress(self) -&gt; float:
+    return num_of_subjects/current_year * 100
+</code></pre>
+
+<p>This saves you from writing a lot of boilerplate code  like</p>
+
+<pre><code class="language-python">def __init__(self, name:str, ID:int, num_of_subjects: int = 45, current_year: int) -&gt; None:
+    self.name = name
+    self.ID = ID
+    self.num_of_subjects = num_of_subjects
+    self.current_year = current_year
+</code></pre>
+
+<p>What lies underneath these changes is some kind of type safety net. In large code bases, developer wants to know what happens with the data, where it goes and how it mutates. Hence the need for these kinds of tools and abstractions. But what's weird is that we went from static languages, to dynamic ones, built great part of internet on them, and now when things scaled we go back to static typing and build static typing abstractions on dynamically typed technologies. Haskellers would now shout how they were right from the beginning. But hold your horse cowboy!</p>
+
+<h2 id="spec">Spec</h2>
+
+<p>Since I got hooked on Clojure, I immediately noticed whole community talking about some thing called Spec. I sticked to learning basics and not pay attention to all the fuss. Recently I took a closer look at it. To explain it in some basic, layman terms it's the code that describes the shape of your data, you specify the things you expect(want) to see.</p>
+
+<pre><code class="language-clojure">[org.clojure/clojure &quot;1.9.0&quot;]
+(require '[clojure.spec.alpha :as s])
+
+(s/valid? ::student
+  {::name &quot;Donald Dunn&quot;
+   ::ID &quot;36271&quot;
+   ::numOfSubjects 40
+   ::currentYear 3})
+;;=&gt; true
+
+;; Fails attribute conformance
+(s/explain ::person
+   {::name &quot;n/a&quot;})
+</code></pre>
+
+<p>It works equally for both Clojure and ClojureScript. It is still in development but it's used in production, since it enables you to inspect and validate your data, it's kinda of a instrumentation tool for your code. You can check arguments of every function call, and check returned values against its spec. So really amazing tool, that is baked into Clojure and feels really as a natural part of ecosystem.</p>
+
+<p>So with Clojure, we now have dynamically typed functional programming language that embraces the power of REPL driven development, but it provides us with that strongly typed system safety net we mentioned earlier. Plus it could be possible to extend Spec or Spec-like tooling for other dynamic languages.</p>
+
+<p>So as we can see Spec is totally different beast. I didn't want to go to much into specific cases and examples since this wasn't the blog post about Spec.</p>
+
+<h4 id="cpp">*Cpp</h4>
+
+<p>Just few weeks ago I was reading about modern C++, about <em>auto</em> and smart and shared pointers. And it was interesting how way of writing C++ code has changed, giving you possibility to write it yourself if you need to get under the hood of the system on deeper level. But most of the time you do not need to, so it's recommended to write it the modern way which introduces new layer of abstraction where you should not interferer into types. Your role is to collaborate with the compiler and let him decide what goes where, since it won't make some fatal mistake as easily as human will (at least we hope so).</p>
+
+<p>--</p>
+
+<p>Just few weeks ago I was reading about modern C++
+What I wanted to bring to attention was overlap between two distinctions, how technology evolves and grows over time and scales introducing new ideas along the way. Or maybe this is another shot at the problem that is present in terms of scale, way of writing code and grow and distribution of the infrastructure and code, it will be experimented with and left forgotten. So looks like we are making dynamically typed systems stronger while preserving expressiveness and ability to produce really fast results. Maybe in not so far future we will have some interesting hybrid type system, where compilers will decide behavior.</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC</a> unless stated otherwise | Filip Miletic 2018 | <a href="https://github.com/defphil">Github</a> | <a href="https://twitter.com/defnphil">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

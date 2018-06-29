@@ -1,9 +1,9 @@
 body {
-  font-family: monospace;
+  font-family: 'PT Mono', monospace;
 }
 code {
   font-family: monospace;
-  font-size: 1%;
+  font-size: 1.4em;
 }
 
 
