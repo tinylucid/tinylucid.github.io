@@ -17,7 +17,11 @@ body {
 	}
 }
 
+<<<<<<< HEAD
 @media screen and (min-width:1000px) {
+=======
+@media screen and (min-width:1250px) {
+>>>>>>> 83cc65da10e871cc8f617f2e360a7f428c3811e5
 	body {
 		margin-left: 200px;
 		padding-right: 200px;
