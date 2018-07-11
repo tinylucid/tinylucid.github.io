@@ -6,7 +6,6 @@ body {
   margin: auto;
   margin-top: 12px;
   line-height: 1.5em;
-  font-size: 0.72em;
 }
 
 @media screen and (max-width:600px) {
@@ -19,8 +18,8 @@ body {
 
 @media screen and (min-width:1000px) {
 	body {
-		margin-left: 200px;
-		padding-right: 200px;
+		margin-left: 300px;
+		padding-right: 100px;
 	}
 }
 
@@ -41,8 +40,8 @@ a:hover { color: #222222; text-decoration: none; }
 .menu a {
     padding: 5px;
 /*    background: #e8e7ea; */
-    font-family: 'PT Mono', monospace;
-    font-size: 1.3em;
+    font-family: monospace;
+    font-size: 1.4em;
     color: #000;
     outline: 2px solid #f4f4f4;
 	-webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
@@ -120,29 +119,29 @@ main {
 }
 
 main p {
-	font-size: 1em;
+	font-size: 0.95em;
 	line-height: 1.4em;
 	font-family: Helvetica, Verdana, sans-serif;
 }
 
 main h1 {
 	font-size: 1.5em;
-	font-family: 'PT Mono', monospace;
+	font-family: monospace;
 }
 
 main h2 {
 	font-size: 1.4em;
-	font-family: 'PT Mono', monospace;
+	font-family: monospace;
 }
 
 main h3 {
 	font-size: 1.3em;
-	font-family: 'PT Mono', monospace;
+	font-family: monospace;
 }
 
 main h4 {
 	font-size: 1.2em;
-	font-family: 'PT Mono', monospace;
+	font-family: monospace;
 }
 
 blockquote {
