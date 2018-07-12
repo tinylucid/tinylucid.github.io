@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paradigms on </title>
+    <link>/tags/paradigms/</link>
+    <description>Recent content in Paradigms on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/paradigms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Objects vs Lambdas</title>
+      <link>/post/2018/04/20/objects-vs-lambdas/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/04/20/objects-vs-lambdas/</guid>
+      <description>Change of perception This won&#39;t be another &#34;Oh my god, SICP changed my life and the way I look at software&#34; blog post. Although it did certainly have significant impact on my perception on how to write software, but I want to talk about something a little bit different today; how functional programming changed the way I write Object Oriented code.
+It&#39;s rather easy to get caught up in pitfalls of object oriented programming.</description>
+    </item>
+    
+    <item>
+      <title>Abstraction contraction</title>
+      <link>/post/2018/04/17/abstraction-contraction/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018/04/17/abstraction-contraction/</guid>
+      <description>Software and it&#39;s weird nature The most exciting and weird thing I found out about in early teenage days was software. I started my journey with TurboPASCAL on start of my second year of high school. It felt really weird at first, mostly because I kinda expected from computers to be magically less stupid than they actually were. &#34;What? I have to tell them when I am about to use natural number, wtf?</description>
+    </item>
+    
+  </channel>
+</rss>
