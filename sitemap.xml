@@ -45,11 +45,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/meta/</loc>
     <lastmod>2018-05-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -93,6 +88,11 @@
   
   <url>
     <loc>/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-06-29T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

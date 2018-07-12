@@ -1,9 +1,6 @@
-body {
-  font-family: monospace;
+@font-face {
+	font-family: Iosevka;
+	font-weight: 400;
+	font-style: normal;
+	src: url(../fonts/iosevka-term-regular.woff) format('woff');
 }
-code {
-  font-family: monospace;
-  font-size: 1.1em;
-}
-
-
