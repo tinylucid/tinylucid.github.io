@@ -3,7 +3,7 @@ body {
   margin: auto;
   margin-top: 12px;
   margin-right: 12px;
-  font-family: Iosevka;
+  font-family: "Iosevka", monospace;
   font-size: 0.9em;
 }
 
@@ -38,12 +38,12 @@ a:hover { color: #222222; text-decoration: underline; }
   font-size: 1em;
   padding: 1px 5px 5px 0px;
   text-align: left;
-  font-family: Iosevka;
+  font-family: "Iosevka", monospace;
 }
 
 .title {
 	font-size: 1.5em;
-	font-family: Iosevka;
+	font-family: "Iosevka", monospace;
 }
 
 footer { 
@@ -55,7 +55,7 @@ pre {
   border-left: 3px solid #ddd;
   padding: 8px;
   overflow-x: scroll;
-  font-family: Iosevka;
+  font-family: "Iosevka", monospace;
 }
 
 code {
@@ -64,7 +64,7 @@ code {
 
 pre code { 
 	background: none; 
-	font-family: Iosevka;
+	font-family: "Iosevka", monospace;
 }
 
 /* misc elements */
@@ -74,7 +74,7 @@ main {
 	font-size: 0.8em;
 	background-color: #ffffff;
 	padding: 1em;
-  	font-family: Iosevka;
+  	font-family: "Iosevka", monospace;
 	max-width: 80ch;
 }
 
