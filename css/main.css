@@ -80,6 +80,11 @@ h3 {
     font-family: "Iosevka", monospace;
 }
 
+#main li {
+	margin-top: 15px;
+	font-size: 0.9em;
+	list-style-type: square;
+}
 
 #sidebar h2 {
     font-family: "Iosevka", monospace;
@@ -106,16 +111,14 @@ h3 {
 }
 
 #main h1 a {
-    color: #0000ff;
+    color: #148281;
     text-decoration: none;
 }
 
 a {
-	color: #0000ff;
+	color: #148281;
 	text-decoration: none;
 }
-
-
 
 #sidebar {
     left: 20px;
@@ -125,25 +128,50 @@ a {
     text-align: right;
 }
 
+#sidebar a {
+	color: #000000;
+}
+#sidebar a:visited {
+	color: #000000;
+}
+
+#sidebar a:hover {
+	color: #0000ff;
+	text-decoration: underline;
+}
+
 #sidebar h1 {
-	border-bottom: 2px solid #000;
-	margin-left: 2.8em;
-	background-color:#ffff3f;
+	margin-left: 2.7em;
+	color: #0000ff;
+}
+
+#sidebar h1.title2 {
+	margin-left: -0em;
+	color: #148281;
+}
+
+#sidebar h1.title1, h1.title2 {
+	display: inline;
 }
 
 #sidebar h2 {
     margin-top: 1em;
+    padding-top: 1.2em;
+    margin-bottom: 0.5em;
     text-transform: uppercase;
     font-size: 13px;
-
 }
 #sidebar ul {
     list-style-type: none;
     margin: 10px 0;
 }
-#sidebar li {
-    font-size: 14px;
-    line-height: 20px;
+
+#sidebar li.recents {
+	margin-top: 10px;
+	margin-bottom: 10px;
+   	padding-left: 5em; 
+    font-size: 12px;
+    line-height: 1.2em;
 }
 
 #nav {
@@ -157,10 +185,19 @@ a {
 }
 
 #nav img.logo {
-    width: 65px;
-    margin-bottom: 10px;
+    width: 40px;
+    margin-bottom: 15px;
 }
 
+#sidebar a.license {
+	font-size: 10px;
+	color: #a2a2a2;
+}
+
+#sidebar img.license {
+	margin-top: 10px;
+	width: 50px;	
+}
 
 @media only screen and (max-width: 800px){
     #sidebar {
@@ -216,7 +253,7 @@ a.changelog:hover {
 
 
 img.logo {
-    width: 113px;
+    width: 50px;
 }
 
 *:focus {
@@ -228,7 +265,6 @@ img.logo {
     color: inherit;
     font-family: Helvetica, serif;
 }
-
 
 
 .links:hover {
