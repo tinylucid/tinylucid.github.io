@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>(defPhil)</title>
+    <link>https://defphil.com/</link>
+    <description>Recent content on (defPhil)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jun 2018 03:01:32 +0600</lastBuildDate>
+    
+	<atom:link href="https://defphil.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example post</title>
+      <link>https://defphil.com/posts/example_post/</link>
+      <pubDate>Wed, 06 Jun 2018 03:01:32 +0600</pubDate>
+      
+      <guid>https://defphil.com/posts/example_post/</guid>
+      <description>Welcome Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra sem ac neque consectetur euismod eu nec ante. Vestibulum mattis leo ac ligula pretium ullamcorper. Mauris gravida mauris ac ligula aliquet tincidunt. Praesent tristique, lorem ac efficitur auctor, dolor tellus blandit ligula, vitae egestas lectus ligula ac urna. In pretium metus ac facilisis venenatis. Duis feugiat maximus est, varius egestas eros. Aliquam non erat leo. Nulla facilisi. Duis facilisis mauris risus, id ornare elit varius et.</description>
+    </item>
+    
+    <item>
+      <title>Example post 2</title>
+      <link>https://defphil.com/posts/example_post2/</link>
+      <pubDate>Mon, 23 Apr 2018 03:01:33 +0600</pubDate>
+      
+      <guid>https://defphil.com/posts/example_post2/</guid>
+      <description>Test Testing code #include &amp;lt;stdio.h&amp;gt; struct threading { } void main(int) { int x; for (x = 0; x &amp;lt; n; x++) { size_t y }  ending</description>
+    </item>
+    
+  </channel>
+</rss>
