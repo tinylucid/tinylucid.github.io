@@ -40,10 +40,17 @@ video {
     margin: 20px 5px;
 }
 
+pre  {
+	background: #f4f4f4;
+	overflow: scroll;
+}
+
 code {
+	background: #f4f4f4;
+	white-space: pre;
     font-family: "Iosevka", monospace;
 	font-size: 0.9em;
-	line-height: 1em;
+	line-height: 1.5em;
 }
 
 .browserupgrade {
