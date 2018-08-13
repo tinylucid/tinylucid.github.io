@@ -17,7 +17,7 @@
       <pubDate>Wed, 06 Jun 2018 03:01:38 +0600</pubDate>
       
       <guid>https://defphil.com/posts/test/</guid>
-      <description>Test </description>
+      <description>I recently read Greg Hendershott&#39;s emacs themes blog post, and cribbed liberally from his approach to loading themes. I also cribbed his Hydra theme switcher. It was so fun to use! I wanted to try it with all the themes I have installed---but I didn&#39;t want to add all of them manually. Boo! So I set out to see if I could dynamically add all installed themes to my Hydra theme switcher.</description>
     </item>
     
   </channel>
