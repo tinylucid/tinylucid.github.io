@@ -94,7 +94,7 @@ h3 {
 }
 
 #sidebar h2 {
-    font-family: "Iosevka Bold", monospace;
+    font-family: "Iosevka", monospace;
 }
 
 
@@ -140,6 +140,12 @@ a {
 }
 #sidebar a:visited {
 	color: #000000;
+}
+
+#sidebar p.subtitle {
+	margin-left: 1em;
+	font-size: 0.8em;
+	color: #a2a2a2;
 }
 
 #sidebar a:hover {
