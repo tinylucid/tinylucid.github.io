@@ -11,14 +11,14 @@
 }
 
 blockquote {
-  background: #f9f9f9;
+  background: #22292d;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #ccc;
+  color: #f4f4f4;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -27,6 +27,7 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+  background-color: #22292d;
 }
 
 audio,
@@ -41,16 +42,17 @@ video {
 }
 
 pre  {
-	background: #f4f4f4;
+	background: #22292d;
 	overflow: scroll;
 }
 
 code {
-	background: #f4f4f4;
+	background: #22292d;
 	white-space: pre;
     font-family: "Iosevka", monospace;
 	font-size: 0.9em;
 	line-height: 1.5em;
+	color: #f4f4f4;
 }
 
 .browserupgrade {
@@ -62,7 +64,7 @@ code {
 
 h3 {
     margin-top: 25px;
-    color: #303030;
+    color: #f4f4f4;
     font-family: "Iosevka", monospace;
 }
 
@@ -70,9 +72,11 @@ h3 {
 #sidebar {
     position: absolute;
     top: 40px;
+    background-color: #2a3338;
 }
 * {
     margin: 0;
+	color: #d8d5cf;
     padding: 0;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -84,21 +88,26 @@ h3 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
     vertical-align: baseline;
     font-family: "Iosevka", monospace;
+    background-color: #2a3338;
 }
 
 #main li {
 	margin-top: 15px;
+	color: #d8d5cf;
 	font-size: 0.9em;
 	list-style-type: square;
 }
 
 #sidebar h2 {
     font-family: "Iosevka", monospace;
+	color: #d8d5cf;
 }
 
 
 #main {
     left: 280px;
+	color: #d8d5cf;
+    background-color: #2a3338;
     width: 500px;
 }
 #main h1 {
@@ -107,23 +116,29 @@ h3 {
     font-weight: 400;
     line-height: 1em;
     letter-spacing: -1px;
+    color: #c8ae9d;
 }
 
 #main p {
     font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+	color: #d8d5cf;
     font-size: 0.9em;
     line-height: 1.5em;
     margin: 12px 0;
 }
 
 #main h1 a {
-    color: #148281;
+    color: #c8ae9d;
     text-decoration: none;
 }
 
 a {
-	color: #148281;
+	color: #44b9b1;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 #sidebar {
@@ -135,20 +150,20 @@ a {
 }
 
 #sidebar a {
-	color: #000000;
+	color: #d8d5cf;
 }
 #sidebar a:visited {
-	color: #000000;
+	color: #d8d5cf;
 }
 
 #sidebar p.subtitle {
 	margin-left: 1em;
 	font-size: 0.8em;
-	color: #a2a2a2;
+	color: #c8ae9d;
 }
 
 #sidebar a:hover {
-	color: #0000ff;
+	color: #44b9b1;
 	text-decoration: underline;
 }
 
@@ -157,9 +172,13 @@ a {
 	color: #0000ff;
 }
 
+#sidebar h1.title1 {
+	color: #f4f4f4;
+}
+
 #sidebar h1.title2 {
-	margin-left: -0em;
-	color: #148281;
+	margin-left: 0.03em;
+	color: #c8ae9d;
 }
 
 #sidebar h1.title1, h1.title2 {
