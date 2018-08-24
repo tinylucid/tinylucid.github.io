@@ -207,16 +207,20 @@ a:hover {
 
 #nav {
     display: none;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+}
+
+#nav ul {
+	margin-bottom: 10px;
 }
 
 #nav li {
     display: inline;
-    margin-right: 7px
+    margin-right: 7px;
 }
 
 #nav img.logo {
-    width: 40px;
+    width: 0px;
     margin-bottom: 15px;
 }
 
