@@ -11,7 +11,7 @@
 }
 
 blockquote {
-  background: #22292d;
+  background: #cccccc;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
@@ -27,7 +27,7 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-  background-color: #22292d;
+  background-color: #cccccc;
 }
 
 audio,
@@ -42,17 +42,17 @@ video {
 }
 
 pre  {
-	background: #22292d;
+	background: #e5e5e5;
 	overflow: scroll;
+	border-left: 5px solid #44b9;
 }
 
 code {
-	background: #22292d;
+	background: #e5e5e5;
 	white-space: pre;
     font-family: "Iosevka", monospace;
 	font-size: 0.9em;
 	line-height: 1.5em;
-	color: #f4f4f4;
 }
 
 .browserupgrade {
@@ -64,7 +64,7 @@ code {
 
 h3 {
     margin-top: 25px;
-    color: #f4f4f4;
+    color: #22292d;
     font-family: "Iosevka", monospace;
 }
 
@@ -72,11 +72,11 @@ h3 {
 #sidebar {
     position: absolute;
     top: 40px;
-    background-color: #2a3338;
+    background-color: #f4f4f4;
 }
 * {
     margin: 0;
-	color: #d8d5cf;
+	color: #22292d;
     padding: 0;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -88,26 +88,26 @@ h3 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
     vertical-align: baseline;
     font-family: "Iosevka", monospace;
-    background-color: #2a3338;
+    background-color: #f4f4f4;
 }
 
 #main li {
 	margin-top: 15px;
-	color: #d8d5cf;
+	color: #22292d;
 	font-size: 0.9em;
 	list-style-type: square;
 }
 
 #sidebar h2 {
     font-family: "Iosevka", monospace;
-	color: #d8d5cf;
+	color: #22292d;
 }
 
 
 #main {
     left: 280px;
-	color: #d8d5cf;
-    background-color: #2a3338;
+	color: #2a3338;
+    background-color: #f4f4f4;
     width: 500px;
 }
 #main h1 {
@@ -121,14 +121,14 @@ h3 {
 
 #main p {
     font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
-	color: #d8d5cf;
+	color: #2a3338;
     font-size: 0.9em;
     line-height: 1.5em;
     margin: 12px 0;
 }
 
 #main h1 a {
-    color: #ff2267;
+    color: #44b9;
     text-decoration: none;
 }
 
@@ -150,16 +150,16 @@ a:hover {
 }
 
 #sidebar a {
-	color: #d8d5cf;
+	color: #2a3338;
 }
 #sidebar a:visited {
-	color: #d8d5cf;
+	color: #2a3338;
 }
 
 #sidebar p.subtitle {
 	margin-left: 1em;
 	font-size: 0.8em;
-	color: #c8ae9d;
+	color: #a0a0a0;
 }
 
 #sidebar a:hover {
@@ -169,16 +169,16 @@ a:hover {
 
 #sidebar h1 {
 	margin-left: 2.7em;
-	color: #0000ff;
+	color: #44b9;
 }
 
 #sidebar h1.title1 {
-	color: #f4f4f4;
+	color: #2a3338;
 }
 
 #sidebar h1.title2 {
 	margin-left: 0.03em;
-	color: #c8ae9d;
+	color: #44b9b1;
 }
 
 #sidebar h1.title1, h1.title2 {
