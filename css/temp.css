@@ -11,14 +11,14 @@
 }
 
 blockquote {
-  background: #cccccc;
+  background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #f4f4f4;
+  color: #ccc;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -27,7 +27,6 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-  background-color: #cccccc;
 }
 
 audio,
@@ -42,13 +41,12 @@ video {
 }
 
 pre  {
-	background: #e5e5e5;
+	background: #f4f4f4;
 	overflow: scroll;
-	border-left: 5px solid #44b9;
 }
 
 code {
-	background: #e5e5e5;
+	background: #f4f4f4;
 	white-space: pre;
     font-family: "Iosevka", monospace;
 	font-size: 0.9em;
@@ -64,7 +62,7 @@ code {
 
 h3 {
     margin-top: 25px;
-    color: #22292d;
+    color: #303030;
     font-family: "Iosevka", monospace;
 }
 
@@ -72,11 +70,9 @@ h3 {
 #sidebar {
     position: absolute;
     top: 40px;
-    background-color: #f4f4f4;
 }
 * {
     margin: 0;
-	color: #22292d;
     padding: 0;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -88,26 +84,21 @@ h3 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
     vertical-align: baseline;
     font-family: "Iosevka", monospace;
-    background-color: #f4f4f4;
 }
 
 #main li {
 	margin-top: 15px;
-	color: #22292d;
 	font-size: 0.9em;
 	list-style-type: square;
 }
 
 #sidebar h2 {
     font-family: "Iosevka", monospace;
-	color: #22292d;
 }
 
 
 #main {
     left: 280px;
-	color: #2a3338;
-    background-color: #f4f4f4;
     width: 500px;
 }
 #main h1 {
@@ -116,29 +107,23 @@ h3 {
     font-weight: 400;
     line-height: 1em;
     letter-spacing: -1px;
-    color: #ff2267;
 }
 
 #main p {
     font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
-	color: #2a3338;
     font-size: 0.9em;
     line-height: 1.5em;
     margin: 12px 0;
 }
 
 #main h1 a {
-    color: #44b9;
+    color: #148281;
     text-decoration: none;
 }
 
 a {
-	color: #44b9b1;
+	color: #148281;
 	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 #sidebar {
@@ -150,36 +135,31 @@ a:hover {
 }
 
 #sidebar a {
-	color: #2a3338;
+	color: #000000;
 }
 #sidebar a:visited {
-	color: #2a3338;
+	color: #000000;
 }
 
 #sidebar p.subtitle {
-	margin-top: 0.3em;
 	margin-left: 1em;
 	font-size: 0.8em;
-	color: #a0a0a0;
+	color: #a2a2a2;
 }
 
 #sidebar a:hover {
-	color: #44b9b1;
+	color: #0000ff;
 	text-decoration: underline;
 }
 
 #sidebar h1 {
 	margin-left: 2.7em;
-	color: #44b9;
-}
-
-#sidebar h1.title1 {
-	color: #2a3338;
+	color: #0000ff;
 }
 
 #sidebar h1.title2 {
-	margin-left: 0.03em;
-	color: #44b9b1;
+	margin-left: -0em;
+	color: #148281;
 }
 
 #sidebar h1.title1, h1.title2 {
@@ -208,20 +188,16 @@ a:hover {
 
 #nav {
     display: none;
-    margin-bottom: 20px;
-}
-
-#nav ul {
-	margin-bottom: 10px;
+    margin-bottom: 20px
 }
 
 #nav li {
     display: inline;
-    margin-right: 7px;
+    margin-right: 7px
 }
 
 #nav img.logo {
-    width: 0px;
+    width: 40px;
     margin-bottom: 15px;
 }
 
