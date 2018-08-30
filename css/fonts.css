@@ -1,20 +1,13 @@
 @font-face {
-  font-family: Iosevka;
+  font-family: Inconsolata;
   font-weight: 400;
   font-style: normal;
-  src: url(../fonts/iosevka-regular.woff2) format('woff2'), url(../fonts/iosevka-regular.woff) format('woff'), url(../fonts/iosevka-regular.ttf) format('truetype');
+  src: url(../fonts/Inconsolata-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: Iosevka;
+  font-family: Inconsolata;
   font-weight: 600;
   font-style: bold;
-  src: url(../fonts/iosevka-bold.woff2) format('woff2'), url(../fonts/iosevka-bold.woff) format('woff'), url(../fonts/iosevka-bold.ttf) format('truetype');
+  src: url(../fonts/Insonsolata-Bold.ttf) format('truetype');
 } 
-
-@font-face {
-  font-family: Iosevka;
-  font-weight: 400;
-  font-style: italic;
-  src: url(../fonts/iosevka-italic.woff2) format('woff2'), url(../fonts/iosevka-italic.woff) format('woff'), url(../fonts/iosevka-italic.ttf) format('truetype');
-}
