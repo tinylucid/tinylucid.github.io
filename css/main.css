@@ -45,14 +45,14 @@ pre  {
 	background: #f4f4f4;
 	overflow: scroll;
 	border-left: 5px solid #44b9;
+	font-size: 1em;
 }
 
 code {
 	background: #f4f4f4;
 	white-space: pre;
-    font-family: "Iosevka", monospace;
-	font-size: 0.8em;
-	line-height: 1.5em;
+    font-family: Inconsolata, monospace;
+	font-size: 0.9em;
 }
 
 .browserupgrade {
@@ -63,7 +63,14 @@ code {
 }
 
 h2,h3,h4,h5 {
-    font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+    font-family: Inconsolata, monospace;
+    margin-top: 12px;
+    color: #22292d;
+}
+
+h4 { 
+	font-size: 15px;
+	font-family: Inconsolata, monospace;
     margin-top: 25px;
     color: #22292d;
 }
@@ -72,7 +79,7 @@ h2,h3,h4,h5 {
 #sidebar {
     position: absolute;
     top: 40px;
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 * {
     margin: 0;
@@ -87,8 +94,8 @@ h2,h3,h4,h5 {
     -webkit-font-smoothing: antialiased!important;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
     vertical-align: baseline;
-    font-family: "Iosevka", monospace;
-    background-color: #fafafa;
+    font-family: Inconsolata, monospace;
+    background-color: #ffffff;
 }
 
 #main li {
@@ -99,7 +106,7 @@ h2,h3,h4,h5 {
 }
 
 #sidebar h2 {
-    font-family: "Iosevka", monospace;
+    font-family: Inconsolata, monospace;
 	color: #22292d;
 }
 
@@ -107,34 +114,40 @@ h2,h3,h4,h5 {
 #main {
     left: 280px;
 	color: #2a3338;
-    background-color: #fafafa;
+    background-color: #ffffff;
     width: 500px;
 }
 #main h1 {
     margin-top: 0;
-    font-size: 40px;
+    padding-bottom: -1em;
+    font-family: Inconsolata, monospace;
+    font-size: 35px;
     font-weight: 400;
-    line-height: 1em;
+    line-height: 0.6em;
     letter-spacing: -1px;
-    color: #ff2267;
+    color: #ff0000;
 }
 
 #main p {
-    font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
-	color: #2a3338;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
     font-size: 0.8em;
-    line-height: 1.5em;
+    line-height: 1.3em;
     margin: 12px 0;
 }
 
 #main h1 a {
-    color: #44b9;
+    color: #de473b;
     text-decoration: none;
 }
 
+#main a {
+	font-size:1.2em;
+}
+
 a {
-	color: #44b9b1;
+	color: #0000ff;
 	text-decoration: none;
+	font-size: 1em;
 }
 
 a:hover {
@@ -145,7 +158,7 @@ a:hover {
     left: 20px;
     width: 200px;
     border-right: 1px solid #ccc;
-    padding: 20px 20px 0 0;
+    padding: 10px 20px 0 0;
     text-align: right;
 }
 
@@ -157,33 +170,21 @@ a:hover {
 }
 
 #sidebar p.subtitle {
+	font-family: Inconsolata, monospace;
 	margin-top: 0.3em;
 	margin-left: 1em;
-	font-size: 0.8em;
-	color: #a0a0a0;
+	font-size: 0.9em;
+	color: #9f9f9f;
 }
 
 #sidebar a:hover {
-	color: #44b9b1;
+	color: #0000ff;
 	text-decoration: underline;
 }
 
 #sidebar h1 {
 	margin-left: 2.7em;
-	color: #44b9;
-}
-
-#sidebar h1.title1 {
 	color: #2a3338;
-}
-
-#sidebar h1.title2 {
-	margin-left: 0.03em;
-	color: #44b9b1;
-}
-
-#sidebar h1.title1, h1.title2 {
-	display: inline;
 }
 
 #sidebar h2 {
@@ -191,11 +192,14 @@ a:hover {
     padding-top: 1.2em;
     margin-bottom: 0.5em;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 14px;
 }
 #sidebar ul {
     list-style-type: none;
     margin: 10px 0;
+}
+
+#sidebar li {
 }
 
 #sidebar li.recents {
@@ -266,7 +270,7 @@ a:hover {
 
 
 .social {
-	font-size: 0.8em;
+	font-size: 0.7em;
     margin: 50px 0;
     padding-top: 1.5em;
     border-top: 1px dashed #aaa;
