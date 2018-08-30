@@ -11,14 +11,14 @@
 }
 
 blockquote {
-  background: #cccccc;
+  background: #e5e5e5;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 blockquote:before {
-  color: #f4f4f4;
+  color: #fafafa;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -27,7 +27,7 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
-  background-color: #cccccc;
+  background-color: #e5e5e5;
 }
 
 audio,
@@ -42,16 +42,16 @@ video {
 }
 
 pre  {
-	background: #e5e5e5;
+	background: #f4f4f4;
 	overflow: scroll;
 	border-left: 5px solid #44b9;
 }
 
 code {
-	background: #e5e5e5;
+	background: #f4f4f4;
 	white-space: pre;
     font-family: "Iosevka", monospace;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	line-height: 1.5em;
 }
 
@@ -62,17 +62,17 @@ code {
     padding: 0.2em 0;
 }
 
-h3 {
+h2,h3,h4,h5 {
+    font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
     margin-top: 25px;
     color: #22292d;
-    font-family: "Iosevka", monospace;
 }
 
 #main,
 #sidebar {
     position: absolute;
     top: 40px;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
 }
 * {
     margin: 0;
@@ -88,7 +88,7 @@ h3 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
     vertical-align: baseline;
     font-family: "Iosevka", monospace;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
 }
 
 #main li {
@@ -107,7 +107,7 @@ h3 {
 #main {
     left: 280px;
 	color: #2a3338;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
     width: 500px;
 }
 #main h1 {
@@ -122,7 +122,7 @@ h3 {
 #main p {
     font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
 	color: #2a3338;
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 1.5em;
     margin: 12px 0;
 }

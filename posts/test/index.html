@@ -61,6 +61,19 @@ documentation for that function, and this has a link to the source at
 the top. I clicked that, and quickly found that it calls
 ~custom-available-themes~.</p>
 
+<h2 id="h2-testing">H2 testing</h2>
+
+<p>Next I needed to generate the Hydra docstring/menu. My biggest
+annoyance with the manual process was modifying the docstring to add
+the key & hint. So initially I thought about automating this in some
+way, perhaps by listing light & dark & "other" themes separately. But
+it would still be annoying. I thought about chaining hydras too, but
+then I discovered that Hydra supports a different mode: you can
+provide a hint as the third argument in the "head" and it will create
+the menu for you. I opted for this approach.</p>
+
+<h4 id="crack-rock">CRACK ROCK</h4>
+
 <p>Next I needed to generate the Hydra docstring/menu. My biggest
 annoyance with the manual process was modifying the docstring to add
 the key & hint. So initially I thought about automating this in some
@@ -170,6 +183,8 @@ following error:</p>
   command-execute: Wrong type argument: commandp, (eval (\` (defhydra sb/hydra-select-themes (:hint nil :color pink) "Select Theme" (\,@ (sb/hydra-load-theme-heads (sb/sort-themes (custom-available-themes)))) ("DEL" (sb/disable-all-themes)) ("RET" nil "done" :color blue))))
 </p>
 </blockquote>
+
+<h3 id="memcpy-to-specify-the-maximum-destination-length">memcpy() to specify the maximum destination length</h3>
 
 <p>I didn't really understand what that meant, but I searched the hydra
 issues some more for "dynamic" invocation and found <a href="https://github.com/abo-abo/hydra/issues/137#issuecomment-117132873" title="a comment">a comment</a> with a
