@@ -235,8 +235,7 @@ a:hover {
 }
 
 #nav img.logo {
-    width: 65px;
-    margin-bottom: 15px;
+    width: 0px;
 }
 
 #sidebar a.license {
@@ -273,7 +272,8 @@ a:hover {
     }
 
     #main {
-        left: 0.7em;
+    	margin-top: -3em;
+        left: 0.6em;
         width: calc(100% - 30px);
     }
 }
