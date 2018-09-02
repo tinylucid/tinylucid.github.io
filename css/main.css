@@ -69,7 +69,7 @@ h2,h3,h4,h5 {
 }
 
 h4 { 
-	font-size: 15px;
+	font-size: 1em;
 	font-family: Inconsolata, monospace;
     margin-top: 25px;
     color: #22292d;
@@ -176,10 +176,11 @@ a:hover {
 	margin-top: 0.3em;
 	margin-left: 0em;
 	margin-right: 0em;
+	box-shadow: 5px 5px 0px 1px; 
 	padding: 10px;
 	font-size: 0.9em;
 	color: #222222;
-	background-color: #ffda71;
+	background-color: #64f6e8;
 }
 
 #sidebar a:hover {
