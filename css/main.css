@@ -1,5 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
+@import url('https://fonts.googleapis.com/css?family=VT323');
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -164,27 +164,27 @@ a:hover {
 }
 
 #sidebar a {
-	color: #2a3338;
+	color: #000000;
 	background-color: #ff9a32;
 }
 #sidebar a:visited {
-	color: #2a3338;
+	color: #000000;
 }
 
 #sidebar p.subtitle {
-	font-family: Inconsolata, monospace;
+	font-family: "VT323", monospace;
 	margin-top: 0.3em;
 	margin-left: 0em;
 	margin-right: 0em;
-	box-shadow: 5px 5px 0px 1px; 
+	box-shadow: 5px 5px 0px 0px; 
 	padding: 10px;
-	font-size: 0.9em;
+	font-size: 1em;
 	color: #222222;
 	background-color: #64f6e8;
 }
 
 #sidebar a:hover {
-	color: #2a3338;
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -224,10 +224,12 @@ a:hover {
 #nav {
     display: none;
     margin-bottom: 20px;
+	
 }
 
 #nav ul {
 	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 #nav li {
