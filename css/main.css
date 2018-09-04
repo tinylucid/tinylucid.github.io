@@ -173,11 +173,12 @@ a:hover {
 
 #sidebar p.subtitle {
 	font-family: "VT323", monospace;
+	border-bottom: 5px solid #b26c2b;
 	margin-top: 0.3em;
 	margin-left: 0em;
 	margin-right: 0em;
 	margin-bottom: 1em;
-	box-shadow: 5px 5px 0px 0px #B26C2B; 
+	box-shadow: 5px 0px 0px 0px #B26C2B; 
 	padding: 10px;
 	font-size: 1em;
 	color: #222222;
