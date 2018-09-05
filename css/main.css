@@ -225,18 +225,22 @@ a:hover {
 
 #nav {
     display: none;
-    margin-bottom: 20px;
+    margin-top: 0px;
 	
 }
 
 #nav ul {
-	margin-bottom: 10px;
-	margin-top: 20px;
+	margin-top: -1.5em;
+	padding-left: 0.5em;
+	padding-bottom: 0.2em;
+	float:right;
+	border-left: 2px solid #000000;
+	border-bottom: 2px solid #000000;
 }
 
 #nav li {
     display: inline;
-    margin-right: 7px;
+    margin-right: 10px;
 }
 
 #nav img.logo {
@@ -278,8 +282,8 @@ a:hover {
     }
 
     #main {
-    	margin-top: -3em;
-        left: 0.6em;
+    	margin-top: 0em;
+        left: 0.5em;
         width: calc(100% - 30px);
     }
 }
