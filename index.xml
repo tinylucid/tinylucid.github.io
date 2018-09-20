@@ -6,18 +6,27 @@
     <description>Recent content on (defPhil)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Sep 2018 03:00:00 +0600</lastBuildDate>
+    <lastBuildDate>Tue, 18 Sep 2018 14:08:00 +0800</lastBuildDate>
     
 	<atom:link href="https://defphil.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Syntax highlighting and other fluff</title>
+      <link>https://defphil.com/posts/syntax-highlighting-and-other-fluff/</link>
+      <pubDate>Tue, 18 Sep 2018 14:08:00 +0800</pubDate>
+      
+      <guid>https://defphil.com/posts/syntax-highlighting-and-other-fluff/</guid>
+      <description>I&#39;ve been programming for little over 5 years now, and I&#39;ve always been obsesed with how my terminals, editors, tiling WMs (ah, the Linux and *BSD days) and other stuff that you productively waste time on. Automate whole setup with multiple bash and Ansible scripts, so you crash your system and get everything up and runing with running single file. Yea, high school was blast! But as I got into faculty time became more and more precious.</description>
+    </item>
+    
+    <item>
       <title>Lispomania</title>
       <link>https://defphil.com/posts/lispomania/</link>
-      <pubDate>Sun, 09 Sep 2018 03:00:00 +0600</pubDate>
+      <pubDate>Thu, 13 Sep 2018 12:39:00 +0600</pubDate>
       
       <guid>https://defphil.com/posts/lispomania/</guid>
-      <description>Test test</description>
+      <description>Finding zen in parentheses Pretty early in my life I decided I wanted to be an engineer. A little bit later I discovered writing software can be really fun and I ejoyed it. Then I found out it pays really well. But I always asked myself is that enough to be happy? What does it mean to be happy anyway? On faculty I saw a lot of people that got into CS because &#34;</description>
     </item>
     
     <item>
