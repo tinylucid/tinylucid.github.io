@@ -1,0 +1,235 @@
+@font-face{font-family:'BIG';src:url(../fonts/NHaasGroteskTXPro-75Bd.ttf) format('truetype')}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css");
+html {
+	background: #fff;
+}
+
+body {
+	font-size: 1em;
+	color: #000;
+	max-width: 80ch;
+  	margin: auto;
+}
+
+#main p {
+	font-family: 'BIG';
+	font-size: 3em;
+	color: #000;
+	margin:auto;
+}
+
+#post-nav a {
+	float: right;
+	margin-right: 5em;
+	background-color: #fff;
+	font-family:'BIG';
+	font-size: 1.2em;
+	color: #000;
+	margin-bottom: 3em;
+}
+
+#list-nav a {
+	float: right;
+	margin-right: 5em;
+	background-color: #fff;
+	font-family:'BIG';
+	font-size: 1.2em;
+	color: #000;
+	margin-bottom: 3em;
+}
+
+#post p {
+	font-size: 0.78em;
+	line-height: 1.5em;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+#post img {
+	width: 97%;
+}
+
+#post pre {
+    max-height: 400px;
+    overflow-y: scroll;
+	overflow-x:scroll;
+	background-color: inherit;
+	border: 1px solid #CCC;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: .5em;
+	margin-left: 1em;
+	width: 90%;
+}
+
+#post code {
+	font-family:'PT Mono', 'Monaco', 'Consolas', monospace;
+	font-size: 0.7em;
+	line-height: 1.5em;
+}
+
+#post h1 {
+	margin-left: -0.5em;
+	display:inline;
+	color: #6362c3;
+	font-family: 'BIG';
+	font-size: 1.8em;
+}
+
+#post h2, h3, h4 {
+	font-family: 'BIG';
+	padding-left: 0.9em;
+}
+
+#post blockquote {
+	background-color: #f2e9e0;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+#post a {
+	color: #222222;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+#post a:hover {
+	color: #fff;	
+	background-color: #42456d;
+}
+
+.post-list .meta {
+	font-family: monospace;
+	font-size: 1em;
+	display:flex;
+	justify-content:flex-start;
+	padding-top: .1em;
+	padding-bottom: 1.5em;
+}
+
+#post #metap {
+	margin-top: -0.5em;
+	font-family: monospace;
+}
+
+.post-list a {
+	color: #6362c3;
+	font-family: 'BIG';
+	text-decoration: none;
+	font-size: 1.4em;
+}
+
+#about-page {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 0.78em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#about-page h1 {
+	font-family: 'BIG';
+	display: inline;
+	background-color: #000;
+	color: #fff;
+}
+
+#about-page-button a {
+	font-family: 'BIG';
+	font-size: 1.2em;
+	background-color: #fff;
+	font-color: #000;
+	margin-right: 5em;
+	float: right;
+}
+
+#about-page-button a:visited {
+	color: #000;
+}
+
+#main a {
+	font-family: 'BIG', monospace;
+	color: #fff;
+	text-decoration: none;
+    background-image: linear-gradient(to left,
+                                      transparent,
+                                      transparent 50%,
+                                      #fff 50%,
+                                      #fff);
+    background-position: 100% 0;
+	background-color: #6362c3;
+	background-size: 200% 100%;
+    transition: all .25s ease-in;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+#main a:hover {
+	background-position: 0 0;
+	color: #6362c3;
+}
+
+#sidebar {
+	height: 100%;
+	width: 150px;
+	position: absolute;
+	z-index: 1;
+	top: 1;
+	background-color: #000;
+	color: #fff;
+	overflow-x:hidden;
+	padding-top: 20px;
+	padding-left: 1em;
+}
+
+#sidebar1contents p {
+	font-family: "PT Mono";
+	font-size: 0.7em;
+}
+
+#manifestolink a {
+	font-family: monospace;
+	color: #fff;
+	margin-left: 5em;
+	margin-bottom: 1em;
+	position:absolute;
+	bottom: 0;
+}
+
+#sidebar2 {
+	height: 41%;
+	width: 250px;
+	position: relative;
+	margin:auto;
+	top: -11em;
+	left: 8em;
+	font-family: "BIG";
+	color: #fff;
+	font-size: 2em;
+	background-color: #6362c3;
+	text-align: left;
+}
+
+#sidebar2contents {
+	padding: 10px 10px 0px 8px;
+}
+#sidebar2contents p {
+	padding: 10px 10px 10px 10px;
+	font-family: "PT Mono";
+    font-size: 0.4em;
+}
+
+section .wordwrap {
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   word-wrap: break-word;      /* IE */
+}
+
+section {
+	display: float;
+	margin-right: 1em;
+}
+
+
+header, nav, section, article {
+  	padding: .4em .6em;
+}
+

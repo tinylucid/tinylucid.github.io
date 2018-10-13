@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>(defPhil)</title>
-    <link>https://defphil.com/</link>
-    <description>Recent content on (defPhil)</description>
+    <title>Posts on (defPhil)</title>
+    <link>https://defphil.com/post/</link>
+    <description>Recent content in Posts on (defPhil)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Sep 2018 14:08:00 +0800</lastBuildDate>
     
-	<atom:link href="https://defphil.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://defphil.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -36,26 +36,6 @@
       
       <guid>https://defphil.com/post/test/</guid>
       <description>I recently read Greg Hendershott&#39;s emacs themes blog post, and cribbed liberally from his approach to loading themes. I also cribbed his Hydra theme switcher. It was so fun to use! I wanted to try it with all the themes I have installed---but I didn&#39;t want to add all of them manually. Boo! So I set out to see if I could dynamically add all installed themes to my Hydra theme switcher.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://defphil.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://defphil.com/about/</guid>
-      <description>about me I also love art, reading, listening to music and DJing, riding skate and hanging out in nature.
-In the end it&amp;rsquo;s all about having fun and not being bored. I hate being bored.
-Feel free to get in touch.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://defphil.com/manifesto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://defphil.com/manifesto/</guid>
-      <description>Hacker manifesto Or explanation of passionate computer nerd if you will   A manifesto is a published verbal declaration of the intentions, motives, or views of the issuer, be it an individual, group, political party or government. A manifesto usually accepts a previously published opinion or public consensus or promotes a new idea with prescriptive notions for carrying out changes the author believes should be made. It often is political or artistic in nature, but may present an individual&amp;rsquo;s life stance.</description>
     </item>
     
   </channel>

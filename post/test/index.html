@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <title> | Test</title>
+    <base href="https://defphil.com/">
+    <link rel="stylesheet" type="text/css" href="https://defphil.com/css/base.css">
+  </head><body><header>
+        <h1></h1>
+        <h4></h4>
+      </header>
+<article>
+	<div id="post">
+  <header>
+    <h1>Test</h1>
+   	<div id="metap"><p>Jul 6, 2018</p></div>
+  </header>
+  <p>I recently read Greg Hendershott's <a href="http://www.greghendershott.com/2017/02/emacs-themes.html" title="emacs themes">emacs themes</a> blog post, and cribbed
+liberally from his approach to loading themes. I also cribbed his
+Hydra theme switcher. It was so fun to use! I wanted to try it with
+all the themes I have installed---but I didn't want to add all of them
+manually. Boo! So I set out to see if I could dynamically add all
+installed themes to my Hydra theme switcher.</p>
+
+<p>First I needed a list of all installed themes. I remembered that when
+you do <code>M-x load-theme RET</code> and TAB you get a list of all the themes,
+so I started looking there. <code>C-h f load-theme RET</code> brings up the
+documentation for that function, and this has a link to the source at
+the top. I clicked that, and quickly found that it calls
+~custom-available-themes~.</p>
+
+<h2 id="h2-testing">H2 testing</h2>
+
+<p>Next I needed to generate the Hydra docstring/menu. My biggest
+annoyance with the manual process was modifying the docstring to add
+the key & hint. So initially I thought about automating this in some
+way, perhaps by listing light & dark & "other" themes separately. But
+it would still be annoying. I thought about chaining hydras too, but
+then I discovered that Hydra supports a different mode: you can
+provide a hint as the third argument in the "head" and it will create
+the menu for you. I opted for this approach.</p>
+
+<h4 id="crack-rock">CRACK ROCK</h4>
+
+<p>Next I needed to generate the Hydra docstring/menu. My biggest
+annoyance with the manual process was modifying the docstring to add
+the key & hint. So initially I thought about automating this in some
+way, perhaps by listing light & dark & "other" themes separately. But
+it would still be annoying. I thought about chaining hydras too, but
+then I discovered that Hydra supports a different mode: you can
+provide a hint as the third argument in the "head" and it will create
+the menu for you. I opted for this approach.</p>
+
+<p>I now needed to come up with a strategy for how to select KEYs to
+select each theme. First I thought about using mnemonics for the
+themes themselves, but I have both <code>leuven</code>, <code>leuven-dark</code>,
+=light-blue=, and <code>liso</code> all starting with <code>l</code>. I then thought about
+using shortest unique substring, but that would mean variable-length
+keys which I didn't want; as much as possible I wanted
+single-keystroke keys. So I decided to go with an alphabet of 62
+candidate keys:</p>
+
+<pre><code class="language-emacs-lisp">  (setq sb/hydra-selectors
+       &quot;abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)
+       ;; Another comment just for testing length of code snippets its behaviour when scrolling etc etc
+</code></pre>
+
+<p>The list returned by <code>custom-available-themes</code> is not sorted
+alphabetically, but I wanted my Hydra menu to present them that way.
+It took a while to figure out how to sort the list since it's a list
+of symbols rather than strings, and also I spent a long time hunting
+for non-destructive sort. (I didn't find any, but it turns out the
+list is created every time so it's not necessary.) My theme sorter
+looks like this:</p>
+
+<pre><code class="language-emacs-lisp">  (defun sb/sort-themes (themes)
+    (sort themes
+          (lambda (a b)
+            (string&lt; (symbol-name a) 
+                     (symbol-name b)))))
+</code></pre>
+
+<p>Now I was ready create my Hydra's "heads". These should be of the
+form <code>(KEY ACTION HINT)</code>. I had a list of candidate KEYs, and a list
+of themes to build the action and hint, but I needed to piece it
+together. I struggled to figure out how to correlate the KEY and THEME
+using <code>mapcar</code>, but then I noticed <code>mapcar*</code> (final <code>*</code> is
+significant) among the autocomplete candidates. This is very similar
+to <code>mapcar</code> but takes multiple lists and passes a value from each to
+the mapping function. Just what I needed! As a bonus it stops when
+/either/ list runs out of items.</p>
+
+<pre><code class="language-emacs-lisp">  (defun sb/hydra-load-theme-heads (themes)
+    (mapcar* (lambda (a b)
+               (list (char-to-string a)
+                     `(sb/load-theme ',b)
+                     (symbol-name b)))
+             sb/hydra-selectors themes))
+</code></pre>
+
+<p>The <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Backquote.html#Backquote" title="backquote">backquote</a> (<code>`</code>) in that snippet is similar to quoting with <code>'</code> or
+~quote~, but allows you to selectively <em>unquote</em> bits inside with <code>,</code>.
+I need it because I needed to quote the argument to <code>sb/load-theme</code>.</p>
+
+<p><code>defhydra</code> doesn't take a list of heads, but I thought I might find a
+related function that would, perhaps <code>defhydra*</code>. Unfortunately, I had
+no such luck. However, this is Lisp so there are ways. We'll reach for
+backquote again, but this time instead of a simple unquote we <a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Backquote.html#Backquote" title="splice">splice</a>
+our heads into the <code>defhydra</code> argument list with <code>,@</code>. This now looked
+like so:</p>
+
+<pre><code class="language-emacs-lisp">  (eval `(defhydra sb/hydra-select-themes
+           (:hint nil :color pink)
+           &quot;Select Theme&quot;
+           ,@(sb/hydra-load-theme-heads
+              (sb/sort-themes
+               (custom-available-themes)))
+           (&quot;DEL&quot; (sb/disable-all-themes))
+           (&quot;RET&quot; nil &quot;done&quot; :color blue)))
+</code></pre>
+
+<p>We then just need to assign a keybinding, which I do like this:</p>
+
+<pre><code class="language-emacs-lisp">  (bind-keys (&quot;C-c w t&quot; . sb/hydra-select-themes/body))
+</code></pre>
+
+<p>This worked beautifully, except for one issue: if I installed a new
+theme it would not show up in my Hydra menu until I manually
+re-evaluated the config snippet, or restart Emacs. That's not ideal.
+Perusing the Hydra examples revealed <a href="https://github.com/abo-abo/hydra/wiki/Switch-to-buffer" title="a recipe that assigned the return
+value of &lt;code&gt;defhydra&lt;/code&gt;">a recipe that assigned the return
+value of <code>defhydra</code></a> to the key, so next I tried to rewrite my code to
+this:</p>
+
+<pre><code class="language-emacs-lisp">  (bind-keys (&quot;C-c w t&quot; .
+              (eval `(defhydra sb/hydra-select-themes
+                       (:hint nil :color pink)
+                       &quot;Select Theme&quot;
+                       ,@(sb/hydra-load-theme-heads
+                          (sb/sort-themes
+                           (custom-available-themes)))
+                       (&quot;DEL&quot; (sb/disable-all-themes))
+                       (&quot;RET&quot; nil &quot;done&quot; :color blue)))))
+</code></pre>
+
+<p>Unfortunately that did not work. Launching the Hydra now I got the
+following error:</p>
+
+<blockquote>
+<p>
+  command-execute: Wrong type argument: commandp, (eval (\` (defhydra sb/hydra-select-themes (:hint nil :color pink) "Select Theme" (\,@ (sb/hydra-load-theme-heads (sb/sort-themes (custom-available-themes)))) ("DEL" (sb/disable-all-themes)) ("RET" nil "done" :color blue))))
+</p>
+</blockquote>
+
+<h3 id="memcpy-to-specify-the-maximum-destination-length">memcpy() to specify the maximum destination length</h3>
+
+<p>I didn't really understand what that meant, but I searched the hydra
+issues some more for "dynamic" invocation and found <a href="https://github.com/abo-abo/hydra/issues/137#issuecomment-117132873" title="a comment">a comment</a> with a
+recipe that I was able to adapt. It's a bit more faff, and I don't
+understand why the <code>call-interactively</code> is necessary, but it works and
+here it is:</p>
+
+<pre><code class="language-emacs-lisp">  (bind-keys (&quot;C-c w t&quot; .
+              (lambda ()
+                (interactive)
+                (call-interactively
+                 (eval `(defhydra sb/hydra-select-themes
+                          (:hint nil :color pink)
+                          &quot;Select Theme&quot;
+                          ,@(sb/hydra-load-theme-heads
+                             (sb/sort-themes
+                              (custom-available-themes)))
+                          (&quot;DEL&quot; (sb/disable-all-themes))
+                          (&quot;RET&quot; nil &quot;done&quot; :color blue)))))))
+</code></pre>
+
+<p>For completeness here's the full source for this switcher:</p>
+
+<pre><code class="language-emacs-lisp">  (defun sb/disable-all-themes ()
+    (interactive)
+    (mapc #'disable-theme custom-enabled-themes))
+
+  (defun sb/load-theme (theme)
+    &quot;Enhance `load-theme' by first disabling enabled themes.&quot;
+    (sb/disable-all-themes)
+    (load-theme theme))
+
+  (setq sb/hydra-selectors
+        &quot;abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)
+
+  (defun sb/sort-themes (themes)
+    (sort themes
+          (lambda (a b)
+            (string&lt;
+             (symbol-name a)
+             (symbol-name b)))))
+
+  (defun sb/hydra-load-theme-heads (themes)
+    (mapcar* (lambda (a b)
+               (list (char-to-string a)
+                     `(sb/load-theme ',b)
+                     (symbol-name b)))
+             sb/hydra-selectors themes))
+
+  (bind-keys (&quot;C-c w t&quot; .
+              (lambda ()
+                (interactive)
+                (call-interactively
+                 (eval `(defhydra sb/hydra-select-themes
+                          (:hint nil :color pink)
+                          &quot;Select Theme&quot;
+                          ,@(sb/hydra-load-theme-heads
+                             (sb/sort-themes
+                              (custom-available-themes)))
+                          (&quot;DEL&quot; (sb/disable-all-themes))
+                          (&quot;RET&quot; nil &quot;done&quot; :color blue)))))))
+</code></pre>
+
+<p>For what it's worth, here's my full <a href="https://github.com/stig/dot-files/blob/master/emacs.d/Themes" title="Emacs Themes Config">Emacs Themes Config</a> on Github.</p>
+
+  	</div>
+  <footer>
+  	  <div id="post-nav">
+  	  	  <nav>
+  	  	  	  <p>
+  	  	  	<a href="https://defphil.com/post">back</a>
+  	  	  	  </p>
+  	  	  </nav>
+  	  </div>
+  </footer>
+</article>
+ 
+
+      </body>
+</html>
