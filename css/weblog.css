@@ -290,7 +290,7 @@ and (max-width: 780px) {
 	  padding-left: 2em;
   }
   main {
-	  padding-top: 100px;
+	  padding-top: 35%;
 	  font-size: 1.2em;
   }
 
@@ -329,12 +329,13 @@ nav p {
 	width: 93%;
 	display:inline;
 	font-size: 1.2em;
-	padding: 2em auto;
+	padding-bottom: 1em;
 	position: absolute;
 	top: 1em;
   }
 
   nav ul {
+  	  padding: 0em;
 	border: 0;
 	display:inline;
     margin: 0;
@@ -346,5 +347,4 @@ nav p {
     margin: 2em;
     padding: 10px;
   }
-
 }
