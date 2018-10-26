@@ -1,60 +1,308 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>(defPhil)</title>
-    <link>https://defphil.com/</link>
-    <description>Recent content on (defPhil)</description>
+    <title>@’s (defPhil) - (defPhil)</title>
+    <link>https://defphil.com/https://defphil.com/</link>
+    <description>All entries in (defPhil) on (defPhil)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    
     <lastBuildDate>Tue, 18 Sep 2018 14:08:00 +0800</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
     
-	<atom:link href="https://defphil.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Syntax highlighting and other fluff</title>
-      <link>https://defphil.com/post/syntax-highlighting-and-other-fluff/</link>
-      <pubDate>Tue, 18 Sep 2018 14:08:00 +0800</pubDate>
       
-      <guid>https://defphil.com/post/syntax-highlighting-and-other-fluff/</guid>
-      <description>I&#39;ve been programming for little over 5 years now, and I&#39;ve always been obsesed with how my terminals, editors, tiling WMs (ah, the Linux and *BSD days) and other stuff that you productively waste time on. Automate whole setup with multiple bash and Ansible scripts, so you crash your system and get everything up and runing with running single file. Yea, high school was blast! But as I got into faculty time became more and more precious.</description>
-    </item>
-    
-    <item>
-      <title>Lispomania</title>
-      <link>https://defphil.com/post/lispomania/</link>
-      <pubDate>Thu, 13 Sep 2018 12:39:00 +0600</pubDate>
+      <item>
+        <title>Syntax highlighting and other fluff</title>
+        <link>https://defphil.com/posts/syntax-highlighting-and-other-fluff/</link>
+        <pubDate>Tue, 18 Sep 2018 14:08:00 +0800</pubDate>
+        <author> </author>
+        <guid>https://defphil.com/posts/syntax-highlighting-and-other-fluff/</guid>
+        <description>&lt;p&gt;I&#39;ve been programming for little over 5 years now, and I&#39;ve always been obsesed
+with how my terminals, editors, tiling WMs (ah, the Linux and *BSD days) and
+other stuff that you &lt;em&gt;productively&lt;/em&gt; waste time on. Automate whole setup with
+multiple bash and Ansible scripts, so you crash your system and get everything
+up and runing with running single file. Yea, high school was blast! But as I got
+into faculty time became more and more precious. And I just couldn&#39;t justify
+spending whole weekend programming XMonad. And I completely moved to Macs, so
+now I see Linux and BSDs mostly through SSH or tty in VM. But on the plus side I
+switched to Emacs around the time I moved to macOS. And that was the interesting
+thing because before that I was mostly Vim guy. But I just really dig the appeal
+of Emacs&#39; unified environment for everything. I invested shiton of time into
+configuring and programming it, but mostly because I like programming in
+Lisp. It was great that I could just write everything in that Emacs modified
+Lisp dialect hit &lt;code&gt;(M-x eval-buffer)&lt;/code&gt; and voila, I see the results.&lt;/p&gt;
+
+&lt;p&gt;I was programming more and more in Lisp, I got a hang of &lt;em&gt;paredit&lt;/em&gt; so I can say I
+embraced the brackets really easily. But suddenly I found myself striping away
+all the colors in my terminals and environments. Colors in themes that I&#39;ve used
+for a quite long time became jarring and irritating. &lt;em&gt;Does this occurrence
+correlate to syntax of Lisplike languages?&lt;/em&gt; I think to a certain extent it
+does. Programming in Lisp and Clojure is much different to anything else I&#39;ve
+done in my life in terms of computers. Okay, maybe assembly programming was,
+khm, different expirence, but I&#39;ve done it mostly because I was enrolled to
+Electrical Engineering course before I changed faculty.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://defphil.com/img/post1-ss.png&#34; alt=&#34;file:/img/post1-ss.png&#34; title=&#34;file:/img/post1-ss.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And the even more interesting thing that coding in lisp brought is coloring the
+parentheses for Rust. We all now how different beast Rust is. A modern language,
+oriented on performance and lower level programming, no GC, but maintining
+safety and correctnes with strict rules provided by the compiler and borrow
+checker. I will write separete blog post just on my experience of learning it,
+but for now we won&#39;t go any further as this is my random-introductory blog
+post. I am not sure why it felt so good to color up those parentheses in rust
+source code, but Rust is data oriented language. Scopes are very important
+there, syntax contains a lot of &lt;,&#39;{([ so it made me really see the data through
+code and scopes with parentheses colored.&lt;/p&gt;
+
+&lt;p&gt;Now back on turning off colors, while many people are pro-syntax highlighting
+oriented, because it is there to give you context of where you are in code, when
+to pay attention etc etc, I found that it mostly gave me headaches and
+distracted me from being focused what lays behind all those pixels on
+screen. I&#39;ve seen a lot of older developers that started programming back in the
+70s and 80s without having syntax highlighting and I tried to give it a shot but
+it was too hard core for me. It felt like reading code on paper, and I got PTSD
+from doing exams by writing code with pen and paper. Then I saw few developers
+(Steve Losh for concrete example) who found really smart balance between&lt;/p&gt;
+</description>
+      </item>
       
-      <guid>https://defphil.com/post/lispomania/</guid>
-      <description>Finding zen in parentheses Pretty early in my life I decided I wanted to be an engineer. A little bit later I discovered writing software can be really fun and I ejoyed it. Then I found out it pays really well. But I always asked myself is that enough to be happy? What does it mean to be happy anyway? On faculty I saw a lot of people that got into CS because &#34;</description>
-    </item>
     
-    <item>
-      <title>Test</title>
-      <link>https://defphil.com/post/test/</link>
-      <pubDate>Fri, 06 Jul 2018 03:01:38 +0600</pubDate>
       
-      <guid>https://defphil.com/post/test/</guid>
-      <description>I recently read Greg Hendershott&#39;s emacs themes blog post, and cribbed liberally from his approach to loading themes. I also cribbed his Hydra theme switcher. It was so fun to use! I wanted to try it with all the themes I have installed---but I didn&#39;t want to add all of them manually. Boo! So I set out to see if I could dynamically add all installed themes to my Hydra theme switcher.</description>
-    </item>
+      <item>
+        <title>Lispomania</title>
+        <link>https://defphil.com/posts/lispomania/</link>
+        <pubDate>Thu, 13 Sep 2018 12:39:00 +0600</pubDate>
+        <author> </author>
+        <guid>https://defphil.com/posts/lispomania/</guid>
+        <description>&lt;h2 id=&#34;finding-zen-in-parentheses&#34;&gt;Finding zen in parentheses&lt;/h2&gt;
+
+&lt;p&gt;Pretty early in my life I decided I wanted to be an engineer. A little bit later
+I discovered writing software can be really fun and I ejoyed it. Then I found
+out it pays really well. But I always asked myself is that enough to be happy?
+What does it mean to be happy anyway? On faculty I saw a lot of people that got
+into CS because &#34;it pays well&#34;. I mean, that&#39;s ok, programming is a job like any
+other else. I never got into it because of these reasons.&lt;/p&gt;
+</description>
+      </item>
+      
     
-    <item>
-      <title></title>
-      <link>https://defphil.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://defphil.com/about/</guid>
-      <description>about me I also love art, reading, listening to music and DJing, riding skate and hanging out in nature.</description>
-    </item>
+      <item>
+        <title>Test</title>
+        <link>https://defphil.com/posts/test/</link>
+        <pubDate>Fri, 06 Jul 2018 03:01:38 +0600</pubDate>
+        <author> </author>
+        <guid>https://defphil.com/posts/test/</guid>
+        <description>&lt;p&gt;I recently read Greg Hendershott&#39;s &lt;a href=&#34;http://www.greghendershott.com/2017/02/emacs-themes.html&#34; title=&#34;emacs themes&#34;&gt;emacs themes&lt;/a&gt; blog post, and cribbed
+liberally from his approach to loading themes. I also cribbed his
+Hydra theme switcher. It was so fun to use! I wanted to try it with
+all the themes I have installed---but I didn&#39;t want to add all of them
+manually. Boo! So I set out to see if I could dynamically add all
+installed themes to my Hydra theme switcher.&lt;/p&gt;
+
+&lt;p&gt;First I needed a list of all installed themes. I remembered that when
+you do &lt;code&gt;M-x load-theme RET&lt;/code&gt; and TAB you get a list of all the themes,
+so I started looking there. &lt;code&gt;C-h f load-theme RET&lt;/code&gt; brings up the
+documentation for that function, and this has a link to the source at
+the top. I clicked that, and quickly found that it calls
+~custom-available-themes~.&lt;/p&gt;
+
+&lt;h2 id=&#34;h2-testing&#34;&gt;H2 testing&lt;/h2&gt;
+
+&lt;p&gt;Next I needed to generate the Hydra docstring/menu. My biggest
+annoyance with the manual process was modifying the docstring to add
+the key &amp; hint. So initially I thought about automating this in some
+way, perhaps by listing light &amp; dark &amp; &#34;other&#34; themes separately. But
+it would still be annoying. I thought about chaining hydras too, but
+then I discovered that Hydra supports a different mode: you can
+provide a hint as the third argument in the &#34;head&#34; and it will create
+the menu for you. I opted for this approach.&lt;/p&gt;
+
+&lt;h4 id=&#34;crack-rock&#34;&gt;CRACK ROCK&lt;/h4&gt;
+
+&lt;p&gt;Next I needed to generate the Hydra docstring/menu. My biggest
+annoyance with the manual process was modifying the docstring to add
+the key &amp; hint. So initially I thought about automating this in some
+way, perhaps by listing light &amp; dark &amp; &#34;other&#34; themes separately. But
+it would still be annoying. I thought about chaining hydras too, but
+then I discovered that Hydra supports a different mode: you can
+provide a hint as the third argument in the &#34;head&#34; and it will create
+the menu for you. I opted for this approach.&lt;/p&gt;
+
+&lt;p&gt;I now needed to come up with a strategy for how to select KEYs to
+select each theme. First I thought about using mnemonics for the
+themes themselves, but I have both &lt;code&gt;leuven&lt;/code&gt;, &lt;code&gt;leuven-dark&lt;/code&gt;,
+=light-blue=, and &lt;code&gt;liso&lt;/code&gt; all starting with &lt;code&gt;l&lt;/code&gt;. I then thought about
+using shortest unique substring, but that would mean variable-length
+keys which I didn&#39;t want; as much as possible I wanted
+single-keystroke keys. So I decided to go with an alphabet of 62
+candidate keys:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (setq sb/hydra-selectors
+       &amp;quot;abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&amp;quot;)
+       ;; Another comment just for testing length of code snippets its behaviour when scrolling etc etc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The list returned by &lt;code&gt;custom-available-themes&lt;/code&gt; is not sorted
+alphabetically, but I wanted my Hydra menu to present them that way.
+It took a while to figure out how to sort the list since it&#39;s a list
+of symbols rather than strings, and also I spent a long time hunting
+for non-destructive sort. (I didn&#39;t find any, but it turns out the
+list is created every time so it&#39;s not necessary.) My theme sorter
+looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (defun sb/sort-themes (themes)
+    (sort themes
+          (lambda (a b)
+            (string&amp;lt; (symbol-name a) 
+                     (symbol-name b)))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now I was ready create my Hydra&#39;s &#34;heads&#34;. These should be of the
+form &lt;code&gt;(KEY ACTION HINT)&lt;/code&gt;. I had a list of candidate KEYs, and a list
+of themes to build the action and hint, but I needed to piece it
+together. I struggled to figure out how to correlate the KEY and THEME
+using &lt;code&gt;mapcar&lt;/code&gt;, but then I noticed &lt;code&gt;mapcar*&lt;/code&gt; (final &lt;code&gt;*&lt;/code&gt; is
+significant) among the autocomplete candidates. This is very similar
+to &lt;code&gt;mapcar&lt;/code&gt; but takes multiple lists and passes a value from each to
+the mapping function. Just what I needed! As a bonus it stops when
+/either/ list runs out of items.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (defun sb/hydra-load-theme-heads (themes)
+    (mapcar* (lambda (a b)
+               (list (char-to-string a)
+                     `(sb/load-theme &#39;,b)
+                     (symbol-name b)))
+             sb/hydra-selectors themes))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/elisp/Backquote.html#Backquote&#34; title=&#34;backquote&#34;&gt;backquote&lt;/a&gt; (&lt;code&gt;`&lt;/code&gt;) in that snippet is similar to quoting with &lt;code&gt;&#39;&lt;/code&gt; or
+~quote~, but allows you to selectively &lt;em&gt;unquote&lt;/em&gt; bits inside with &lt;code&gt;,&lt;/code&gt;.
+I need it because I needed to quote the argument to &lt;code&gt;sb/load-theme&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;defhydra&lt;/code&gt; doesn&#39;t take a list of heads, but I thought I might find a
+related function that would, perhaps &lt;code&gt;defhydra*&lt;/code&gt;. Unfortunately, I had
+no such luck. However, this is Lisp so there are ways. We&#39;ll reach for
+backquote again, but this time instead of a simple unquote we &lt;a href=&#34;https://www.gnu.org/software/emacs/manual/html_node/elisp/Backquote.html#Backquote&#34; title=&#34;splice&#34;&gt;splice&lt;/a&gt;
+our heads into the &lt;code&gt;defhydra&lt;/code&gt; argument list with &lt;code&gt;,@&lt;/code&gt;. This now looked
+like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (eval `(defhydra sb/hydra-select-themes
+           (:hint nil :color pink)
+           &amp;quot;Select Theme&amp;quot;
+           ,@(sb/hydra-load-theme-heads
+              (sb/sort-themes
+               (custom-available-themes)))
+           (&amp;quot;DEL&amp;quot; (sb/disable-all-themes))
+           (&amp;quot;RET&amp;quot; nil &amp;quot;done&amp;quot; :color blue)))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We then just need to assign a keybinding, which I do like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (bind-keys (&amp;quot;C-c w t&amp;quot; . sb/hydra-select-themes/body))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This worked beautifully, except for one issue: if I installed a new
+theme it would not show up in my Hydra menu until I manually
+re-evaluated the config snippet, or restart Emacs. That&#39;s not ideal.
+Perusing the Hydra examples revealed &lt;a href=&#34;https://github.com/abo-abo/hydra/wiki/Switch-to-buffer&#34; title=&#34;a recipe that assigned the return
+value of &amp;lt;code&amp;gt;defhydra&amp;lt;/code&amp;gt;&#34;&gt;a recipe that assigned the return
+value of &lt;code&gt;defhydra&lt;/code&gt;&lt;/a&gt; to the key, so next I tried to rewrite my code to
+this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (bind-keys (&amp;quot;C-c w t&amp;quot; .
+              (eval `(defhydra sb/hydra-select-themes
+                       (:hint nil :color pink)
+                       &amp;quot;Select Theme&amp;quot;
+                       ,@(sb/hydra-load-theme-heads
+                          (sb/sort-themes
+                           (custom-available-themes)))
+                       (&amp;quot;DEL&amp;quot; (sb/disable-all-themes))
+                       (&amp;quot;RET&amp;quot; nil &amp;quot;done&amp;quot; :color blue)))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Unfortunately that did not work. Launching the Hydra now I got the
+following error:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+  command-execute: Wrong type argument: commandp, (eval (\` (defhydra sb/hydra-select-themes (:hint nil :color pink) &#34;Select Theme&#34; (\,@ (sb/hydra-load-theme-heads (sb/sort-themes (custom-available-themes)))) (&#34;DEL&#34; (sb/disable-all-themes)) (&#34;RET&#34; nil &#34;done&#34; :color blue))))
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;memcpy-to-specify-the-maximum-destination-length&#34;&gt;memcpy() to specify the maximum destination length&lt;/h3&gt;
+
+&lt;p&gt;I didn&#39;t really understand what that meant, but I searched the hydra
+issues some more for &#34;dynamic&#34; invocation and found &lt;a href=&#34;https://github.com/abo-abo/hydra/issues/137#issuecomment-117132873&#34; title=&#34;a comment&#34;&gt;a comment&lt;/a&gt; with a
+recipe that I was able to adapt. It&#39;s a bit more faff, and I don&#39;t
+understand why the &lt;code&gt;call-interactively&lt;/code&gt; is necessary, but it works and
+here it is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (bind-keys (&amp;quot;C-c w t&amp;quot; .
+              (lambda ()
+                (interactive)
+                (call-interactively
+                 (eval `(defhydra sb/hydra-select-themes
+                          (:hint nil :color pink)
+                          &amp;quot;Select Theme&amp;quot;
+                          ,@(sb/hydra-load-theme-heads
+                             (sb/sort-themes
+                              (custom-available-themes)))
+                          (&amp;quot;DEL&amp;quot; (sb/disable-all-themes))
+                          (&amp;quot;RET&amp;quot; nil &amp;quot;done&amp;quot; :color blue)))))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For completeness here&#39;s the full source for this switcher:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-emacs-lisp&#34;&gt;  (defun sb/disable-all-themes ()
+    (interactive)
+    (mapc #&#39;disable-theme custom-enabled-themes))
+
+  (defun sb/load-theme (theme)
+    &amp;quot;Enhance `load-theme&#39; by first disabling enabled themes.&amp;quot;
+    (sb/disable-all-themes)
+    (load-theme theme))
+
+  (setq sb/hydra-selectors
+        &amp;quot;abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ&amp;quot;)
+
+  (defun sb/sort-themes (themes)
+    (sort themes
+          (lambda (a b)
+            (string&amp;lt;
+             (symbol-name a)
+             (symbol-name b)))))
+
+  (defun sb/hydra-load-theme-heads (themes)
+    (mapcar* (lambda (a b)
+               (list (char-to-string a)
+                     `(sb/load-theme &#39;,b)
+                     (symbol-name b)))
+             sb/hydra-selectors themes))
+
+  (bind-keys (&amp;quot;C-c w t&amp;quot; .
+              (lambda ()
+                (interactive)
+                (call-interactively
+                 (eval `(defhydra sb/hydra-select-themes
+                          (:hint nil :color pink)
+                          &amp;quot;Select Theme&amp;quot;
+                          ,@(sb/hydra-load-theme-heads
+                             (sb/sort-themes
+                              (custom-available-themes)))
+                          (&amp;quot;DEL&amp;quot; (sb/disable-all-themes))
+                          (&amp;quot;RET&amp;quot; nil &amp;quot;done&amp;quot; :color blue)))))))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For what it&#39;s worth, here&#39;s my full &lt;a href=&#34;https://github.com/stig/dot-files/blob/master/emacs.d/Themes&#34; title=&#34;Emacs Themes Config&#34;&gt;Emacs Themes Config&lt;/a&gt; on Github.&lt;/p&gt;
+</description>
+      </item>
+      
     
-    <item>
-      <title></title>
-      <link>https://defphil.com/manifesto/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://defphil.com/manifesto/</guid>
-      <description>*Hacker manifesto   A manifesto is a published verbal declaration of the intentions, motives, or views of the issuer, be it an individual, group, political party or government. A manifesto usually accepts a previously published opinion or public consensus or promotes a new idea with prescriptive notions for carrying out changes the author believes should be made. It often is artistic or political in nature, but may present an individual&#39;s life stance.</description>
-    </item>
+    
+      
     
   </channel>
 </rss>
