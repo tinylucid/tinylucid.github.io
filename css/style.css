@@ -38,8 +38,10 @@ a:hover {
   text-decoration: none;
 }
 
-#site-slogan,
 #footer {
+    position: absolute;
+    height:40px;
+    bottom: 0;
   color: #777;
 }
 
