@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://defphil.com/posts/syntax-highlighting-and-other-fluff/</loc>
+    <loc>https://defphil.com/blog/syntax-highlighting-and-other-fluff/</loc>
     <lastmod>2018-09-18T14:08:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://defphil.com/posts/lispomania/</loc>
+    <loc>https://defphil.com/code/</loc>
     <lastmod>2018-09-13T12:39:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://defphil.com/posts/test/</loc>
+    <loc>https://defphil.com/home/</loc>
+    <lastmod>2018-09-13T12:39:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://defphil.com/blog/lispomania/</loc>
+    <lastmod>2018-09-13T12:39:00+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://defphil.com/blog/test/</loc>
     <lastmod>2018-07-06T03:01:38+06:00</lastmod>
   </url>
   
@@ -22,11 +32,7 @@
   </url>
   
   <url>
-    <loc>https://defphil.com/manifesto/</loc>
-  </url>
-  
-  <url>
-    <loc>https://defphil.com/</loc>
+    <loc>https://defphil.com/blog/</loc>
     <lastmod>2018-09-18T14:08:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -37,13 +43,13 @@
   </url>
   
   <url>
-    <loc>https://defphil.com/posts/</loc>
-    <lastmod>2018-09-18T14:08:00+08:00</lastmod>
+    <loc>https://defphil.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://defphil.com/tags/</loc>
+    <loc>https://defphil.com/</loc>
+    <lastmod>2018-09-18T14:08:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
