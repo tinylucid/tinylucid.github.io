@@ -39,7 +39,7 @@ a:hover {
 }
 
 #footer {
-    position: absolute;
+    position: relative;
     height:40px;
     bottom: 0;
   color: #777;
