@@ -28,10 +28,6 @@
   </url>
   
   <url>
-    <loc>https://defphil.com/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://defphil.com/blog/</loc>
     <lastmod>2018-09-18T14:08:00+08:00</lastmod>
     <priority>0</priority>
@@ -45,6 +41,10 @@
   <url>
     <loc>https://defphil.com/tags/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://defphil.com/about/</loc>
   </url>
   
   <url>

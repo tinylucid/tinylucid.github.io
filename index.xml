@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>my personal website</title>
+    <title>λ personal website</title>
     <link>https://defphil.com/</link>
-    <description>Recent content on my personal website</description>
+    <description>Recent content on λ personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 18 Sep 2018 14:08:00 +0800</lastBuildDate>
@@ -57,12 +57,12 @@
     </item>
     
     <item>
-      <title></title>
+      <title>about me</title>
       <link>https://defphil.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://defphil.com/about/</guid>
-      <description>about me I also love art, reading, listening to music and DJing, riding skate and hanging out in nature.</description>
+      <description>I also love art, reading, listening to music and DJing, riding skate and hanging out in nature.</description>
     </item>
     
   </channel>
