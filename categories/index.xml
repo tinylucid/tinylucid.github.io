@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on λ personal website</title>
+    <title>Categories on λ lisps and UNIXisms</title>
     <link>https://defphil.com/categories/</link>
-    <description>Recent content in Categories on λ personal website</description>
+    <description>Recent content in Categories on λ lisps and UNIXisms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
