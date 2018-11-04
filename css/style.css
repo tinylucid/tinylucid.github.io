@@ -1,7 +1,7 @@
 html,
 body {
   background: #fff;
-  color: #202020;
+  color: #2a2b21;
   font-family: Helvetica, Verdana, sans-serif;
   font-size: 0.9em;
   line-height: 1.6em;
@@ -20,7 +20,7 @@ a:link,
 a:active,
 a:visited,
 a:hover {
-  color: #0000ff;
+  color: #0a84ff;
 }
 
 #site-title {
@@ -51,7 +51,7 @@ a:hover {
 
 pre {
     font-family: monospace;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     width: 100%;
     font-size: 1.2em;
     line-height: 1.3em;
@@ -72,6 +72,7 @@ nav ul {
 
 nav ul.first {
 	float: right;
+	margin-right: 20%;
 }
 
 nav ul.first > li {
@@ -81,19 +82,14 @@ nav ul.first > li {
 
 nav a:link,
 nav a:active,
-nav a:visited,
-nav a:hover {
-  text-decoration: none;
-}
-
-nav a:link,
-nav a:active,
 nav a:visited {
-  color: #0000ff;
+    text-decoration: none;
+    color: #0a84ff;
 }
 
 nav a:hover {
-  color: #000;
+    text-decoration: none;
+    color: #4A525A;
 }
 
 #content,
@@ -101,7 +97,7 @@ hr {
 }
 
 #footer {
-    color: #d2d2d2;
+    color: #777;
 }
 
 #content {
