@@ -6,18 +6,20 @@
     <description>Recent content in Blogs on λ lisps and UNIXisms</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Sep 2018 14:08:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Nov 2018 12:10:34 +0100</lastBuildDate>
     
 	<atom:link href="https://defphil.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Syntax highlighting and other fluff</title>
-      <link>https://defphil.com/blog/syntax-highlighting-and-other-fluff/</link>
-      <pubDate>Tue, 18 Sep 2018 14:08:00 +0800</pubDate>
+      <title>OS Threading 101</title>
+      <link>https://defphil.com/blog/os-threading-101/</link>
+      <pubDate>Fri, 09 Nov 2018 12:10:34 +0100</pubDate>
       
-      <guid>https://defphil.com/blog/syntax-highlighting-and-other-fluff/</guid>
-      <description>I&#39;ve been programming for little over 5 years now, and I&#39;ve always been obsesed with how my terminals, editors, tiling WMs (ah, the Linux and *BSD days) and other stuff that you productively waste time on. Automate whole setup with multiple bash and Ansible scripts, so you crash your system and get everything up and runing with running single file. Yea, high school was blast! But as I got into faculty time became more and more precious.</description>
+      <guid>https://defphil.com/blog/os-threading-101/</guid>
+      <description>Thread creation and initialization illumos might not be the happiest place to start with learning about multithreaded handling and implementation on OS level simply because of complexity of system. It carries a lot of &#39;legacy&#39; code from Solaris and SPARC architecture and includes systems like Zones and Dtrace which may lead to confussion, but we will focus on it&#39;s source code that is applicable to x86 platform.
+(illumos/usr/src/uts/common/disp/thread.c)
+Thread structure and organization As we know on x86 stack grows down (on Solaris it&#39;s selectable for example).</description>
     </item>
     
     <item>
@@ -27,15 +29,6 @@
       
       <guid>https://defphil.com/blog/lispomania/</guid>
       <description>Finding zen in parentheses Pretty early in my life I decided I wanted to be an engineer. A little bit later I discovered writing software can be really fun and I ejoyed it. Then I found out it pays really well. But I always asked myself is that enough to be happy? What does it mean to be happy anyway? On faculty I saw a lot of people that got into CS because &#34;</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://defphil.com/blog/test/</link>
-      <pubDate>Fri, 06 Jul 2018 03:01:38 +0600</pubDate>
-      
-      <guid>https://defphil.com/blog/test/</guid>
-      <description>I recently read Greg Hendershott&#39;s emacs themes blog post, and cribbed liberally from his approach to loading themes. I also cribbed his Hydra theme switcher. It was so fun to use! I wanted to try it with all the themes I have installed---but I didn&#39;t want to add all of them manually. Boo! So I set out to see if I could dynamically add all installed themes to my Hydra theme switcher.</description>
     </item>
     
   </channel>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OS Threading 101 - Filip Miletic</title>
+    <link rel="stylesheet" href="https://defphil.com/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0">
+    	<meta name="generator" content="Hugo 0.50" />
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="header">
+      </div>
+
+            <nav>
+	<ul class="first">
+          
+            <li><a href="https://defphil.com/">~</a>
+	    
+	    </li>
+	  
+            <li><a href="https://defphil.com/blog/">blog</a>
+	    
+	    </li>
+	  
+            <li><a href="https://defphil.com/about/">about</a>
+	    
+	    </li>
+	  
+            <li><a href="https://defphil.com/code/">code</a>
+	    
+	    </li>
+	  
+            <li><a href="https://defphil.com/blog/index.xml">rss</a>
+	    
+	    </li>
+	  
+	</ul>
+      </nav>
+
+
+      <div id="content">
+
+        <div id="article">
+	  <h1>OS Threading 101</h1>
+
+
+<p class="timestamp">November 9, 2018</p>
+
+<h1 id="thread-creation-and-initialization">Thread creation and initialization</h1>
+
+<p>illumos might not be the happiest place to start with learning about
+multithreaded handling and implementation on OS level simply because of
+complexity of system. It carries a lot of 'legacy' code from Solaris and SPARC
+architecture and includes systems like Zones and Dtrace which may lead to
+confussion, but we will focus on it's source code that is applicable to x86
+platform.</p>
+
+<p>(illumos/usr/src/uts/common/disp/thread.c)</p>
+
+<h2 id="thread-structure-and-organization">Thread structure and organization</h2>
+
+<p>As we know on x86 stack grows down (on Solaris it's selectable for example). 
+We create new thread with following (simplified on diagram) structure by
+first creating turnstile which is not part of thread structure since we may need
+to break association whenever more than one thread blocks on a given
+synchronization object. They hang off dblks in the streams allocator.</p>
+
+<pre><code>+------------------------------+ |
+|         base of stack        | |
++------------------------------+ |
+|       pc where thread has    | |
+|            started           | V
++------------------------------+
+|           CPU bound          |
++------------------------------+
+|        threading flags       |
++------------------------------+
+|     threading attributes     |
+|     (state, priorities,      |
+|      sleeping in rw_lock     |
+|      reason for blocking     |
+|      scheduling classes)     |
++------------------------------+
+|      non-swappable part      |
+|         of lwp state         |
+|      (signals, links,        |
+|       state for poll(2),     |
+|       timers, reasons,       |
+|       sys call number)       |
++------------------------------+
+|    pointers to dispatcher    |
++------------------------------+
+|        some profiling        |
+|       and DTrace stuff       |
++------------------------------+
+</code></pre>
+
+<p>Threads are arranged in doubly linked list. That way dispatcher traverses the
+list and based on the state and information that is packed into structure that
+we call `thread` arranges resources, priorities, assings CPU and organizes tasks.</p>
+
+<h2 id="thread-initialization">Thread initialization</h2>
+
+<p>We first check if stack is free and alloc both thread and stack in segkp<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
+chunk, then machine-depedent mutex code may need to be aligned, but we will skip
+this process since it's not relevant to goal of this post. As the last process
+of so called initialization of stack and thread we initializek `t_stk` to the
+kernel stack pointer to use upon entry to the kernel.</p>
+
+<pre><code class="language-c">t-&gt;t_proj = project_hold(proj0p);
+lgrp_affinity_init(&amp;t-&gt;t_lgrp_affinity);
+mutex_enter(&amp;pidlock);
+nthread++;
+
+t-&gt;t_did = next_t_did++;
+t-&gt;t_prev = curthread-&gt;t_prev;
+t-&gt;t_next = curthread;
+</code></pre>
+
+<p>Then system puts hold on project0. All kernel-only threads must be in
+project0. Thread is then added to the list of all threads, and initialized its
+t_cpu pointer. Preemption is blocked since system is looking at the thread list
+searching for t_cpu pointing to the CPU being offlined. If that's not the case
+with our thread, it should be on the list. We are keeping kernel preemption
+disabled during this process since we want all threads to be in sync. If we let
+dispatcher to search threads right from the start we would have blocked states
+even before we initialize structures.</p>
+
+<pre><code class="language-C">kpreempt_disable();
+curthread-&gt;t_prev-&gt;t_next = t;
+curthread-&gt;t_prev = t;
+t-&gt;t_cpupart = &amp;cp_default;
+</code></pre>
+
+<p>First we affiliate newly created thread with the root lgroup since kernel doesnt
+allocte its memory at this moment. If it is later associated with lwp<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>, it
+will be reassigned to it's lgroup. Current thread inherits current cpu. If this
+cpu is not part of the chosen lgroup, new cpu will be chosen by cpu_chose when
+thread is ready for running.</p>
+
+<pre><code class="language-C">lgrp_move_thread(t, &amp;cp_default.cp_lgrploads[LGRP_ROOTID], 1);
+if (CPU-&gt;cpu_part == &amp;cp_default)
+        t-&gt;t_cpu = CPU;
+else
+        t-t_cpu = diso_lowpri_cpu(cp_default.cp_cpulist, t-&gt;t_lpl, t-&gt;t_pri, NULL);
+
+t-&gt;t_disp_queue = t-&gt;t_cpu-&gt;cpu_disp;
+kpreempt_enable();
+</code></pre>
+
+<p>And now we come to initialization of thread state and dispatcher lock pointer.
+Disp. holds onto pidlock to block all thread walkers until the state is set.</p>
+
+<p>If thread state is free the interrupt routine must set thread dispatcher lock
+pointer if starting on the CPU other than current one.
+If it is running we get dispatcher spl<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>, stop the thread, initialize it
+with CL_SETRUN<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup> and unlock it after that.
+If it is stopped we just aquire stop_lock and pass it to thread.
+If it is on TS_ONPROC<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup> we asign it current cpu.
+If none of these states are the case (if thread is sleeping or zombie) we throw
+an error.</p>
+
+<p>We exit the mutex and thread is created and initialized.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">TODO write about segkp <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+
+<li id="fn:2">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+
+<li id="fn:3">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+
+<li id="fn:4">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+
+<li id="fn:5">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+        </div>
+
+      </div>
+
+      <div id="footer">
+           
+          © 2018 Filip Miletic  </div>
+
+    </div>
+
+  </body>
+</html>
+

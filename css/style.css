@@ -52,11 +52,11 @@ a:hover {
 pre {
     font-family: monospace;
     background-color: #f8f8f8;
-    width: 100%;
+    width: 95%;
     font-size: 1.2em;
     line-height: 1.3em;
     overflow-x:scroll;
-    padding: 10px auto;
+    padding: .6em;
 }
 
 nav {

@@ -49,10 +49,12 @@
 
 
   
-    <h2><a href="https://defphil.com/blog/syntax-highlighting-and-other-fluff/">Syntax highlighting and other fluff</a></h2>
-    <p class="timestamp">September 18, 2018</p>
+    <h2><a href="https://defphil.com/blog/os-threading-101/">OS Threading 101</a></h2>
+    <p class="timestamp">November 9, 2018</p>
     <div class="content">
-    I've been programming for little over 5 years now, and I've always been obsesed with how my terminals, editors, tiling WMs (ah, the Linux and *BSD days) and other stuff that you productively waste time on. Automate whole setup with multiple bash and Ansible scripts, so you crash your system and get everything up and runing with running single file. Yea, high school was blast! But as I got into faculty time became more and more precious.
+    Thread creation and initialization illumos might not be the happiest place to start with learning about multithreaded handling and implementation on OS level simply because of complexity of system. It carries a lot of 'legacy' code from Solaris and SPARC architecture and includes systems like Zones and Dtrace which may lead to confussion, but we will focus on it's source code that is applicable to x86 platform.
+(illumos/usr/src/uts/common/disp/thread.c)
+Thread structure and organization As we know on x86 stack grows down (on Solaris it's selectable for example).
     
       ...
     
@@ -63,16 +65,6 @@
     <p class="timestamp">September 13, 2018</p>
     <div class="content">
     Finding zen in parentheses Pretty early in my life I decided I wanted to be an engineer. A little bit later I discovered writing software can be really fun and I ejoyed it. Then I found out it pays really well. But I always asked myself is that enough to be happy? What does it mean to be happy anyway? On faculty I saw a lot of people that got into CS because "
-    
-      ...
-    
-    </div>
-    
-  
-    <h2><a href="https://defphil.com/blog/test/">Test</a></h2>
-    <p class="timestamp">July 6, 2018</p>
-    <div class="content">
-    I recently read Greg Hendershott's emacs themes blog post, and cribbed liberally from his approach to loading themes. I also cribbed his Hydra theme switcher. It was so fun to use! I wanted to try it with all the themes I have installed---but I didn't want to add all of them manually. Boo! So I set out to see if I could dynamically add all installed themes to my Hydra theme switcher.
     
       ...
     
