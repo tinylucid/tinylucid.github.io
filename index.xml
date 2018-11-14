@@ -37,7 +37,9 @@ Thread structure and organization As we know on x86 stack grows down (on Solaris
       <pubDate>Thu, 13 Sep 2018 12:39:00 +0600</pubDate>
       
       <guid>https://defphil.com/home/</guid>
-      <description>Filip Miletic  github sr.ht best to reach me via email you can also find me on lobste.rs or as phlm on Freenode</description>
+      <description>Filip Miletic 
+Here you can read my blog or read more about me. My manifesto and thoughts about what I do and what I believe is right.
+Some of my code is hosted at: github or sr.ht best to reach me via email you can also find me on lobste.rs or as phlm on Freenode</description>
     </item>
     
     <item>
