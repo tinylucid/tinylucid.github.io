@@ -61,7 +61,7 @@ hr {
 }
 
 #article {
-    font-size: .7em;
+    font-size: .8em;
     line-height: 1.5em;
   margin-top: 4em;
   padding-bottom: 10px;
@@ -78,7 +78,7 @@ hr {
 }
 
 .homeContent {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	line-height: 1.4em;
 	font-family: monospace;
 }
@@ -186,6 +186,10 @@ ul.pagination {
   text-decoration: none;
 }
 
+#nav {
+	display: none;
+}
+
 @media (min-width: 750px) {
   #container {
       margin-left: 200px;
@@ -196,6 +200,7 @@ ul.pagination {
   }
 
   #article {
+	  font-size: .8em;
     width: 500px;
     position: relative;
   }
