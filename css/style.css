@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
 
 html,
 body {
@@ -21,7 +20,8 @@ body {
 a:link,
 a:active,
 a:visited {
-  color: #3a75e2;
+    color: #3a75e2;
+    font-family: monospace;
   font-weight:bold;
 }
 
@@ -68,7 +68,6 @@ hr {
   padding-right: 30px;
   padding-left: 30px;
 }
-
 #article img {
     display: inline;
 }
@@ -83,6 +82,22 @@ hr {
 	font-family: monospace;
 }
 
+.postContent p {
+	font-family: 'PT Serif';
+}
+
+.summaryContent {
+    font-family: 'PT Serif';
+}
+
+
+
+#article p {
+	font-size: 1em;
+	line-height:1.7em;
+}
+
+
 h1,
 h2,
 h3,
@@ -90,8 +105,8 @@ h4,
 h5,
 h6 {
     color: #333333;
-      font-family: 'Roboto';
-      font-weight:700;
+      font-family: monospace;
+      font-weight:bold;
 }
 
 #article p, #article ol li, #article ul li {
@@ -149,7 +164,7 @@ span.upper {
   text-transform: uppercase;
 }
 
-img.right {
+img.right50
   float: right;
   margin: 0 0 1em 1em;
 }
@@ -193,7 +208,7 @@ nav {
 @media (min-width: 750px) {
   #container {
       margin-left: 200px;
-      width: 500px;
+      width: 450px;
   }
   nav {
       display: none;
@@ -201,7 +216,7 @@ nav {
 
   #article {
 	  font-size: .8em;
-    width: 500px;
+    width: 450px;
     position: relative;
   }
 
