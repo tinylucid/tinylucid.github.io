@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 html,
 body {
@@ -88,11 +88,11 @@ hr {
 }
 
 .postContent p {
-	font-family: 'PT Serif', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 }
 
 .summaryContent {
-    font-family: 'PT Serif', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 
@@ -219,7 +219,7 @@ nav {
   }
 
   #article {
-	  font-size: .8em;
+	  font-size: .85em;
     width: 450px;
     position: relative;
   }
