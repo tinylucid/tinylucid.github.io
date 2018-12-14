@@ -3,39 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://defphil.com/blog/os-threading-101/</loc>
+    <loc>https://defphil.com/post/os-threading-101/</loc>
     <lastmod>2018-11-09T12:10:34+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://defphil.com/code/</loc>
+    <loc>https://defphil.com/post/lispomania/</loc>
     <lastmod>2018-09-13T12:39:00+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://defphil.com/home/</loc>
-    <lastmod>2018-09-13T12:39:00+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://defphil.com/blog/lispomania/</loc>
-    <lastmod>2018-09-13T12:39:00+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://defphil.com/</loc>
-    <lastmod>2018-11-09T12:10:34+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://defphil.com/blog/</loc>
-    <lastmod>2018-11-09T12:10:34+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://defphil.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://defphil.com/post/</loc>
+    <lastmod>2018-11-09T12:10:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,6 +30,12 @@
   
   <url>
     <loc>https://defphil.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://defphil.com/</loc>
+    <lastmod>2018-11-09T12:10:34+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
