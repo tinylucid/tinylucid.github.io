@@ -2,7 +2,7 @@
 
 .column {
     width: 100%;
-    max-width: 35em;
+    max-width: 40em;
 
     min-height: 100%;
 
@@ -63,6 +63,9 @@ header a.about {
 }
 
 /*/ Markdown Styling Below /*/
+article#content {
+	line-height:1.5em;
+}
 
 /* general paragraph styling */
 
@@ -183,6 +186,7 @@ footer.bottom-footer {
 
 pre {
     width: 100%;
+    line-height: 1.4em;
     background-color: #363743;
     color: #fff;
     padding: 20px;
