@@ -37,8 +37,12 @@ Thread structure and organization As we know on x86 stack grows down (on Solaris
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://defphil.com/about/</guid>
-      <description>Hi, my name is Filip Miletic. I am currently student at Faculty of Organisational Science -- Information Systems and Technology, at University of Belgrade. Previously I&#39;ve dropped out of Electrical Engineering at Faculty of Electrical Engineering, where I&#39;ve studied electronics and EE for 2 years.
-I am mostly interested in lower level programming, but I am always learning about everything I find interesting. So I&#39;ve been learning about computers all the way down how ICs and discrete circuits were made, all the way up to JS and some web stuff.</description>
+      <description>Hi, my name is Filip Miletic.
+Best way to contact me is via email.
+Here you can take a look at my CV.
+--
+I am currently student at Faculty of Organisational Science -- Information Systems and Technology, at University of Belgrade. Previously I&#39;ve dropped out of Electrical Engineering at Faculty of Electrical Engineering, where I&#39;ve studied electronics and EE for 2 years.
+I am mostly interested in lower level programming, but I am always learning about everything I find interesting.</description>
     </item>
     
   </channel>
