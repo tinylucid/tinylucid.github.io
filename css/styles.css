@@ -1,5 +1,19 @@
 /* single-column styling */
 
+@font-face {
+font-family: 'Avenir LT Std 95 Black';
+font-style: normal;
+font-weight: normal;
+src: url('/fonts/AvenirLTStd-Black.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir LT Std 45 Book';
+font-style: normal;
+font-weight: normal;
+src: url('/fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
 .column {
     width: 100%;
     max-width: 40em;
@@ -26,11 +40,12 @@ header.header {
 }
 
 header a.about {
+    font-family: 'Avenir LT Std 45 Book', serif;
 	font-size: .8em;
 }
 
 .title {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Avenir LT Std 95 Black', serif;
     font-size: 1.5em;
 }
 
@@ -54,7 +69,7 @@ header a.about {
 }
 
 .post-title {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Avenir LT Std 45 Book', serif;
     font-size: 1.3em;
 }
 
@@ -76,7 +91,7 @@ p {
 
 p.description {
 	margin-top: .5em;
-	font-family: 'Roboto Slab', serif;
+    font-family: 'Avenir LT Std 45 Book', serif;
 	font-size: .75em;
 	color: #8f8f8f;
 }
