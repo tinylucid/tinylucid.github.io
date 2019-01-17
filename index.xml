@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>defphil</title>
-    <link>https://defphil.com/</link>
-    <description>Recent content on defphil</description>
+    <title>PHiLip Miletic</title>
+    <link>http://phlm.xyz/</link>
+    <description>Recent content on PHiLip Miletic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Nov 2018 12:10:34 +0100</lastBuildDate>
     
-	<atom:link href="https://defphil.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://phlm.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>OS Threading 101</title>
-      <link>https://defphil.com/post/os-threading-101/</link>
+      <link>http://phlm.xyz/post/os-threading-101/</link>
       <pubDate>Fri, 09 Nov 2018 12:10:34 +0100</pubDate>
       
-      <guid>https://defphil.com/post/os-threading-101/</guid>
+      <guid>http://phlm.xyz/post/os-threading-101/</guid>
       <description>Thread creation and initialization illumos might not be the happiest place to start with learning about multithreaded handling and implementation on OS level simply because of complexity of system. It carries a lot of &#39;legacy&#39; code from Solaris and SPARC architecture and includes systems like Zones and Dtrace which may lead to confussion, but we will focus on it&#39;s source code that is applicable to x86 platform.
 (illumos/usr/src/uts/common/disp/thread.c)
 Thread structure and organization As we know on x86 stack grows down (on Solaris it&#39;s selectable for example).</description>
@@ -24,19 +24,19 @@ Thread structure and organization As we know on x86 stack grows down (on Solaris
     
     <item>
       <title>Lispomania</title>
-      <link>https://defphil.com/post/lispomania/</link>
+      <link>http://phlm.xyz/post/lispomania/</link>
       <pubDate>Thu, 13 Sep 2018 12:39:00 +0600</pubDate>
       
-      <guid>https://defphil.com/post/lispomania/</guid>
+      <guid>http://phlm.xyz/post/lispomania/</guid>
       <description>Finding zen in parentheses Pretty early in my life I decided I wanted to be an engineer. A little bit later I discovered writing software can be really fun and I ejoyed it. Then I found out it pays really well. But I always asked myself is that enough to be happy? What does it mean to be happy anyway? On faculty I saw a lot of people that got into CS because &#34;</description>
     </item>
     
     <item>
       <title>about</title>
-      <link>https://defphil.com/about/</link>
+      <link>http://phlm.xyz/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://defphil.com/about/</guid>
+      <guid>http://phlm.xyz/about/</guid>
       <description>Hi, my name is Filip Miletic.
 Best way to contact me is via email.
 Here you can take a look at my CV.
