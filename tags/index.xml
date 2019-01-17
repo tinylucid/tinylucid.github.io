@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on PHiLip Miletic</title>
-    <link>http://phlm.xyz/tags/</link>
+    <link>https://phlm.xyz/tags/</link>
     <description>Recent content in Tags on PHiLip Miletic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://phlm.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phlm.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

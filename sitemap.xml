@@ -3,39 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://phlm.xyz/post/os-threading-101/</loc>
+    <loc>https://phlm.xyz/post/os-threading-101/</loc>
     <lastmod>2018-11-09T12:10:34+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://phlm.xyz/post/lispomania/</loc>
+    <loc>https://phlm.xyz/post/lispomania/</loc>
     <lastmod>2018-09-13T12:39:00+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://phlm.xyz/categories/</loc>
+    <loc>https://phlm.xyz/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://phlm.xyz/</loc>
+    <loc>https://phlm.xyz/</loc>
     <lastmod>2018-11-09T12:10:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://phlm.xyz/post/</loc>
+    <loc>https://phlm.xyz/post/</loc>
     <lastmod>2018-11-09T12:10:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://phlm.xyz/tags/</loc>
+    <loc>https://phlm.xyz/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://phlm.xyz/about/</loc>
+    <loc>https://phlm.xyz/about/</loc>
   </url>
   
 </urlset>
