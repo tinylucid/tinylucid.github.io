@@ -36,6 +36,11 @@ section#main {
     font-size: .8em;    
 }
 
+a.ttl {
+	font-size: 1.6em;
+	font-family:'Avenir LT Std 95 Black';
+}
+
 header.header {
     width: 100%;
     margin-bottom: 20px;
@@ -43,12 +48,12 @@ header.header {
 
 header a.about {
     font-family: 'Avenir LT Std 45 Book', serif;
-	font-size: .85em;
+	margin-left: 1em;
+	font-size: .8em;
 }
 
 .title {
     font-family: 'Avenir LT Std 95 Black', serif;
-    font-size: 1.6em;
 }
 
 /* post styling */
@@ -56,16 +61,15 @@ header a.about {
 .post-header {
     margin-bottom: 10px;
     padding-bottom: 10px;
-
     width: 100%;
     border-bottom: 1px solid #ededed;
     border-top: 3px solid #FC4747;
+
 }
 
 .post-summary-header {
     padding-top: 10px;
     padding-bottom: 10px;
-
     width: 100%;
     border-top: 1px solid #ededed;
 }
@@ -79,9 +83,13 @@ header a.about {
     font-size: .9em;
 }
 
+.preview-p {
+	line-height:1.6em;
+}
+
 /*/ Markdown Styling Below /*/
 article#content {
-	line-height:1.6em;
+	line-height:1.7em;
 }
 
 /* general paragraph styling */
@@ -115,11 +123,18 @@ a {
     text-decoration: none;
     text-weight: bold;
     color: #444444;
-}
 
-a:hover {
+	padding: 2px;
+}
+a.ttl {
+	color: #fff;	
     background-color: #FC4747;
+    padding:5px;
+    padding-right: 0px;
+}
+a:hover {
     color: #fff;
+    background-color: #FC4747;
 }
 
 /* list styling */
