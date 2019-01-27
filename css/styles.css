@@ -15,8 +15,8 @@ src: url('/fonts/AvenirLTStd-Book.woff') format('woff');
 }
 
 .column {
-    width: 100%;
-    max-width: 40em;
+    width: 90%;
+    max-width: 42em;
 
     min-height: 100%;
 
@@ -37,8 +37,13 @@ section#main {
 }
 
 a.ttl {
-	font-size: 1.6em;
+	font-size: 1.5em;
 	font-family:'Avenir LT Std 95 Black';
+}
+
+a.about {
+	padding-bottom: .3em;
+	border-bottom: 3px solid #FC4747;
 }
 
 header.header {
@@ -53,7 +58,6 @@ header a.about {
 }
 
 .title {
-    font-family: 'Avenir LT Std 95 Black', serif;
 }
 
 /* post styling */
@@ -75,7 +79,7 @@ header a.about {
 }
 
 .post-title {
-    font-family: 'Avenir LT Std 45 Book', serif;
+	font-weight: bold;
     font-size: 2em;
 }
 
@@ -84,6 +88,7 @@ header a.about {
 }
 
 .preview-p {
+	text-align: justify;
 	line-height:1.6em;
 }
 
@@ -95,6 +100,7 @@ article#content {
 /* general paragraph styling */
 
 p {
+	text-align: justify;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -233,11 +239,13 @@ pre {
 
 * { padding: 0; margin: 0; }
 
-html{
+html {
     height: 100%;
     background-color: #ededed;
 }
+
 body {
     min-height: 100%;
     font-size: .9em;
 }
+
