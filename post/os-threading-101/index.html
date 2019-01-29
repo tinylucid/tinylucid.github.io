@@ -33,7 +33,7 @@
 	
 
     <header class="post-header">
-      <p class="post-title">OS Threading 101 </p>
+      <p class="post-title">Thread initialization on illumos </p>
       <p class="post-meta">Nov 9 2018</p>
     </header>
 
@@ -46,8 +46,6 @@ complexity of system. It carries a lot of 'legacy' code from Solaris and SPARC
 architecture and includes systems like Zones and Dtrace which may lead to
 confussion, but we will focus on it's source code that is applicable to x86
 platform.</p>
-
-<p>(illumos/usr/src/uts/common/disp/thread.c)</p>
 
 <h2 id="thread-structure-and-organization">Thread structure and organization</h2>
 
@@ -93,7 +91,7 @@ we call `thread` arranges resources, priorities, assings CPU and organizes tasks
 
 <h2 id="thread-initialization">Thread initialization</h2>
 
-<p>We first check if stack is free and alloc both thread and stack in segkp<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>
+<p>We first check if stack is free and alloc both thread and stack in segkp
 chunk, then machine-depedent mutex code may need to be aligned, but we will skip
 this process since it's not relevant to goal of this post. As the last process
 of so called initialization of stack and thread we initializek `t_stk` to the
@@ -125,7 +123,7 @@ t-&gt;t_cpupart = &amp;cp_default;
 </code></pre>
 
 <p>First we affiliate newly created thread with the root lgroup since kernel doesnt
-allocte its memory at this moment. If it is later associated with lwp<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>, it
+allocte its memory at this moment. If it is later associated with lwp, it
 will be reassigned to it's lgroup. Current thread inherits current cpu. If this
 cpu is not part of the chosen lgroup, new cpu will be chosen by cpu_chose when
 thread is ready for running.</p>
@@ -145,30 +143,14 @@ Disp. holds onto pidlock to block all thread walkers until the state is set.</p>
 
 <p>If thread state is free the interrupt routine must set thread dispatcher lock
 pointer if starting on the CPU other than current one.
-If it is running we get dispatcher spl<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">3</a></sup>, stop the thread, initialize it
-with CL_SETRUN<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">4</a></sup> and unlock it after that.
+If it is running we get dispatcher spl, stop the thread, initialize it
+with CL_SETRUN and unlock it after that.
 If it is stopped we just aquire stop_lock and pass it to thread.
-If it is on TS_ONPROC<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">5</a></sup> we asign it current cpu.
+If it is on TS_ONPROC we asign it current cpu.
 If none of these states are the case (if thread is sleeping or zombie) we throw
 an error.</p>
 
 <p>We exit the mutex and thread is created and initialized.</p>
-<div class="footnotes">
-
-<hr />
-
-<ol>
-<li id="fn:1">TODO write about segkp <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
-
-<li id="fn:2">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
-
-<li id="fn:3">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
-
-<li id="fn:4">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
-
-<li id="fn:5">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
-</ol>
-</div>
 
     </article>
 

@@ -6,19 +6,28 @@
     <description>Recent content in Posts on phlm</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Nov 2018 12:10:34 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jan 2019 13:10:34 +0100</lastBuildDate>
     
 	<atom:link href="https://phlm.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>OS Threading 101</title>
+      <title>Change of perception with Clojure</title>
+      <link>https://phlm.xyz/post/change-of-perception-clojure/</link>
+      <pubDate>Mon, 28 Jan 2019 13:10:34 +0100</pubDate>
+      
+      <guid>https://phlm.xyz/post/change-of-perception-clojure/</guid>
+      <description>It&#39;s been quite some time since I wrote Clojure, probably around 2 months or so. I stumbled upon this blogpost by Connor Mendenhall. Reading it carefully without skimming is really recommended, and fun. It inspired me enough to write my first blogpost in 2019.
+My first introduction to functional programming was through Scheme and SICP (I am re-reading this book for few years now, it never stops to amaze me). This would be the core concept that would slap me from the back of the head when I started getting my feet wet with Clojure.</description>
+    </item>
+    
+    <item>
+      <title>Thread initialization on illumos</title>
       <link>https://phlm.xyz/post/os-threading-101/</link>
       <pubDate>Fri, 09 Nov 2018 12:10:34 +0100</pubDate>
       
       <guid>https://phlm.xyz/post/os-threading-101/</guid>
       <description>Thread creation and initialization illumos might not be the happiest place to start with learning about multithreaded handling and implementation on OS level simply because of complexity of system. It carries a lot of &#39;legacy&#39; code from Solaris and SPARC architecture and includes systems like Zones and Dtrace which may lead to confussion, but we will focus on it&#39;s source code that is applicable to x86 platform.
-(illumos/usr/src/uts/common/disp/thread.c)
 Thread structure and organization As we know on x86 stack grows down (on Solaris it&#39;s selectable for example).</description>
     </item>
     
