@@ -1,18 +1,25 @@
 /* single-column styling */
-
 @font-face {
-font-family: 'Avenir LT Std 95 Black';
+font-family: 'Inter Black';
 font-style: normal;
-font-weight: normal;
-src: url('/fonts/AvenirLTStd-Black.woff') format('woff');
+font-weight: black;
+src: url('/fonts/Inter-Black.woff') format('woff');
 }
 
 @font-face {
-font-family: 'Avenir LT Std 45 Book';
+font-family: 'Inter Regular';
 font-style: normal;
 font-weight: normal;
-src: url('/fonts/AvenirLTStd-Book.woff') format('woff');
+src: url('/fonts/Inter-Regular.woff') format('woff');
 }
+
+@font-face {
+font-family: 'Inter Bold';
+font-style: normal;
+font-weight: black;
+src: url('/fonts/Inter-Bold.woff') format('woff');
+}
+
 
 .column {
     width: 90%;
@@ -38,7 +45,7 @@ section#main {
 
 a.ttl {
 	font-size: 1.5em;
-	font-family:'Avenir LT Std 95 Black';
+	font-family:'Inter Black', Arial, Verdana, sans-serif;
 }
 
 a.about {
@@ -52,7 +59,7 @@ header.header {
 }
 
 header a.about {
-    font-family: 'Avenir LT Std 45 Book', serif;
+    font-family: 'Inter Regular', serif;
 	margin-left: 1em;
 	font-size: .8em;
 }
@@ -80,7 +87,8 @@ header a.about {
 
 .post-title {
 	font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
+    font-family: 'Inter Bold', Arial, Verdana, sans-serif;
 }
 
 .post-meta {
@@ -90,6 +98,8 @@ header a.about {
 .preview-p {
 	text-align: justify;
 	line-height:1.6em;
+	
+    font-family: 'Inter Regular', Arial, Verdana, sans-serif;
 }
 
 /*/ Markdown Styling Below /*/
@@ -103,11 +113,13 @@ p {
 	text-align: justify;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Inter Regular', Arial, Verdana, sans-serif;
 }
 
 p.description {
-	margin-top: .5em;
-    font-family: 'Avenir LT Std 45 Book', serif;
+	margin-top: 1em;
+	margin-left: .5em;
+    font-family: 'Inter Regular', serif;
 	font-size: .8em;
 	color: #8f8f8f;
 }
