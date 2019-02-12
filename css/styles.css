@@ -40,11 +40,11 @@ src: url('/fonts/Inter-Bold.woff') format('woff');
 
 /* title/header styling */
 section#main {
-    font-size: .8em;    
+    font-size: 1em;    
 }
 
 a.ttl {
-	font-size: 1.5em;
+	font-size: 1.7em;
 	font-family:'Inter Black', Arial, Verdana, sans-serif;
 }
 
@@ -61,7 +61,7 @@ header.header {
 header a.about {
     font-family: 'Inter Regular', serif;
 	margin-left: 1em;
-	font-size: .8em;
+	font-size: 1em;
 }
 
 .title {
@@ -87,7 +87,7 @@ header a.about {
 
 .post-title {
 	font-weight: bold;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-family: 'Inter Bold', Arial, Verdana, sans-serif;
 }
 
@@ -120,7 +120,7 @@ p.description {
 	margin-top: 1em;
 	margin-left: .5em;
     font-family: 'Inter Regular', serif;
-	font-size: .8em;
+	font-size: 1em;
 	color: #8f8f8f;
 }
 
@@ -228,14 +228,14 @@ footer.bottom-footer {
     width: 100%;
     border-top: 1px solid #ededed;
 
-    font-size: 10px;
+    font-size: .8em;
 }
 
 
 /* code block styling */
 
 pre {
-    width: 100%;
+    widt: 10%;
     line-height: 1.4em;
     background-color: #363743;
     color: #fff;
@@ -244,7 +244,7 @@ pre {
     margin-top: 10px;
     margin-bottom: 10px;
     overflow-x: scroll;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 /* general background styling */
@@ -258,6 +258,6 @@ html {
 
 body {
     min-height: 100%;
-    font-size: .9em;
+    font-size: 0.8em;
 }
 
