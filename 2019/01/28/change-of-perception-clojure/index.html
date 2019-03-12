@@ -1,22 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>phlm</title>
-    <description>Personal blog space of Filip Miletic, open source developer and student</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 12 Mar 2019 17:42:05 +0100</pubDate>
-    <lastBuildDate>Tue, 12 Mar 2019 17:42:05 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>Change of perception with Clojure</title>
-        <description>&lt;p&gt;It’s been quite some time since I wrote Clojure, probably around 2 months or
-so. I stumbled upon &lt;a href=&quot;http://ecmendenhall.github.io/blog/blog/2013/09/05/clean-clojure-functions/&quot;&gt;&lt;span class=&quot;underline&quot;&gt;this&lt;/span&gt;&lt;/a&gt; blogpost by Connor Mendenhall. Reading it carefully
-without skimming is really recommended, and fun. It inspired me enough to write
-my first blogpost in 2019.&lt;/p&gt;
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Change of perception with Clojure - phlm</title>
+  <meta name="description" content="Personal blog space of Filip Miletic, open source developer and student">
+  <link rel="stylesheet" href="http://localhost:4000/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/2019/01/28/change-of-perception-clojure/">
+  <link rel="alternate" type="application/rss+xml" title="phlm" href="http://localhost:4000/feed.xml">
+</head>
 
-&lt;p&gt;My first introduction to functional programming was through Scheme and SICP (I
+  <body>
+    <div class="page-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Change of perception with Clojure</h1>
+    <p class="post-meta">
+      <time datetime="2019-01-28T00:00:00+01:00" itemprop="datePublished">Jan 28, 2019</time>
+       &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Filip Miletic</span></span>
+
+      
+  		
+
+  		
+  		
+
+  		&middot;	<span class="tags" itemprop="tags">
+  				<a href="http://localhost:4000/tagged#clojure">#Clojure</a>
+  			</span>
+
+  	  
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    <p>It’s been quite some time since I wrote Clojure, probably around 2 months or
+so. I stumbled upon <a href="http://ecmendenhall.github.io/blog/blog/2013/09/05/clean-clojure-functions/"><span class="underline">this</span></a> blogpost by Connor Mendenhall. Reading it carefully
+without skimming is really recommended, and fun. It inspired me enough to write
+my first blogpost in 2019.</p>
+
+<p>My first introduction to functional programming was through Scheme and SICP (I
 am re-reading this book for few years now, it never stops to amaze me). This
 would be the core concept that would slap me from the back of the head when I
 started getting my feet wet with Clojure. Whole process of writing code
@@ -24,25 +47,25 @@ alongside REPL, coming back to it, reiterating it, making it more idiomatic,
 achieving more with much less code that is more readable,  all of those things
 are core concepts of SICP, which I didn’t get on my first tries. Going through
 book again felt very rewarding and made my efforts in functional programming
-that more rewarding .&lt;/p&gt;
+that more rewarding .</p>
 
-&lt;p&gt;In this blogpost we can see usual way of writing functional code. 
+<p>In this blogpost we can see usual way of writing functional code. 
 Immutable data + small and clean (not always pure) functions, and
 whole process of achieving that through some weird but natural way of splitting
 things apart while working alongside REPL. Yeah, a lot of concepts in one sentence,
 but that’s all there is to it, and it is really simple when you get what each of
-those concepts mean and what they stand for.&lt;/p&gt;
+those concepts mean and what they stand for.</p>
 
-&lt;p&gt;I consider every functional language to be kind of a different beast. Core
+<p>I consider every functional language to be kind of a different beast. Core
 concepts are the same, and if you get that, big chances are you will peak on the
 other side of some other interesting and exotic language (and if you are reading
-this blogpost I am sure you are &lt;span class=&quot;underline&quot;&gt;that&lt;/span&gt; kind of person to begin with). Haskell is
+this blogpost I am sure you are <span class="underline">that</span> kind of person to begin with). Haskell is
 notorious by it’s type system, Common Lisp by it’s flexibility of writing
 imperative/functional code and it’s meta-programming capabilities, Erlang about
 it’s concurrency, and Clojure? Clojure is data oriented language. And it blew my
-mind! It totally changed the way how I perceive abstractions and write code.&lt;/p&gt;
+mind! It totally changed the way how I perceive abstractions and write code.</p>
 
-&lt;p&gt;How Clojure achieves that special layer of abstraction between underlying data
+<p>How Clojure achieves that special layer of abstraction between underlying data
 and clean Lisp-like syntax is through literals and core concepts like
 immutability. After enough staring at different parentheses, letters and
 symbols, you get the sense of what is what, and what fits where. 
@@ -52,7 +75,7 @@ writing small decoupled functions (again, _read the blogpost which represents
 very nicely how code evolves from something big and clunky, to something very
 idiomatic, easy to maintain and read_), top to bottom, breaking problems into
 very small pieces. And how you move down the buffer of your favourite text
-editor (&lt;em&gt;:cough:&lt;/em&gt; Emacs &lt;em&gt;:cough:&lt;/em&gt;) you see those small and nice functions that do
+editor (<em>:cough:</em> Emacs <em>:cough:</em>) you see those small and nice functions that do
 only one thing combined with each other, on top of immutable data, state of your
 data becomes much clearer, you get the sense about what is happening in your own
 program. The whole process of reiterating through code, making it more how
@@ -62,23 +85,23 @@ years, but don’t let that fool you, they aren’t dead, they just don’t need
 touched. They work how they should, people are using them and don’t think about
 them anymore. Only language where I’ve seen this is the same case is Common
 Lisp, maybe even more fascinating in that regard than Clojure, but that’s for
-different topic.&lt;/p&gt;
+different topic.</p>
 
-&lt;p&gt;Now things aren’t that fine and dandy in the beginning. I had a luck that I
+<p>Now things aren’t that fine and dandy in the beginning. I had a luck that I
 was exposed to Emacs much earlier than I began working with Clojure. I can’t
 imagine writing Clojure (and any other functional or REPL-based language) in
 any other environment (Cursive is great, go check it out, but I use IntelliJ 
-only for Java). But my main hurdle with Clojure was &lt;em&gt;way of doing things right&lt;/em&gt;. I
+only for Java). But my main hurdle with Clojure was <em>way of doing things right</em>. I
 still consider myself an amateur Clojurist, I don’t have any real world
 full-time job experience with Clojure, but in the beginning I felt really
 overwhelmed. I was overthinking my every step, and was getting confused by
-possibility of doing one thing on N different ways.&lt;/p&gt;
+possibility of doing one thing on N different ways.</p>
 
-&lt;p&gt;/Should I use multidimensional
+<p>/Should I use multidimensional
 vector, or map? How do I achieve X-thing without iterating through whole set?
-Should I rewrite this big function using multimethods or separate them completely?/&lt;/p&gt;
+Should I rewrite this big function using multimethods or separate them completely?/</p>
 
-&lt;p&gt;&lt;strong&gt;Getting Clojure&lt;/strong&gt; by &lt;a href=&quot;http://russolsen.com&quot;&gt;Russ Olsen&lt;/a&gt; helped me tremendously with all those questions
+<p><strong>Getting Clojure</strong> by <a href="http://russolsen.com">Russ Olsen</a> helped me tremendously with all those questions
  that made me rethink my every step. And solution for this kind of problem was
  very simple as always… write. more. Clojure. code. With all that out of the
  way, I had my favourite language. When I had to do some work in Java, or C I
@@ -86,30 +109,30 @@ Should I rewrite this big function using multimethods or separate them completel
  opinionated and that could be problem to a wider adoption, but after that
  initial period of struggling with a lot of new concepts I appreciated every bit
  about it. And I’ve met a lot of people doing really cool stuff with
- Clojure. Like for example mind-bending stuff from &lt;a href=&quot;http://brutalism.rs&quot;&gt;Vladimir Mitrovic&lt;/a&gt;, or less
- artistic and more scientific efforts from &lt;a href=&quot;https://dragan.rocks&quot;&gt;Dragan Djuric&lt;/a&gt; and his work in Data
- Science/ML/High Performance Computing.&lt;/p&gt;
+ Clojure. Like for example mind-bending stuff from <a href="http://brutalism.rs">Vladimir Mitrovic</a>, or less
+ artistic and more scientific efforts from <a href="https://dragan.rocks">Dragan Djuric</a> and his work in Data
+ Science/ML/High Performance Computing.</p>
 
-&lt;p&gt;I can really see myself using Clojure just for sake of using it. Hobby project
+<p>I can really see myself using Clojure just for sake of using it. Hobby project
 here and there for now. But I would really like to make a living out of it when
 I gain more experience as developer. Until then I will work hard to be better at
-it.&lt;/p&gt;
+it.</p>
 
-&lt;p&gt;Clojure and it’s ecosystem feel modern, refreshing and sophisticated. As it grows more
+<p>Clojure and it’s ecosystem feel modern, refreshing and sophisticated. As it grows more
 mature and as guys from Cognitect put more efforts into tooling and ecosystem it
 is really starting to represent something that we lost along the way of
 technological advancement and industrialization of software and
-programming.&lt;/p&gt;
+programming.</p>
 
-</description>
-        <pubDate>Mon, 28 Jan 2019 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2019/01/28/change-of-perception-clojure/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/01/28/change-of-perception-clojure/</guid>
-        
-        <category>Clojure</category>
-        
-        
-      </item>
-    
-  </channel>
-</rss>
+
+  </div>
+  <hr>
+</article>
+
+      <div class="copyright">
+      <p>CC BY-NA &copy; Filip Miletic 2019 <a href="http://localhost:4000/"><strong> <== </strong></a> --  <a href="mailto:phil@phlm.xyz">email</a> -
+        <a href="https://git.sr.ht/~phl">sourcehut</a> - <a href="https://github.com/defphil">github</a></p>
+      </div>
+    </div>
+  </body>
+</html>
