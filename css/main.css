@@ -204,6 +204,9 @@ hr {
     font-size: 0.875rem; }
   .site-header .site-intro {
     font-size: 1.2rem; }
+  .site-header .site-nav {
+    font-family: "Iosevka", monospace;
+    font-size: 1.1em; }
 
 .smallcap {
   font-size: 1.5rem;
