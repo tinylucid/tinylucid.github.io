@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curing myself from config disease - phlm</title>
+  <meta name="description" content="Personal blog space of Filip Miletic, open source developer and student">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/2019/03/14/curing-myself-from-config-disease/">
+  <link rel="alternate" type="application/rss+xml" title="phlm" href="/feed.xml">
+</head>
+
+  <body>
+    <div class="page-content">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Curing myself from config disease</h1>
+    <p class="post-meta">
+      <time datetime="2019-03-14T00:00:00+01:00" itemprop="datePublished">Mar 14, 2019</time>
+       &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Filip Miletic</span></span>
+
+      
+  		
+
+  		
+  		
+
+  		&middot;	<span class="tags" itemprop="tags">
+  				<a href="/tagged#tools">#Tools</a>
+  			</span>
+
+  	  
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    <h2 id="i-confess-i-was-config-freak">I confess, I was config freak</h2>
+
+<p>Since early days of high school I was sinking significant amount of time into writing my own scripts and configs that didn’t made much impact on anything except my own experience in front of the computer. Amount of knowledge I was getting out of it was probably significantly lower compared to if I had spent that time doing real problem solving or working on some personal project instead. But you know how it goes when you are a kid, you have plenty time on your hand, and at during that period I was exploring wonders of UNIX-like operating systems. Pretty early I decided that Windows was no-go for me. I just didn’t like it. Arch Linux was my thing at a time. Oh boy, I remember the day when I installed Arch for the first time. This time I got everything right. Wifi - check; User account - check; X11 - check; Sound - check; I felt like I’ve accomplished something big. Little did I know that I started chasing the rabbit down the hole.</p>
+
+<h3 id="it-was-all-vims-fault">It was all Vim’s fault</h3>
+
+<p>In that period of UNIX system exploration I was reinstalling and crashing Linux systems at least once a day. <img align="right" src="/assets/img/19-03-14/puke-ss.png" /> So a lot of the time I’ve spent in ‘chroot’ environment of live USB installation, so no GUI. I started getting grasp of Vim since everyone on the internet was recommending it. I introduced myself to it totally spontaneously. Learned command by command, at first I was scratching my head a lot… I thought Bill Joy took some hefty dose of LSD while was designing it… I never saw anything quite similar to it’s modal editing model. First I was like, “wow, this thing is ugly”. I was working previously mostly on Macs, those wonderful Snow Leopard days when Apple was becoming developers’ favorite thing since sliced bread. TextMate was the thing around that time. I was using it lightly since I wasn’t programming anything serious around that time, I was complete beginner. But since I was staying more and more time in terminal, learning Vim was natural thing to do. And I started reading many configs. Copying things which I didn’t understand (we know how that ends), installing plugins, loading custom themes, syntax files, etc… And suddenly after a lot of wasted time playing around with Linux and ricing, I didn’t have anything to do. Everything was pixel-perfect how I wanted. So now what… <em>(Sadly I can’t find screenshots from my setups on /r/unixporn right now)</em></p>
+
+<h3 id="parens-strike-back">(((Parens strike back)))</h3>
+
+<p>I installed Emacs. Around that time I decided to give Emacs a shot, I got into Faculty. I was majoring in Electrical Engineering. Didn’t have much free time, it was very tough period, I was studying a lot. But after I’ve finished exams from first few semesters I really started to develop serious obsession with writing software. I wanted to learn functional programming, since I got bored with OOP. I knew if I wanted to grasp real OO knowledge I would need to find a job/internship and work on some bigger then average personal project codebase. So I got into Lisp (scheme to be more precise), and Emacs was like a must. It provided interactive environment with infinite possibilities, you could achieve theoretically anything using that dialect called ELisp. I was very hyped. It seemed that with Emacs my ricing needs will never run out of fuel.</p>
+
+<p><img src="/assets/img/19-03-14/emacs-ss.png" alt="My current Emacs setup" title="Emacs" /></p>
+
+<h3 id="back-to-life-back-to-reality">Back to life back to reality</h3>
+
+<p>But the funny thing was that every time I thought I’ve achieved apex with my configurations, I will immediately start decluttering and stripping things off. <em>I hated latency and lag while typing.</em> I hated it with my gut. I don’t know why but for me startup times of 2 seconds were bane of my existence. I liked light software, when things are simple and responsive, twitchy and as smooth as they can be. Pendulum started going in completely other direction. I kept using both Vim and Emacs, but their configurations were smalled, they included only things I actually used.</p>
+
+<h4 id="and-back-to-defaults">…and back to defaults</h4>
+
+<p>For last year or so, I was experimenting with syntax highlighting. I found myself disabling it more often than leaving it on. Then I wrote my own themes
+which were highlighting most important things in code like keywords, string, comments, numbers and function names. When I started doing some real work I needed my tools to work and get out of the way. No more fancy colors, mode-lines, bold and italic fonts and what not. I started to appreciate standardized formats which were portable (read: pure text files, ahem org-mode). With Vim and Emacs I never have to fear if the thing will die like TextMate did. So my time investment was probably for life. And I came to realization that I made my configurations look really similar to default ones. Minor things are modified for local development environment like FZF and tag navigation and that’s it. I even started using default colorschemes in Vim. All those low contrast themes with bright blue background made me not see anything, it was very tiring for my eyes, and default colors worked the best. I remember very good the discomfort when I SSHd on some machine, opened Vim and I felt really uncomfortable cause it didn’t look anything like I was used to, but the whole point of learning Vim was to have powerful text editor tool under my belt that I can pull out anywhere and work flawlessly.</p>
+
+<p><img src="/assets/img/19-03-14/vim-ss.png" alt="Current Vim setup, which I use mostly for terminal work" /></p>
+
+<p>Now I see a lot of new fancy things getting pretty popular. VSCode is one of them. I give it a shot probably every second or third release, just because I follow Microsoft’s development blog on it. Okay, I forgive slower than usually startup times (it starts slower than my full blown Emacs configuration [okay I optimized it not to load packages which aren’t used in that moment, but still]). I start typing or scrolling folder browser on the left side and I immediately uninstall it. The lag. I can’t really stand it. The bloat everywhere. I get it it strikes perfect balance between IDE and editor. It brought very interesting ideas to the table of development tools with it’s tight integration of Git, debugger and terminal. Developing JS/TS projects make perfect sense, and probably the only use case in which I can see myself going over all that sluggishness. But I am never writing JS as of now. On the other hand, after hour in VSCode I open Sublime Text and I am like, “I am not crazy people, I told you that thing is slow”. Now it is all about what you want and need from your development tools. I like fast tools that gets out of your way. I have to give shout out to Sublime Text, because it is such a nice piece of software that gets job done.</p>
+
+<p>At this point I feel like I’ve made a full circle. Went through hell and back. But I think I’ve learned a valuable lesson. Fact is that I had a lot of free time for playing with systems, tools and computers. I’ve learned few valuable things about development process and tools. And now I consider myself proficient in two most famous dev. tools, Vim and Emacs.</p>
+
+
+  </div>
+  <hr>
+</article>
+
+      <div class="copyright">
+      <p>CC BY-NA &copy; Filip Miletic 2019 <a href="/"><strong> <== </strong></a> --  <a href="mailto:phil@phlm.xyz">email</a> -
+        <a href="https://git.sr.ht/~phl">sourcehut</a> - <a href="https://github.com/defphil">github</a></p>
+      </div>
+    </div>
+  </body>
+</html>
