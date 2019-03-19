@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on &gt; phlm_</title>
+    <link>https://phlm.xyz/posts/</link>
+    <description>Recent content in Posts on &gt; phlm_</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>CC BY © 2019 Filip Miletic</copyright>
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://phlm.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test post</title>
+      <link>https://phlm.xyz/posts/testpost/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://phlm.xyz/posts/testpost/</guid>
+      <description>Test List:
+ defin ext  testing post
+Example:
+{{ add 1 2 }
+#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;quot;Enter the aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanumber of terms: &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;n); printf(&amp;quot;Fibonacci Series: &amp;quot;); for (i = 1; i &amp;lt;= n; ++i) { printf(&amp;quot;%d, &amp;quot;, t1); nextTerm = t1 + t2; t1 = t2; t2 = nextTerm; } return 0; }  #includes &amp;lt;iostream&amp;gt; std::cout&amp;lt;&amp;lt;&amp;quot;Hello World!\n&amp;quot;;  </description>
+    </item>
+    
+    <item>
+      <title>Change of perception thanks to Clojure</title>
+      <link>https://phlm.xyz/posts/perception-clojure/</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://phlm.xyz/posts/perception-clojure/</guid>
+      <description>It’s been quite some time since I wrote Clojure, probably around 2 months or so. I stumbled upon this blogpost by Connor Mendenhall. Reading it carefully without skimming is really recommended, and fun. It inspired me enough to write my first blogpost in 2019.
+My first introduction to functional programming was through Scheme and SICP (I am re-reading this book for few years now, it never stops to amaze me). This would be the core concept that would slap me from the back of the head when I started getting my feet wet with Clojure.</description>
+    </item>
+    
+  </channel>
+</rss>

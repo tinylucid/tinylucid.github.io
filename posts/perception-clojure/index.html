@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Change of perception with Clojure - phlm</title>
-  <meta name="description" content="Personal blog space of Filip Miletic, open source developer and student">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/2019/01/28/change-of-perception-clojure/">
-  <link rel="alternate" type="application/rss+xml" title="phlm" href="/feed.xml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Change of perception thanks to Clojure | &gt; phlm_</title>
+
+    <style>@import 'https://fonts.googleapis.com/css?family=IBM+Plex+Mono';body{margin:20px auto;max-width:650px;line-height:1.4;font-size:1em;color:#444;padding:0 5px;font-family:-apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol}h1,h2,h3{line-height:1.2}div.header h1{padding-top:0;margin-bottom:3em;font-size:18px;font-weight:400}#contain{width:auto;display:inline}.header-menu{float:right;color:#999;font-size:.8em;font-weight:700}.site-title{background-color:#333}.site-title a:link,a:visited,a:hover,a:active{color:#fff}a:link,a:visited,a:hover,a:active{color:#1535e5;text-decoration:none}ul.pagination{list-style-type:none;text-align:center;padding:0}ul.pagination>li{padding:8px;display:inline-block}div.footer{text-align:center;padding-top:5em}img{max-width:100%;max-height:100%;display:block;margin-left:auto;margin-right:auto}article.post{font-size:.9em}code{font-family:SF Mono,Menlo,Monaco,Consolas,monospace;font-size:.9em;color:#e51578;background:#fafafa}pre{padding:1em;background:#fafafa;overflow-x:scroll;overflow-y:hidden}</style>
+
+    
 </head>
 
-  <body>
-    <div class="page-content">
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Change of perception with Clojure</h1>
-    <p class="post-meta">
-      <time datetime="2019-01-28T00:00:00+01:00" itemprop="datePublished">Jan 28, 2019</time>
-       &middot; <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Filip Miletic</span></span>
+<body>
+<div class="header">
+    <h1>
+        <a class="site-title" style="padding-top: .2em;
+    				     padding-bottom: .2em;
+    				     padding-left: .5em;
+    				     padding-right: .5em;
+    				     color: #fff;
+    				     text-decoration: none;
+    				     font-weight:800;" 
+    				     href="/">&gt; phlm_</a>
+	<div class="header-menu">
+            <a href="/posts/" style="margin-right: 20px;">blog</a>
+            <a href="/about/" style="margin-right: 20px;">about</a>
+        </div>
+    </h1>
+</div>
 
-      
-  		
+<div id="content">
 
-  		
-  		
+<header>
+    <h1>Change of perception thanks to Clojure</h1>
+    
 
-  		&middot;	<span class="tags" itemprop="tags">
-  				<a href="/tagged#clojure">#Clojure</a>
-  			</span>
+<div class="post-meta">
+    <time style="font-size:.8em;" datetime="2019-01-28">Jan 28, 2019</time>
+    <a style="font-size:.8em;" href="https://phlm.xyz/tags/clj/">clj</a>
+</div>
 
-  	  
-    </p>
-  </header>
-  <div class="post-content" itemprop="articleBody">
+</header>
+<article class="post">
     <p>It’s been quite some time since I wrote Clojure, probably around 2 months or
 so. I stumbled upon <a href="http://ecmendenhall.github.io/blog/blog/2013/09/05/clean-clojure-functions/"><span class="underline">this</span></a> blogpost by Connor Mendenhall. Reading it carefully
 without skimming is really recommended, and fun. It inspired me enough to write
-my first blogpost in 2019.</p>
+my first blogpost in 2019.</p></p>
 
 <p>My first introduction to functional programming was through Scheme and SICP (I
 am re-reading this book for few years now, it never stops to amaze me). This
@@ -47,14 +55,14 @@ alongside REPL, coming back to it, reiterating it, making it more idiomatic,
 achieving more with much less code that is more readable,  all of those things
 are core concepts of SICP, which I didn’t get on my first tries. Going through
 book again felt very rewarding and made my efforts in functional programming
-that more rewarding .</p>
+that more rewarding .</p></p>
 
 <p>In this blogpost we can see usual way of writing functional code. 
 Immutable data + small and clean (not always pure) functions, and
 whole process of achieving that through some weird but natural way of splitting
 things apart while working alongside REPL. Yeah, a lot of concepts in one sentence,
 but that’s all there is to it, and it is really simple when you get what each of
-those concepts mean and what they stand for.</p>
+those concepts mean and what they stand for.</p></p>
 
 <p>I consider every functional language to be kind of a different beast. Core
 concepts are the same, and if you get that, big chances are you will peak on the
@@ -63,7 +71,7 @@ this blogpost I am sure you are <span class="underline">that</span> kind of pers
 notorious by it’s type system, Common Lisp by it’s flexibility of writing
 imperative/functional code and it’s meta-programming capabilities, Erlang about
 it’s concurrency, and Clojure? Clojure is data oriented language. And it blew my
-mind! It totally changed the way how I perceive abstractions and write code.</p>
+mind! It totally changed the way how I perceive abstractions and write code.</p></p>
 
 <p>How Clojure achieves that special layer of abstraction between underlying data
 and clean Lisp-like syntax is through literals and core concepts like
@@ -71,9 +79,9 @@ immutability. After enough staring at different parentheses, letters and
 symbols, you get the sense of what is what, and what fits where. 
 And then everything snaps right in front of your eyes. 
 It feels like you almost see the data flowing through code. By carefully
-writing small decoupled functions (again, _read the blogpost which represents
+writing small decoupled functions (again, <span style="text-decoration: underline;">read the blogpost which represents
 very nicely how code evolves from something big and clunky, to something very
-idiomatic, easy to maintain and read_), top to bottom, breaking problems into
+idiomatic, easy to maintain and read</span>), top to bottom, breaking problems into
 very small pieces. And how you move down the buffer of your favourite text
 editor (<em>:cough:</em> Emacs <em>:cough:</em>) you see those small and nice functions that do
 only one thing combined with each other, on top of immutable data, state of your
@@ -85,7 +93,7 @@ years, but don’t let that fool you, they aren’t dead, they just don’t need
 touched. They work how they should, people are using them and don’t think about
 them anymore. Only language where I’ve seen this is the same case is Common
 Lisp, maybe even more fascinating in that regard than Clojure, but that’s for
-different topic.</p>
+different topic.</p></p>
 
 <p>Now things aren’t that fine and dandy in the beginning. I had a luck that I
 was exposed to Emacs much earlier than I began working with Clojure. I can’t
@@ -95,11 +103,11 @@ only for Java). But my main hurdle with Clojure was <em>way of doing things righ
 still consider myself an amateur Clojurist, I don’t have any real world
 full-time job experience with Clojure, but in the beginning I felt really
 overwhelmed. I was overthinking my every step, and was getting confused by
-possibility of doing one thing on N different ways.</p>
+possibility of doing one thing on N different ways.</p></p>
 
 <p>/Should I use multidimensional
 vector, or map? How do I achieve X-thing without iterating through whole set?
-Should I rewrite this big function using multimethods or separate them completely?/</p>
+Should I rewrite this big function using multimethods or separate them completely?/</p></p>
 
 <p><strong>Getting Clojure</strong> by <a href="http://russolsen.com">Russ Olsen</a> helped me tremendously with all those questions
  that made me rethink my every step. And solution for this kind of problem was
@@ -111,12 +119,12 @@ Should I rewrite this big function using multimethods or separate them completel
  about it. And I’ve met a lot of people doing really cool stuff with
  Clojure. Like for example mind-bending stuff from <a href="http://brutalism.rs">Vladimir Mitrovic</a>, or less
  artistic and more scientific efforts from <a href="https://dragan.rocks">Dragan Djuric</a> and his work in Data
- Science/ML/High Performance Computing.</p>
+ Science/ML/High Performance Computing.</p></p>
 
 <p>I can really see myself using Clojure just for sake of using it. Hobby project
 here and there for now. But I would really like to make a living out of it when
 I gain more experience as developer. Until then I will work hard to be better at
-it.</p>
+it.</p></p>
 
 <p>Clojure and it’s ecosystem feel modern, refreshing and sophisticated. As it grows more
 mature and as guys from Cognitect put more efforts into tooling and ecosystem it
@@ -124,15 +132,28 @@ is really starting to represent something that we lost along the way of
 technological advancement and industrialization of software and
 programming.</p>
 
-
-  </div>
-  <hr>
 </article>
 
-      <div class="copyright">
-      <p>CC BY-NA &copy; Filip Miletic 2019 <a href="/"><strong> <== </strong></a> --  <a href="mailto:phil@phlm.xyz">email</a> -
-        <a href="https://git.sr.ht/~phl">sourcehut</a> - <a href="https://github.com/defphil">github</a></p>
-      </div>
+
+
     </div>
-  </body>
+<div class="footer">
+    
+    
+    <div class="footer-links">
+        <a style="margin-right: 20px;" href="https://github.com/defphil">GitHub</a>
+        <a style="margin-right: 20px;" href="/posts/index.xml">RSS</a>
+        <a href="mailto:eaxfilip@gmail.com">email</a>
+        
+    </div>
+    
+
+    
+    
+    <div style="font-size:.8em;" class="copyright">CC BY © 2019 Filip Miletic</div>
+    
+</div>
+
+</body>
+
 </html>
