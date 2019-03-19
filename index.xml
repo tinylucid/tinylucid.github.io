@@ -7,23 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY © 2019 Filip Miletic</copyright>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://phlm.xyz/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Test post</title>
-      <link>https://phlm.xyz/posts/testpost/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>https://phlm.xyz/posts/testpost/</guid>
-      <description>Test List:
- defin ext  testing post
-Example:
-{{ add 1 2 }
-#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;quot;Enter the aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanumber of terms: &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;n); printf(&amp;quot;Fibonacci Series: &amp;quot;); for (i = 1; i &amp;lt;= n; ++i) { printf(&amp;quot;%d, &amp;quot;, t1); nextTerm = t1 + t2; t1 = t2; t2 = nextTerm; } return 0; }  #includes &amp;lt;iostream&amp;gt; std::cout&amp;lt;&amp;lt;&amp;quot;Hello World!\n&amp;quot;;  </description>
-    </item>
     
     <item>
       <title>Change of perception thanks to Clojure</title>
