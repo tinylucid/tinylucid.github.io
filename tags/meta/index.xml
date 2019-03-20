@@ -7,22 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>CC BY © 2019 Filip Miletic</copyright>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 20 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://phlm.xyz/tags/meta/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test post</title>
-      <link>https://phlm.xyz/posts/testpost/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0100</pubDate>
+      <title>Interim tech report for last 6 months</title>
+      <link>https://phlm.xyz/posts/interim-tech-report/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://phlm.xyz/posts/testpost/</guid>
-      <description>Test List:
- defin ext  testing post
-Example:
-{{ add 1 2 }
-#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;quot;Enter the aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaanumber of terms: &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;n); printf(&amp;quot;Fibonacci Series: &amp;quot;); for (i = 1; i &amp;lt;= n; ++i) { printf(&amp;quot;%d, &amp;quot;, t1); nextTerm = t1 + t2; t1 = t2; t2 = nextTerm; } return 0; }  #includes &amp;lt;iostream&amp;gt; std::cout&amp;lt;&amp;lt;&amp;quot;Hello World!\n&amp;quot;;  </description>
+      <guid>https://phlm.xyz/posts/interim-tech-report/</guid>
+      <description>With this post, I wanted to recap what changes I&#39;ve introduced to my digital life, on and offline. In general, I removed and deleted most of things. Went back to open source software, standardized formats that work everywhere(txt), reduced my iPhone usage... So lets start:
+ I deleted Facebook. (Which I had from 2007. to 2012. and from 2015. until this moment)   I deleted Instagram. I realized I was not looking at the content I wanted and followed, but Facebook was serving me too much ads and content I really didn&#39;t care about, so I found out there was no point in having it.</description>
     </item>
     
   </channel>
