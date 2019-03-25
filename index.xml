@@ -6,7 +6,6 @@
     <description>Recent content on &gt; phlm_</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>CC BY © 2019 Filip Miletic</copyright>
     <lastBuildDate>Wed, 20 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://phlm.xyz/index.xml" rel="self" type="application/rss+xml" />
@@ -34,13 +33,30 @@ My first introduction to functional programming was through Scheme and SICP (I a
     
     <item>
       <title>about me</title>
-      <link>https://phlm.xyz/about/</link>
+      <link>https://phlm.xyz/_about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://phlm.xyz/about/</guid>
-      <description>Hi, my name is Filip Miletic (Phil for many friends around the globe).  Best way to contact me is via email: eaxfilip[at]gmail.com  Here you can take a look at my CV.  You can reach me on IRC phlm@freenode.
-–
-I am currently student at Faculty of Organisational Science – Information Systems and Technology, at University of Belgrade. Previously I’ve dropped out of Electrical Engineering at Faculty of Electrical Engineering, where I’ve studied Electronics for 2 years.</description>
+      <guid>https://phlm.xyz/_about/</guid>
+      <description>Hi, my name is Filip Miletic (Phil for many friends around the globe).  Best way to contact me is via email: eaxfilip[at]gmail.com  Here you can take a look at my CV.  You can reach me on IRC phlm@freenode. 
+I am currently student at Faculty of Organisational Science – Information Systems and Technology, at University of Belgrade. Previously I’ve dropped out from Faculty of Electrical Engineering (University of Belgrade), where I’ve studied Electronics for 2 years.</description>
+    </item>
+    
+    <item>
+      <title>art</title>
+      <link>https://phlm.xyz/_art/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phlm.xyz/_art/</guid>
+      <description> Testing art gallery </description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>https://phlm.xyz/_projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://phlm.xyz/_projects/</guid>
+      <description> Testing projects page </description>
     </item>
     
   </channel>

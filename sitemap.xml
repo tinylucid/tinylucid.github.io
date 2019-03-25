@@ -47,7 +47,15 @@
   </url>
   
   <url>
-    <loc>https://phlm.xyz/about/</loc>
+    <loc>https://phlm.xyz/_about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phlm.xyz/_art/</loc>
+  </url>
+  
+  <url>
+    <loc>https://phlm.xyz/_projects/</loc>
   </url>
   
 </urlset>
