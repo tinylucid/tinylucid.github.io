@@ -46,7 +46,7 @@
 // }
 
 
-var total =50;
+var total = 30;
 var systems;
 var gravity;
 var repeller;
