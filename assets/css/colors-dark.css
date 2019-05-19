@@ -1,0 +1,51 @@
+html, body {
+	background-color: #F1EED9;
+	color: #46433A;
+}
+
+a, a:visited, a:active {
+	color: #2aa198;
+	border-color: #eee8d5;
+}
+
+a:hover {
+	color: #a19Ef9;
+  background-color: #F1EED9;
+}
+
+h1, h2, h3 {
+	color: #46433A;
+}
+
+h1 a, h1 a:visited, h1 a:active {
+	color: #CE534D;
+}
+
+h1 a:hover {
+	background-color: #F1EED9;
+}
+
+blockquote {
+	border-color: #CE534D;
+}
+
+#sidebar a:hover {
+	color: #2aa198;
+	background-color: #d0ccb6;
+}
+
+#footer {
+	border-color: #eee8d5;
+}
+
+
+
+/*** Pygments ***/
+.highlight{
+	background-color: #eee8d5;
+	color: #657b83;
+	border: 1px solid #d6ceb6;
+    border-radius: 3px 3px 3px 3px;
+    overflow: auto;
+    padding: 6px 10px;
+}
