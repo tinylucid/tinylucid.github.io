@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <description>my space on the internet</description>
+    <description>another blog on the internet</description>
     <link>https://phlm.xyz/</link>
     <atom:link href="https://phlm.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 29 May 2019 16:19:52 +0200</pubDate>
-    <lastBuildDate>Wed, 29 May 2019 16:19:52 +0200</lastBuildDate>
+    <pubDate>Fri, 31 May 2019 15:30:24 +0200</pubDate>
+    <lastBuildDate>Fri, 31 May 2019 15:30:24 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
