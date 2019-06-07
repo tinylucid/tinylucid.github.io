@@ -1,6 +1,12 @@
 html, body {
-	background-color: #FFFFF0;
 	color: #050505;
+	background-color: #EFC9C9;
+}
+
+#page {
+  background-color: #f0f0f0;
+  padding-right: 4em;
+  padding-bottom: 2em;
 }
 
 a, a:visited, a:active {
@@ -29,8 +35,18 @@ blockquote {
   background-color: #aaaaaa;
 }
 
+#sidebar {
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 0em;
+}
+
+#sidebar a {
+	color: #ffffff;
+}
+
 #sidebar a:hover {
-	color: #0000ff;
+  color: #0000ff;
 }
 
 #footer {

@@ -110,6 +110,7 @@ h3 {
 
 /*** Structure ***/
 #page {
+  padding-top:1em;
 	width: 37em;
 	margin: 0 auto;
 }
@@ -119,6 +120,8 @@ h3 {
   font-family: monospace;
 	width: 37em;
   margin: 20px 10px 0px 5px;
+  background-color: #EFC9C9;
+  padding-bottom: 1em;
 }
 #header h1 {
   font-family: monospace;
@@ -131,6 +134,10 @@ h3 {
   background-color: 
   font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
 	border: none;
+}
+
+#header p {
+  font-size: 1.2em;
 }
 
 #footer {
@@ -151,25 +158,27 @@ h3 {
 }
 
 #sidebar {
-	position: relative;
+	position: absolute;
   list-style-type: none;
   margin-top: -1em;
-  padding: 0;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 1.3em;
 	text-align: left;
 	width: 15em;
-  left: -2em;
+  left: -.5em;
+  padding-right: 0em;
 }
 
 #sidebar li {
     display: inline;
+    padding-top: 2em;
 }
 
 #sidebar a {
 	border: none;
   font-family: monospace;
 	font-size: 1em;
-	padding: 2px 4px;
+	padding: 0px 4px;
 }
 
 #sidebar a:hover {
