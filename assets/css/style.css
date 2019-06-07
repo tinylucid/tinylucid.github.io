@@ -113,6 +113,7 @@ h3 {
   padding-top:1em;
 	width: 37em;
 	margin: 0 auto;
+  border: 5px solid #000;
 }
 
 #header {
@@ -142,8 +143,7 @@ h3 {
 
 #footer {
 	width: 43em;
-	margin: 50px auto 20px auto;
-  align: center;
+  align: left;
 	padding-top: 10px;
 	font-size: 0.85em;
 	border-top: 1px solid #073642;
@@ -171,7 +171,6 @@ h3 {
 
 #sidebar li {
     display: inline;
-    padding-top: 2em;
 }
 
 #sidebar a {
