@@ -34,7 +34,8 @@ since it must be aligned with the content */
   margin-left: 0;
   columns: 2;
   -webkit-columns: 2;
-  -moz-columns: 2; }
+  -moz-columns: 2;
+  width: 350px; }
 
 /* list icons */
 .main-list-item-icon {
