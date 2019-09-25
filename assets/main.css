@@ -1,6 +1,6 @@
 html { border-top: 10px solid #000; }
 
-body { font-family: Verdana, Arial, sans-serif; font-size: 0.8em; color: #26231A; line-height: 1.4em; background-color: #FFFFFF; }
+body { font-family: Verdana, Arial, sans-serif; font-size: 0.9em; color: #26231A; line-height: 1.5em; background-color: #FFFFFF; }
 
 header, main { padding: 0 20px; }
 
@@ -33,7 +33,7 @@ div.content { margin-left: -2em; }
 /*** author ***/
 .author-container { margin-top: -13.5em; }
 
-.author-container h1 { font-size: 2.8em; margin-top: 0; margin-bottom: 0; margin-right: -5.8em; display: inline; margin-left: 5.3em; }
+.author-container h1 { font-size: 2.8em; margin-top: -5.5em; margin-right: -6.3em; display: block; margin-left: 5.7em; line-height: 1em; }
 
 /*** tagline ***/
 .tagline-container p { visibility: hidden; width: 200px; font-size: 1.2em; font-family: monospace; }
@@ -54,7 +54,7 @@ footer { position: fixed; bottom: 0; right: 0; height: 20px; }
 /* All other devices (768px and up) */
 @media (min-width: 768px) { .wrapper { width: 680px; display: inline-block; }
   header { float: left; width: 200px; text-align: right; }
-  .author-container h1, .tagline-container p { text-align: right; }
+  .author-container h1, .tagline-container p { text-align: left; }
   main { width: 60%; padding-right: 80%; margin-left: 10%; padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
