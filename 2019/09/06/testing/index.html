@@ -1,0 +1,77 @@
+<div class="post" style="font-family: Verdana, Arial, sans-serif;font-size: .8em;width: 500px;">
+<h1>TESTING POSTS FOR MY BLOG</h1>
+
+<h1 id="welcome">welcome</h1>
+<p>Well, “integration” is a fuzzy word. If you just want something that just doesn’t have conflicting default keybindings, I suspect that few WMs grab Alt by default. i3 makes it pretty easy to move its modifiers, though.</p>
+
+<p>I’ve decided to use i3, not because I’m particularly married to its model, but because I don’t know what’s going on with this Wayland business, and if the world kills off X11 at some point in the future and i3 doesn’t come with it, i3 has a Wayland-based clone, sway. Also, i3 is one of the simpler tiling window managers, and thus I believe has a significant userbase.</p>
+
+<p>However, I used to use Sawfish for many years, which used a different Lisp variant, had an interactive REPL, and thus looked a bit familiar to people who like emacs because of the Lisp underpinnings. So if you like the “emacs model” of having an extensible-while-running piece of software written in Lisp, it’s kinda similar. I moved away from it because it felt like it wasn’t being kept current and the Debian packages tended to badly fall behind current releases.</p>
+
+<p>StumpWM has an interface that is intended to look like that of emacs and appeal to emacs users. I have tried it, but never really got into it at the time, though that was more a then-objection to tiling WMs than anything else.</p>
+
+<p>I haven’t used it and have no idea how practical it is, but given that exwm has emacs itself be the WM, can’t get much more integrated, at least from an internals standpoint. :-)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>I've seen emacs uses the Meta key a lot, which is the default modifier key in i3.
+</code></pre></div></div>
+
+<p>I modify i3’s default keybindings to have emacs-like keybindings (e.g. instead of Alt/Meta-hjkl, I use Super-bnpf). I use emacs in a terminal (so that I can use it remotely), constrain myself to only use keys that terminal emulators understand, and don’t bind Super to anything. IMHO, Super should be a WM/user key.</p>
+
+<h2 id="to-the-jungle">to the jungle</h2>
+
+<p>From my ~/.config/i3/config:</p>
+
+<p>set $mod Mod4</p>
+
+<p>bindsym $mod+b focus left
+bindsym $mod+n focus down
+bindsym $mod+p focus up
+bindsym $mod+f focus right</p>
+
+<p>bindsym $mod+Shift+b move left
+bindsym $mod+Shift+n move down
+bindsym $mod+Shift+p move up
+bindsym $mod+Shift+f move right</p>
+
+<p>While I’m at it, if you’ve been using vim for a long time, I dunno whether you’re going evil or not. I do not – I feel like it’d be more fighting the system than is worthwhile – but if you use i3 for its vim-like keybindings, might be of interest. I’m sure that there are old vim folks here who have used it and can give their opinion on it.
+level 2
+heartb1t
+1 point ·
+1 year ago</p>
+
+<p>Simplicity is one of the main things that drew to i3 too. And I hope the X Window server doesn’t die.</p>
+
+<p>I’m leaning towards trying out EXWM, but only after I really get the hang of vanilla Emacs.</p>
+
+<p>Some other people also told me to try evil mode, and I will, as soon as I feel comfortable (or uncomfortable) with vanilla.</p>
+
+<p>I may try out some other WM on my free time. StumpWM really caught my attention (though I think I’ll just go straight up to EXWM anyways, but only time will tell).</p>
+
+<p>Thank you very much!!
+level 1
+g00eykabl00ey
+2 points ·
+1 year ago</p>
+
+<p>You didn’t miss the fact that i3 bypasses unbound keys to emacs right? I have a bunch of stuff bound to super in emacs and it works like a charm.</p>
+
+<p>A piece of general advice for combining i3 and emacs: make frames an integral part of your workflow. Stick to frames for your main layout and only split windows once inside a frame. This way, you can use other-window rather heavily (I have it at M-o) and it won’t cycle through 8 candidates.</p>
+
+<p>I have a TON of other cool hacks for optimizing the i3/emacs combo, more than can fit here. If there’s interest, I will try to do a cohesive write-up when I have time.
+level 2
+heartb1t
+1 point ·
+1 year ago</p>
+
+<p>I’m reading through the Emacs manual and they emphasize a lot the difference between frame and window. Thanks for the tip and I’d like to see the cool hacks whenever you have time.</p>
+
+<p><strong>testing</strong> whateve</p>
+
+
+
+<hr />
+<p>2019-09-06 00:00:00 +0200 - Filip Miletic</p>
+<a href="/" style="font-size: 1.2em;">>>> HOME</a>
+</html>
+</div>
+</div>
