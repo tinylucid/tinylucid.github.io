@@ -1,6 +1,6 @@
 html { border-top: 10px solid #000; }
 
-body { font-family: sans-serif; font-size: 0.9em; color: #26231A; line-height: 1.5em; background-color: #F1F1F1; }
+body { font-family: sans-serif; font-size: 0.9em; color: #26231A; line-height: 1.5em; background-color: #FFFFFF; }
 
 header, main { padding: 0 20px; }
 
@@ -24,12 +24,12 @@ div.content { margin-left: -2em; }
 /*** logo ***/
 .logo-container { text-align: center; }
 
-.logo { background: #f0f0f0; width: 190px; height: 200px; display: inline-block; background-size: cover; }
+.logo { background: #f0f0f0; width: 200px; height: 200px; display: inline-block; background-size: cover; }
 
 /*** author ***/
-.author-container { margin-top: -15em; }
+.author-container { margin-top: -13.5em; }
 
-.author-container h1 { font-size: 2.8em; margin-top: 0; margin-bottom: 0; margin-right: -5.2em; display: inline; margin-left: 5em; }
+.author-container h1 { font-size: 2.8em; margin-top: 0; margin-bottom: 0; margin-right: -5.8em; display: inline; margin-left: 5.3em; }
 
 /*** tagline ***/
 .tagline-container p { visibility: hidden; width: 200px; font-size: 1.2em; font-family: monospace; }
@@ -42,13 +42,15 @@ footer { position: fixed; bottom: 0; right: 0; height: 20px; }
 
 /*** media queries ***/
 /* X-Small devices (phones, 480px and up) */
-@media (min-width: 480px) { /* wrapper stays 480px wide past 480px wide and is kept centered */
-  .wrapper { width: 480px; margin: 2% auto 0 auto; } }
+@media (min-width: 320px) { /* wrapper stays 480px wide past 480px wide and is kept centered */
+  .wrapper { width: 320px; margin: 2% auto 0 auto; } }
+
+@media only screen and (max-device-width: 600ax) { .wrapper { width: 320px; margin: 2% auto 0 auto; } }
 
 /* All other devices (768px and up) */
 @media (min-width: 768px) { .wrapper { width: 680px; display: inline-block; }
   header { float: left; width: 200px; text-align: right; }
-  .author-container h1, .logo-container, .tagline-container p { text-align: right; }
-  main { width: 56%; padding-right: 80%; margin-left: 10%; padding: 0; } }
+  .author-container h1, .tagline-container p { text-align: right; }
+  main { width: 60%; padding-right: 80%; margin-left: 10%; padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
