@@ -1,0 +1,73 @@
+html {
+    background: white;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh;
+
+}
+
+#hello {
+    font-size: 300%;
+    font-family: Consolas, 'DejaVu Sans Mono';
+    display: flex;
+    align-content: left;
+}
+
+#start {
+    padding: 5px;
+    margin: 5px;
+    max-width:80ch;
+    border: 1px solid black;
+    margin-top: 2em;
+}
+
+#about {
+    margin: 15px;;
+    font-family: serif, Arial;
+    font-size: 1em;
+    line-height: 1.3em;
+    justify-content: left;
+    align-content: left;
+
+}
+
+#links {
+    padding: 5px;
+    margin: 10px;
+    width: inherit article#home;
+    align-items: center;
+    justify-content: right;
+    font-size:120%;
+}
+
+
+#links a {
+    color: #3300ff;
+    link-color: #3300ff;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+
+    font-family: Consolas, 'DejaVu Sans Mono';
+    font-weight: bold;
+}
+
+#links ul {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+#links ul > li {
+
+    display: inline-block;
+
+
+}
