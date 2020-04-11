@@ -15,48 +15,62 @@ body {
 
 #hello {
     font-size: 300%;
-    font-family: Consolas, 'DejaVu Sans Mono';
+    font-family: Consolas, Liberation Mono, 'DejaVu Sans Mono', 'SF Mono', Menlo, Monaco;
     display: flex;
     align-content: left;
+    border-bottom: 3px solid black;
+}
+
+#subtitle {
+    color: #aaaaaa;
+    font-size: 1.7vh;
+    font-family: 'Cascadia Code', Consolas, Liberation Mono, 'DejaVu Sans Mono', 'SF Mono', Menlo, Monaco;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display:block;
+    text-align: right;
+    line-height: 1.5em;
+}
+#name {
+    color:black;
 }
 
 #start {
-    padding: 5px;
-    margin: 5px;
-    max-width:80ch;
-    border: 1px solid black;
-    margin-top: 2em;
-}
+    max-width:77ch;
+ }
 
 #about {
-    margin: 15px;;
+    padding-left: 15px;
+    padding-right: 10px;
+
     font-family: serif, Arial;
     font-size: 1em;
     line-height: 1.3em;
     justify-content: left;
     align-content: left;
-
+    border: 1px solid black;
 }
 
 #links {
-    padding: 5px;
-    margin: 10px;
+    margin-left: 10px;
     width: inherit article#home;
     align-items: center;
     justify-content: right;
-    font-size:120%;
 }
 
 
 #links a {
-    color: #3300ff;
-    link-color: #3300ff;
+    color: #367588;
     text-decoration: none;
-    margin: 5px;
-    padding: 5px;
-
-    font-family: Consolas, 'DejaVu Sans Mono';
+    margin-left: 5px;
+    padding-left: 10px;
+    font-family: 'Cascadia Code', Consolas, Liberation Mono, 'DejaVu Sans Mono', 'SF Mono', Menlo, Monaco;
+    font-size: .9em;
     font-weight: bold;
+}
+
+#links a:hover {
+    text-decoration: underline;
 }
 
 #links ul {
@@ -66,8 +80,18 @@ body {
 }
 
 #links ul > li {
-
     display: inline-block;
+}
 
+#arch a {
+    color: #367588;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    font-family: Consolas, 'DejaVu Sans Mono', 'Menlo', Monaco;
+    font-weight: bold;
+}
 
+#arch a:hover {
+    text-decoration: underline;
 }

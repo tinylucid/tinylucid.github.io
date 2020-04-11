@@ -1,79 +1,77 @@
 <!doctype html>
 <html>
   <head>
-		
-		<title>ESCthetik</title>
-		
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="cache-control" content="no-cache">
-		<meta http-equiv="pragma" content="no-cache">
-		<meta name="description" content="Hi, I'm Filip. Low level programmer and thinkerer." />	
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black" />		
-		<meta name="author" content="Filip Miletic">
-		
-		<link rel="shortcut icon" href="assets/favicon.ico">		
+	
+	<title>0xDD</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta name="description" content="Hi, I'm Filip. Low level programmer and thinkerer." />	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />		
+	<meta name="author" content="Filip Miletic">
+	
+	<link rel="shortcut icon" href="assets/favicon.ico">		
+	<link rel="stylesheet" href="assets/default.css">
+    <link rel="stylesheet" href="assets/reset.css">		
+  </head>		
+  <body>
 
-		<link rel="stylesheet" href="assets/default.css">
-        <link rel="stylesheet" href="assets/reset.css">
-
-      
-			
-  </head>
-		
-	<body>
-	  <script>
-          function generate() {
-              var token = '';
-              var range = '6789abcdef6789abcdefbefa6987b7f998987bfdeadeb';
-              var len = 37;
-              var u_string = '';
-              for ( var i = 0; i < len; i++ ) {
-                  var tmp = Math.floor(Math.random() * len);
-                  token = range.charAt(tmp);
-                  //console.log(token);
-                  var un_str = unescape('%u259' + token);
-                  u_string += un_str;
-                  if (tmp % (Math.floor(Math.random() * 13)) == 0) {
-                      u_string += ' ';
-                  }
+    <script>
+      function generate() {
+          var token = '';
+          var range = '6789abcdef6789abcdefbefa6987b7f998987bfdeadeb';
+          var len = 36;
+          var u_string = '';
+          for ( var i = 0; i < len; i++ ) {
+              var tmp = Math.floor(Math.random() * len);
+              token = range.charAt(tmp);
+              var un_str = unescape('%u259' + token);
+              u_string += un_str;
+              if (tmp % (Math.floor(Math.random() * 13)) == 0) {
+                  u_string += ' ';
               }
-              document.getElementById("art").innerHTML = u_string;
           }
-      </script>
-      
-	  <article id="home">
-        	<strong id="hello">
-				Filip Miletic
-			</strong>
+          document.getElementById("art").innerHTML = u_string;
+      }
+    </script>
+    
+	<article id="home">
+ 
+      <strong id="hello">
+		0xDD
+	  </strong>
+      <div id="subtitle">
+        Hello, I'm <div id="name">Filip Miletic</div>
+      </div>
 
-          <div id="start">
-			
-			<section id="about">
-              <p>interested in low level and systems programming, computer graphics and security. Proponent of open source software, decentralized and free internet.</p>
-              <p>&#8226 UNIX enthusiast, proficient in C and modern C++, had experience with OpenGL, Win32, DirectX</p>
-              <p>&#8226 currently experimenting with Rust and Scheme
-
-              <p id="art"> a a a
-                <script>generate();</script>
-                </p>
-			  <p>please don't hesitate to get in touch if you have any questions.</p>
-				
-			</section>
-          </div>
-            <div id="links">
-              <ul>
-			    <li><a href="cv.html">archive</a></li>
-			    <li><a href="mailto:eaxfilip@gmail.com">E-Mail</a></li>
-			    <li><a href="cv.html">CV</a></li>
-		  </ul>
-          
-        </div>
-            
-		</article>
-
-        
+      <div id="start">
 		
-	</body>
+		<section id="about">
+          <p>Interested in low level and systems programming, computer graphics. In my spare time </br> I like creative coding, hardware and software hacking, djing, reading and drawing. </br> Trying to understand computers all over the stack.</p>
+          <p>&#8226 UNIX enthusiast, proficient in C and modern C++, had experience with OpenGL, Win32, DirectX, WebGL; currently experimenting with Rust, Scheme and Javascript</p>
+          <p>&#8226 for being creative with code I use openFrameworks, GLSL, Max/MSP, touchdesigner</p>
+          <p id="art">
+            <script>generate();</script>
+          </p>
+		  <p>please don't hesitate to get in touch if you have any questions</p>
+		  
+		</section>
+      </div>
+      <div id="links">
+        <ul>
+		  <li><a href="archive.html">archive</a></li>
+		  <li><a href="mailto:eaxfilip@gmail.com">E-Mail</a></li>
+          <!--			    <li><a href="cv.html">CV</a></li>  -->
+		</ul>
+        
+      </div>
+      
+	</article>
+
+    
+	
+  </body>
 </html>
