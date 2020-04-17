@@ -1,62 +1,90 @@
 html {
-    background: #ffe094;
+    background: white;
     color: black;
 }
 
 body {
-    display: flex;
+    display: overflow;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: left;
-    min-height: 60vh;
 
+    min-height: 100vh;
 }
 
-#hello {
+
+.container {
     font-size: 300%;
     font-family: Consolas, Liberation Mono, 'DejaVu Sans Mono', 'SF Mono', Menlo, Monaco;
-    display: flex;
-    align-content: left;
     border-bottom: 3px solid black;
+    position: relative;
+    display:inline-block;
 }
 
-#subtitle {
-    color: #aaaaaa;
-    font-size: 1.7vh;
-    font-family: 'Cascadia Code', Consolas, Liberation Mono, 'DejaVu Sans Mono', 'SF Mono', Menlo, Monaco;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display:block;
-    text-align: right;
-    line-height: 1.5em;
-}
-#name {
-    color:black;
+.title {
+    position: absolute;    
+    height: 100%;
+    text-align: left;
+    width: 100%;
 }
 
-#start {
-    max-width:77ch;
+.title:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: bottom;
+   
+}
+
+h2  {
+   display: inline-block;
+   
+   color: #0000FF;
+   background-color: #fff;
+   
+}
+
+.subtitle {
+
+   display: inline-block;
+   font-size: .5em;
+   color: #0000FF;
+   background-color: #fff;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.start {
+    justify-content:left;    
+    position: relative;
+    margin-left: 15px;
  }
+ 
+ 
+.art {
+    line-height: .9em;
+    width: 100%;
+}
 
-#about {
-    padding-left: 15px;
-    padding-right: 10px;
-
+.about {
+    max-width: 95%;
+    width: 600px;
     font-family: serif, Arial;
     font-size: 1em;
     line-height: 1.3em;
-    justify-content: left;
-    align-content: left;
-    border: 1px solid black;
+      text-align: justify;
+  text-justify: inter-word;
 }
 
+
 #links {
-    margin-left: 10px;
-    width: inherit article#home;
-    align-items: center;
-    justify-content: right;
+    align-items: left;
+    justify-content: left;
 }
+
 
 
 #links a {
@@ -75,23 +103,11 @@ body {
 
 #links ul {
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: left;
+    align-items: left;
+    margin-left: 20%;
 }
 
 #links ul > li {
     display: inline-block;
-}
-
-#arch a {
-    color: #367588;
-    text-decoration: none;
-    margin: 5px;
-    padding: 5px;
-    font-family: Consolas, 'DejaVu Sans Mono', 'Menlo', Monaco;
-    font-weight: bold;
-}
-
-#arch a:hover {
-    text-decoration: underline;
 }

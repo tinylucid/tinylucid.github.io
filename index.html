@@ -22,8 +22,8 @@
     <script>
       function generate() {
           var token = '';
-          var range = '6789abcdef6789abcdefbefa6987b7f998987bfdeadeb';
-          var len = 36;
+          var range = '6789abcdef6789abcdefbefa6987b7f998987bfdeadeb6789abcdef6789abcdefbefa6987b7f998987bfdeadeb';
+          var len = 35;
           var u_string = '';
           for ( var i = 0; i < len; i++ ) {
               var tmp = Math.floor(Math.random() * len);
@@ -38,33 +38,39 @@
       }
     </script>
     
-	<article id="home">
+	<article class="home">
  
-      <strong id="hello">
-		0xDD
-	  </strong>
-      <div id="subtitle">
-        Hello, I'm <div id="name">Filip Miletic</div>
+      <div class="container">
+        
+        <div class="title">
+            <h2>0xDD</h2>
+            <div class="subtitle">Filip Miletic</div>
+        </div>
+        <img class="img" src="img/header.png">
       </div>
+      
+    
 
-      <div id="start">
-		
-		<section id="about">
-          <p>Interested in low level and systems programming, computer graphics. In my spare time I like creative coding, hardware and software hacking, djing, reading and drawing. Trying to understand computers all over the stack.</p>
-          <p>&#8226 UNIX enthusiast, proficient in C and modern C++, had experience with OpenGL, Win32, DirectX, WebGL; currently experimenting with Rust, Scheme and Javascript</p>
-          <p>&#8226 for being creative with code I use openFrameworks, GLSL, Max/MSP, touchdesigner</p>
+      <div class="start">
+
+		<div class="about">
+          <p>Interested in low level and systems programming, computer graphics. In my spare time I like creative coding, hardware and software hacking, reading and djing. Grew up on late Web 1.0 and net.art. Understanding computers all over the stack as main motive for learning.</p>
+          <p>&#8226 UNIX enthusiast, proficient in C and modern C++, had experience with OpenGL, Win32, DirectX, WebGL; currently experimenting with Rust, Scheme and Javascript. Emulators, graphics demos and interactive installations along other projects</p>
+          <p>&#8226 creating software art with openFrameworks, GLSL, Max/MSP, touchdesigner</p>
+        </br>
+         
           <p id="art">
             <script>generate();</script>
           </p>
 		  <p>please don't hesitate to get in touch if you have any questions</p>
-		  
-		</section>
+		  </div>
+
       </div>
       <div id="links">
         <ul>
-		  <li><a href="https://www.instagram.com/onehalf.exe">instagram</a></li>
+		  <li><a href="archive.html">archive</a></li>
 		  <li><a href="mailto:eaxfilip@gmail.com">E-Mail</a></li>
-         <!--			    <li><a href="cv.html">CV</a></li>  -->
+          <!--			    <li><a href="cv.html">CV</a></li>  -->
 		</ul>
         
       </div>
