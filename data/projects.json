@@ -1,0 +1,19 @@
+{
+   "list": [
+      {
+         "name":"Rigid body simulation",
+         "url":"https://github.com/defphil/rigbodysim",
+         "desc":"Circle rigid body simulation in Java"
+      },
+      {
+         "name":"Directional Lighting in WebGL",
+         "url":"https://github.com/defphil/epos-webgl",
+         "desc":"Implementation of directional lighting in TypeScript"
+      },
+      {
+         "name":"DirectX 11 renderer",
+         "url":"",
+         "desc":"Win32 / DX11 renderer -- still wip, not open sourced yet"
+      }
+   ]
+}

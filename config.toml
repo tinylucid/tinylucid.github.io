@@ -1,0 +1,37 @@
+baseURL = "https://0xdd.xyz/"
+languageCode = "en-us"
+title = "Filip Miletic"
+theme = "cactus"
+
+[params]
+colortheme = "white"
+mainSection = ""
+description = "I am programmer working with all kinds of technologies, sometimes even in domain of art. Mostly I'm interested in computer graphics, low level programming and creative coding. I'm into weird aesthetics and music."
+tagsOverview = false
+showProjectsList = true
+projectsUrl = "https://github.com/defphil"
+rss = true
+copyright = "Filip Miletic"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Art"
+url = "/art"
+weight = 2
+
+[[params.social]]
+  name = "github"
+  link = "https://github.com/defphil"
+
+[[params.social]]
+  name = "email"
+  link = "eaxfilip@gmail.com"
+
+[[params. social]]
+  name = "fab fa-git-alt"
+  link = "https://git.sr.ht/~phl"
+
