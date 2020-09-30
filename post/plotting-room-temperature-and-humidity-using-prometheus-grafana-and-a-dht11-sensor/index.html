@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head>
+<link rel="stylesheet" type="text/css" href="/css/hacktheplanet.css"/>
+
+<meta name="description" content="" />
+<meta name="author" content="Filip Miletic">
+<meta name="keywords" content="">
+
+
+<title>Plotting room temperature and humidity using Prometheus, Grafana and a DHT11 sensor</title>
+</head>
+<body>
+      <div class="container">
+        <div class="blog">
+<h1>Plotting room temperature and humidity using Prometheus, Grafana and a DHT11 sensor</h1>
+  Sep 3, 2020
+  <p>
+<p>
+Last week we installed an airconditioning unit in our house and
+yesterday a <a href="https://akizukidenshi.com/download/ds/aosong/DHT11.pdf">DHT11 humidity and temperature</a> sensor arrived that I had
+ordered in the past from ebay and had totally forgotten about it. So,
+I got the idea to monitor the temperature and humidity in the room, to
+see how well the airconditioning unit works.
+</p>
+<p>
+What better way to do this than use Prometheus, Grafana and a spare
+<a href="https://www.raspberrypi.org/products/raspberry-pi-zero-w/">Raspverry Pi Zero W</a> I had lying around.
+</p>
+<h3 id="headline-1">
+Architecture
+</h3>
+<p>
+My prometheus server runs on a docker container, which in turn runs on
+a KVM, which in turn (squared) runs on a physical host I maintain at
+online.net. I use a VPN to connect all of my hosts and <a href="https://github.com/prometheus/node%255Fexporter">node_exporter</a>
+is configured to only listen on the VPN interface.
+</p>
+<p>
+I initially planned on using a cheap NodeMCU/esp8266 board to
+interface with the sensor and write a simple exporter in the
+prometheus format. I quickly scraped that idea because I&#39;m using <a href="https://en.wikipedia.org/wiki/Network%255Faddress%255Ftranslation">NAT</a>
+at home and I would either have do port forwarding or have my router
+by a part of the VPN and assign IPs in the VPN address space.
+</p>
+<p>
+I opted for the simpler solution, use a Raspberry Pi and just have it
+be a client to the VPN. This also meant I got to test <a href="https://debops.org/">DebOps</a> on armv6
+based devices.
+</p>
+<h3 id="headline-2">
+Implementation
+</h3>
+<p>
+The implementation was easier than I expected. I run my DebOps-related
+playbooks, modified some parts to work on armv6, soldered some male
+pin headers to the raspi and connected the sensor to power/ground and
+a GPIO pin.
+</p>
+<p>
+To interface with the sensor, I used a <a href="https://github.com/adafruit/Adafruit%255FPython%255FDHT">python library by Adafruit</a> and
+for exporting the metrics I used the <a href="https://github.com/prometheus/client%255Fpython">official python prometheus
+client</a>. Nothing fancy here, just hardcoded some glue code and had it
+run automatically on startup.
+</p>
+<div class="src src-python">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> prometheus_client <span style="color:#f92672">import</span> start_http_server, Gauge
+<span style="color:#f92672">import</span> Adafruit_DHT
+
+t <span style="color:#f92672">=</span> Gauge(<span style="color:#e6db74">&#39;temperature&#39;</span>, <span style="color:#e6db74">&#39;Temperature&#39;</span>)
+h <span style="color:#f92672">=</span> Gauge(<span style="color:#e6db74">&#39;humidity&#39;</span>, <span style="color:#e6db74">&#39;Humidity&#39;</span>)
+
+start_http_server(<span style="color:#ae81ff">9222</span>)
+<span style="color:#66d9ef">while</span> True:
+    humidity, temperature <span style="color:#f92672">=</span> Adafruit_DHT<span style="color:#f92672">.</span>read_retry(<span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">4</span>)
+    t<span style="color:#f92672">.</span>set(temperature)
+    h<span style="color:#f92672">.</span>set(humidity)</code></pre></div>
+</div>
+<p>
+Here is a screenshot showcasing the end result plotted in Grafana,
+where you can clearly see when we turned on/off the AC unit.
+</p>
+<p>
+<figure>
+    <img src="/images/graph.png"/> 
+</figure>
+
+</p>
+</p>
+   Tags:  <a href="/tags/metrics"> metrics</a>  <a href="/tags/iot"> iot</a>  
+
+        </div>
+        <div class="sidebar"><img class="avatar" src="/images/4.png">
+I am programmer working with all kinds of technologies, sometimes even in domain of art. <br> <br> Currently working at <b>Ubisoft Belgrade</b>. Technical areas of interest: computer graphics, low level programming and creative coding. I'm into weird aesthetics, generative design, indie games and music. <br> <br> <b>Contact:</b> eaxfilip [at] gmail [dot] com
+<p><hr /></p>
+
+
+  <p><a href="https://0xdd.xyz/" title="~/">~/</a></p>
+
+  <p><a href="https://0xdd.xyz/art" title="art">art</a></p>
+
+  <p><a href="https://github.com/defphil" title="github">github</a></p>
+
+  <p><a href="https://git.sr.ht/~phl" title="sourcehut">sourcehut</a></p>
+
+
+
+</div>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>metrics on Filip Miletic</title>
+    <link>https://0xdd.xyz/tags/metrics/</link>
+    <description>Recent content in metrics on Filip Miletic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://0xdd.xyz/tags/metrics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Plotting room temperature and humidity using Prometheus, Grafana and a DHT11 sensor</title>
+      <link>https://0xdd.xyz/post/plotting-room-temperature-and-humidity-using-prometheus-grafana-and-a-dht11-sensor/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xdd.xyz/post/plotting-room-temperature-and-humidity-using-prometheus-grafana-and-a-dht11-sensor/</guid>
+      <description>Last week we installed an airconditioning unit in our house and yesterday a DHT11 humidity and temperature sensor arrived that I had ordered in the past from ebay and had totally forgotten about it. So, I got the idea to monitor the temperature and humidity in the room, to see how well the airconditioning unit works.  What better way to do this than use Prometheus, Grafana and a spare Raspverry Pi Zero W I had lying around.</description>
+    </item>
+    
+  </channel>
+</rss>
