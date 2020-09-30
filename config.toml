@@ -1,0 +1,38 @@
+baseURL = "https://0xdd.xyz/"
+languageCode = "en-us"
+title = "Filip Miletic"
+theme = "HackThePlanet"
+
+[params]
+author = "Filip Miletic"
+avatar = "/images/4.png"
+
+
+[permalinks]
+post = "/post/:title/"
+
+[[menu.main]]
+name = "~/"
+url = "/"
+weight = -1
+
+[[menu.main]]
+name = "art"
+url = "/art"
+weight = 10
+
+[[menu.main]]
+  name = "github"
+  url = "https://github.com/defphil"
+  weight = 20
+
+[[menu.main]]
+  name = "sourcehut"
+  url = "https://git.sr.ht/~phl"
+  weight = 30
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

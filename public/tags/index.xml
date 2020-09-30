@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Filip Miletic</title>
+    <link>https://0xdd.xyz/tags/</link>
+    <description>Recent content in Tags on Filip Miletic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://0xdd.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iot</title>
+      <link>https://0xdd.xyz/tags/iot/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xdd.xyz/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metrics</title>
+      <link>https://0xdd.xyz/tags/metrics/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://0xdd.xyz/tags/metrics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://0xdd.xyz/tags/iot/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/tags/metrics/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/post/plotting-room-temperature-and-humidity-using-prometheus-grafana-and-a-dht11-sensor/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/post/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/tags/</loc>
+    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/art/</loc>
+    <lastmod>2020-08-15T14:35:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/</loc>
+    <lastmod>2020-08-15T14:35:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://0xdd.xyz/categories/</loc>
+  </url>
+  
+</urlset>
