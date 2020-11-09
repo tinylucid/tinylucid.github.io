@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: inherit;
+  }
+
+  body {
+    background: #483aaa;
+    color: #d2abe0;
+
+    font-family: system-ui;
+    font-size: 4.45vw;
+    line-height: 4.45vw;
+        font-weight: bold;
+            font-variant-ligatures: normal;
+  }
+
+
+  /* PAGE */
+
+  h1 {
+
+    font: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+  }
+
+  p {
+    animation: fadein 2.2s forwards ease-out;
+    padding: 1.78vw 10vw 2.67vw 3vw;
+  } 
+  h1 {
+    animation: fadein 1.2s forwards ease-out;
+    padding: 1.78vw 10vw 2.67vw 3vw;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    color: inherit;
+    padding-left: .5vw;
+    padding-right: 1.5vw;
+    margin-left: -.5vw;
+    margin-right: -.5vw;
+    cursor: pointer;
+  }
+
+  a:hover {
+    background: #d2abe0;
+    color: #483aaa;
+  }
+
+  a:focus {
+    text-decoration: none;
+    outline: solid 4px rgba(0,0,0,.4);
+  }
+
+    ::selection {
+    background: #000;
+    background: rgba(0,0,0,.99);
+    color: #fff;
+  }
+  
+ @keyframes fadein {
+    0% {
+      opacity: 0;
+      margin-top: 1.5vw;
+    }
+
+    100% {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
