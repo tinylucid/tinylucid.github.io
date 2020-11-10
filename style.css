@@ -96,22 +96,22 @@ ul#links li {
   font-family: monospace;
 }
 
- @keyframes fadein {
-    0% {
-      opacity: 0;
-      margin-top: 1.5em;
-    }
-
-    100% {
-      opacity: 1;
-      margin-top: 0;
-    }
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    margin-top: 1.5em;
   }
 
-  @media (max-width: 600px) {
-
-      body {
-        overflow: scroll;
-        font-size: 3rem;
-      }
+  100% {
+    opacity: 1;
+    margin-top: 0;
   }
+}
+
+@media (max-width: 600px) {
+
+    body {
+      overflow: scroll;
+      font-size: 3rem;
+    }
+}
