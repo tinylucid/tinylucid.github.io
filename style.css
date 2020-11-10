@@ -6,19 +6,33 @@
 }
 
 body {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
   background: #483aaa;
   color: #d2abe0;
-  height: 100vh;
-  position: relative;
   font-family: system-ui;
   font-size: 4.6em;
   line-height: 1.2em;
-      font-weight: bold;
-          font-variant-ligatures: normal;
+  font-weight: bold;
+  font-variant-ligatures: normal;
 }
 
 
 /* PAGE */
+
+#container {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#header {
+  display: block;
+  padding-bottom: 15%;
+}
 
 h1 {
 
@@ -31,6 +45,7 @@ p {
   animation: fadein 2.2s forwards ease-out;
   padding: 1.78vw 10vw 2.67vw 3vw;
 } 
+
 h1 {
   animation: fadein 1.2s forwards ease-out;
   padding: 1.78vw 10vw 2.67vw 3vw;
@@ -63,34 +78,20 @@ a:focus {
   color: #fff;
 }
 
-#blog
-{
-  display: none;
-  font-family: monospace;
-  font-size: .5em;
-}
-
-#posts
-{
-  font-size: .9em;
-    padding: 1.78vw 10vw 2.67vw 3vw;
-
-}
-
-.footer
+#footer
 {
   width: 100%;
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
 }
 
 ul#links li {
-      height: 100%;
-      padding-right: 1.1em;
+  height: 100%;
+  padding-right: 1.1em;
   float: right;
- text-align: left;
+  text-align: right;
 
-      display:inline;
+  display: block;
   font-size: .4em;
   font-family: monospace;
 }
@@ -98,11 +99,19 @@ ul#links li {
  @keyframes fadein {
     0% {
       opacity: 0;
-      margin-top: 1.5vw;
+      margin-top: 1.5em;
     }
 
     100% {
       opacity: 1;
       margin-top: 0;
     }
+  }
+
+  @media (max-width: 600px) {
+
+      body {
+        overflow: scroll;
+        font-size: 3rem;
+      }
   }
