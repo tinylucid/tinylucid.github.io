@@ -12,7 +12,7 @@ body {
   background: #483aaa;
   color: #d2abe0;
   font-family: system-ui;
-  font-size: 4em;
+  font-size: 4.6em;
   line-height: 1.2em;
   font-weight: bold;
   font-variant-ligatures: normal;
@@ -35,26 +35,20 @@ body {
 }
 
 h1 {
-  font-family: monospace;
 
-  line-height: 1em;
-
-  font-size: 1.2em;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 
 p {
-  font-family: monospace;
-  font-size:  .3em;
-  line-height:  .8em;
-    font-weight: 400;
-    letter-spacing: 0.2em;
   animation: fadein 2.2s forwards ease-out;
   padding: 1.78vw 10vw 2.67vw 3vw;
 } 
 
 h1 {
   animation: fadein 1.2s forwards ease-out;
-  padding: 2.78vw 2vw 2.67vw 3vw;
+  padding: 1.78vw 10vw 2.67vw 3vw;
 }
 
 a {
@@ -78,7 +72,7 @@ a:focus {
   outline: solid 4px rgba(0,0,0,.4);
 }
 
-::selection {
+  ::selection {
   background: #000;
   background: rgba(0,0,0,.99);
   color: #fff;
@@ -88,7 +82,7 @@ a:focus {
 {
   width: 100%;
   position: absolute;
-  bottom: 1em;
+  bottom: 0;
 }
 
 ul#links li {
@@ -105,19 +99,19 @@ ul#links li {
 @keyframes fadein {
   0% {
     opacity: 0;
-    margin-top: 2em;
+    margin-top: 1.5em;
   }
 
   100% {
     opacity: 1;
-    margin-top: 1em;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 600px) {
 
     body {
-      overflow: scroll;
-      font-size: 1em;
+      overflow: hidden;
+      font-size: 3rem;
     }
 }
