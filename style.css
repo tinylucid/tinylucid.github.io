@@ -61,7 +61,7 @@ body {
 }
 
 h1 {
-  font-family: 'Ferrite Core DX';
+  font-family: 'monospace';
 
   line-height: 1em;
 
@@ -69,7 +69,7 @@ h1 {
 }
 
 p {
-  font-family: 'Ferrite Core DX';
+  font-family: 'monospace';
   font-size:  .3em;
   line-height:  .8em;
     font-weight: 400;
