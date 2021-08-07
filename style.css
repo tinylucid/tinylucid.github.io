@@ -120,8 +120,8 @@ ul#links li {
 }
 
 @media (max-width: 600px) {
-
     body {
+        overflow: scroll;
       font-size: 3rem;
     }
 }
