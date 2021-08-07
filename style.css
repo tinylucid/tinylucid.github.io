@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   position: relative;
   background: #483aaa;
@@ -123,5 +123,15 @@ ul#links li {
     body {
         overflow: scroll;
       font-size: 3rem;
+
     }
+
+
+    #footer
+{
+  display: block;
+  width: 100%;
+  position: relative;
+
+}
 }
