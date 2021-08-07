@@ -122,7 +122,6 @@ ul#links li {
 @media (max-width: 600px) {
 
     body {
-      overflow: hidden;
       font-size: 3rem;
     }
 }
