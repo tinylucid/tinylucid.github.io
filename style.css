@@ -10,6 +10,9 @@ body {
   height: 100%;
   position: relative;
   background: #483aaa;
+  background-image: url("bg.png");
+  background-position: left top; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
   color: #d2abe0;
   font-family: system-ui;
   font-size: 4.6em;
@@ -43,7 +46,7 @@ h1 {
 
 p {
   animation: fadein 2.2s forwards ease-out;
-  padding: 1.78vw 10vw 2.67vw 3vw;
+  padding: 1vw 10vw 2.67vw 3vw;
 
 }
 
@@ -110,12 +113,12 @@ ul#links li {
 @keyframes fadein {
   0% {
     opacity: 0;
-    margin-top: 1.5em;
+    margin-top: 0em;
   }
 
   100% {
     opacity: 1;
-    margin-top: 0;
+    margin-top: 1em;
   }
 }
 
