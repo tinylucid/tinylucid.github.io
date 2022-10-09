@@ -10,7 +10,6 @@ body {
   height: 100%;
   position: relative;
   background: #483aaa;
-  background-image: url("bg.png");
   background-position: left top; /*Positioning*/
   background-repeat: no-repeat; /*Prevent showing multiple background images*/
   color: #d2abe0;
