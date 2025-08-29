@@ -95,10 +95,15 @@ padding: 1em;
   width: 50%;
   padding: 1em;
 }
+#image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 #text {
   float: left;
-  width: calc(50% - 2em);   /* room for padding */
+  width: calc(50% - 2em);
   padding-left: 1em;
 }
 
@@ -115,9 +120,13 @@ padding: 1em;
   #text {
     float: none;
     width: 100%;
+  }
+    
+  #image {
     padding: 1em;
   }
 
   #links {
     padding-left: 1em;
   }
+}
