@@ -95,9 +95,11 @@ padding: 1em;
   width: 50%;
   padding: 1em;
 }
+
 #image img {
   display: block;
   width: 100%;
+  max-width: min(512px, 25vw);
   height: auto;
 }
 
@@ -125,7 +127,9 @@ padding: 1em;
   #image {
     padding: 1em;
   }
-
+  #image img {
+    max-width: min(512px, 80vw);
+  }
   #links {
     padding-left: 1em;
   }
