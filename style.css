@@ -1,76 +1,91 @@
 html {
-
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 body {
-  overflow:auto;
-  height:100%;
-  background-position:left top;
-  font-family: monospace;
-  font-size:1.5em;
-  line-height:1.2em;
-      color:white;
-  background:  black;
-}
-header {
-  position:relative
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: monospace;
+    font-size: 1.5em;
+    line-height: 1.2em;
 }
 a {
-  text-decoration:none;
-  color:inherit;
-  font-weight:bold;
-
-  display:inline-block
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
 }
 a:hover {
-  background:#d2abe0;
-  color:#483aaa
+    background: #d2abe0;
+    color: #483aaa;
 }
-#image {
-  -moz-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-  filter: FlipH;
-  float:left;
-  padding:1em;
-
+.headerwrapper {
+    margin-bottom: 1.5em;
 }
-
-#text {
-  float:left;
-  width:20%;
-  padding-left:2em
+#header {
+max-width: 1000px;
+margin: 0 auto;
+padding: 1em;
+}
+.backbutton {
+    margin-top: 1em;
 }
 
-#links {
-  float:left;
-  clear:left;
-  padding-bottom:2em
+/* GRID */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* square */
+    overflow: hidden;
+    background: #111;
+}
+.img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: transform .3s ease;
+}
+.img img:hover {
+    transform: scale(1.05);
 }
 
-a:focus {
-  text-decoration:none;
-  outline:solid 1px rgba(0,0,0,.4)
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.9);
+    align-items: center;
+    justify-content: center;
 }
-
-::selection {
-  background:#0000ff;
-  background:rgba(0,0,0,.99);
-  color:#fff
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border: 1px solid #444;
 }
-
-@media (max-width: 800px) {
-  body {
-    font-size:1.2em
-  }
-  #text {
-    float:left;
-    clear:left;
-    width:75vw;
-    font-size: 1.1em;
-  }
-  img {
-    float:left;
-    display:block
-  }
+.close {
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
 }
